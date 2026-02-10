@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow:
+
+# Site Map
+https://thescienceoffaith.com/sitemap.xml
+
+# Key Content for LLMs
+https://thescienceoffaith.com/practices/the-cognitive-benefits-of-centering-prayer
+https://thescienceoffaith.com/mantras-chants
+https://thescienceoffaith.com/rituals
