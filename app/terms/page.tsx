@@ -143,7 +143,7 @@ export default function TermsPage() {
                         If you have any questions about these Terms of Service, please contact us:
                     </p>
                     <p style={{ margin: 0, lineHeight: '1.7' }}>
-                        <strong>Email:</strong> <a href="mailto:contact@sacredsanskriti.com" style={{ color: 'var(--link-color)' }}>contact@sacredsanskriti.com</a><br />
+                        <strong>Email:</strong> <a href="mailto:contactus@sacredsanskriti.com" style={{ color: 'var(--link-color)' }}>contactus@sacredsanskriti.com</a><br />
                         <strong>Address:</strong> Hyderabad, India
                     </p>
                 </div>

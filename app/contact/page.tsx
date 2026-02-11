@@ -12,7 +12,7 @@ export default function ContactPage() {
                     We'd love to hear from you. Whether you have questions, feedback, or research to share, please reach out.
                 </p>
                 <div style={{ padding: '2rem', backgroundColor: '#f8f9fa', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-                    <p><strong>Email:</strong> contact@scienceoffaith.com</p>
+                    <p><strong>Email:</strong> contactus@sacredsanskriti.com</p>
                     <p><strong>Address:</strong> Hyderabad, India</p>
                 </div>
 

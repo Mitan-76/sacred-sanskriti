@@ -90,7 +90,7 @@ export default function RootLayout({
                             },
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "email": "contact@sacredsanskriti.com",
+                                "email": "contactus@sacredsanskriti.com",
                                 "contactType": "Customer Service"
                             },
                             "sameAs": [

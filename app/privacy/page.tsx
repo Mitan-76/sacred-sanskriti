@@ -81,7 +81,7 @@ export default function PrivacyPage() {
                 </h2>
 
                 <p className="mb-4" style={{ lineHeight: '1.8' }}>
-                    Under the DPDP Act and GDPR, you have the right to access, rectify, or request the erasure of your personal data. If you wish to exercise these rights, please contact us at <a href="mailto:contact@sacredsanskriti.com" style={{ color: 'var(--link-color)', textDecoration: 'underline' }}>contact@sacredsanskriti.com</a>.
+                    Under the DPDP Act and GDPR, you have the right to access, rectify, or request the erasure of your personal data. If you wish to exercise these rights, please contact us at <a href="mailto:contactus@sacredsanskriti.com" style={{ color: 'var(--link-color)', textDecoration: 'underline' }}>contactus@sacredsanskriti.com</a>.
                 </p>
 
                 <h2 style={{ color: '#2d3748', marginTop: '2.5rem', marginBottom: '1rem' }}>
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
                         If you have any questions about this Privacy Policy, please contact us:
                     </p>
                     <p style={{ margin: 0, lineHeight: '1.7' }}>
-                        <strong>Email:</strong> <a href="mailto:contact@sacredsanskriti.com" style={{ color: 'var(--link-color)' }}>contact@sacredsanskriti.com</a><br />
+                        <strong>Email:</strong> <a href="mailto:contactus@sacredsanskriti.com" style={{ color: 'var(--link-color)' }}>contactus@sacredsanskriti.com</a><br />
                         <strong>Address:</strong> Hyderabad, India
                     </p>
                 </div>
