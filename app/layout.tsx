@@ -5,11 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-main" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-main", display: 'swap' });
 const merriweather = Merriweather({
     weight: ["300", "400", "700"],
     subsets: ["latin"],
-    variable: "--font-heading"
+    variable: "--font-heading",
+    display: 'swap'
 });
 
 export const metadata: Metadata = {

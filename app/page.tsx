@@ -19,7 +19,7 @@ export default function Home() {
                     fill
                     style={{ objectFit: 'cover', zIndex: -1 }}
                     priority
-                    sizes="100vw"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
                 />
                 <div style={{ position: 'relative', zIndex: 1, padding: '3rem', maxWidth: '600px', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', borderRadius: '12px', margin: '2rem' }}>
                     <h1 style={{ fontSize: '3rem', color: '#1a365d', marginBottom: '1rem', textShadow: '0 2px 4px rgba(255,255,255,0.5)' }}>Where Science Meets the Sacred</h1>
