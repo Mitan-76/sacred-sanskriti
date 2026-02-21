@@ -1,7 +1,8 @@
+import { getPostsByCategory } from "@/lib/content";
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+export default async function Home() {
     const silos = [
         { title: "Mantras & Chants", slug: "mantras-chants", desc: "Meaning, Structure, Rhythm, and Sound Science" },
         { title: "Rituals", slug: "rituals", desc: "Evolutionary biology and sociology of rituals" },
@@ -9,6 +10,24 @@ export default function Home() {
         { title: "Myth vs Text", slug: "myth-vs-text", desc: "Comparative linguistics and historical accuracy" },
         { title: "Practices", slug: "practices", desc: "Neuroscience and Psychology behind spiritual acts" },
     ];
+    const categories = [
+  "mantras-chants",
+  "rituals",
+  "symbols",
+  "myth-vs-text",
+  "practices",
+];
+
+const allPosts = categories.flatMap((category) =>
+  getPostsByCategory(category).map((post) => ({
+    ...post,
+    category,
+  }))
+);
+
+const latestPosts = allPosts
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 5);
 
     return (
         <div className="container">
@@ -36,6 +55,20 @@ export default function Home() {
                             <Link href={`/${silo.slug}`}>{silo.title}</Link>
                         </h3>
                         <p>{silo.desc}</p>
+                    </div>
+                ))}
+            </section>
+            <section style={{ gridColumn: 'span 12', marginTop: '3rem' }}>
+                <h2 style={{ marginBottom: '1.5rem' }}>Latest Articles</h2>
+                
+                {latestPosts.map((post) => (
+                    <div key={`${post.category}-${post.slug}`} style={{ marginBottom: '1.5rem' }}>
+                        <h3>
+                            <Link href={`/${post.category}/${post.slug}`}>
+                                {post.title}
+                            </Link>
+                        </h3>
+                        <p>{post.description}</p>
                     </div>
                 ))}
             </section>

@@ -1,25 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { getPostsByCategory } from "@/lib/content";
 
-import Breadcrumb from '@/components/Breadcrumb';
+export default function SymbolsPage() {
+  const posts = getPostsByCategory("symbols");
 
-export default function SymbolsPillar() {
-    return (
-        <div className="container" style={{ marginTop: '2rem' }}>
-            <div style={{ gridColumn: 'span 12' }}>
-                <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Symbols', href: '/symbols' }]} />
-            </div>
-            <main className="main-content">
-                <h1>Symbols: Sacred Geometry & Psychology</h1>
-                <p className="mb-4">
-                    Semiologists and psychological impact of sacred geometry and religious icons.
-                </p>
-                <div className="article-list">
-                    <p>Coming Soon...</p>
-                </div>
-            </main>
-            <aside className="sidebar">
-                <div className="ads-sidebar">Ad Space</div>
-            </aside>
+  return (
+    <div>
+      <h1>Symbols</h1>
+
+      {posts.map((post) => (
+        <div key={post.slug} style={{ marginBottom: "20px" }}>
+          <h2>
+            <Link href={`/symbols/${post.slug}`}>
+              {post.title}
+            </Link>
+          </h2>
+          <p>{post.description}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }

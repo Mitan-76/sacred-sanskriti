@@ -1,24 +1,23 @@
-import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
+import Link from "next/link";
+import { getPostsByCategory } from "@/lib/content";
 
-export default function MantrasPillar() {
-    return (
-        <div className="container" style={{ marginTop: '2rem' }}>
-            <div style={{ gridColumn: 'span 12' }}>
-                <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Mantras & Chants', href: '/mantras-chants' }]} />
-            </div>
-            <main className="main-content">
-                <h1>Mantras & Chants: The Science of Sound</h1>
-                <p className="mb-4">
-                    Explaining the vibrational physics and psychological impact of repetitive prayer and chanting.
-                </p>
-                <div className="article-list">
-                    <p>Coming Soon...</p>
-                </div>
-            </main>
-            <aside className="sidebar">
-                <div className="ads-sidebar">Ad Space</div>
-            </aside>
+export default function MantrasChantsPage() {
+  const posts = getPostsByCategory("mantras-chants");
+
+  return (
+    <div>
+      <h1>Mantras & Chants</h1>
+
+      {posts.map((post) => (
+        <div key={post.slug} style={{ marginBottom: "20px" }}>
+          <h2>
+            <Link href={`/mantras-chants/${post.slug}`}>
+              {post.title}
+            </Link>
+          </h2>
+          <p>{post.description}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }

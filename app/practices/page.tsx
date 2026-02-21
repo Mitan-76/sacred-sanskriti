@@ -1,67 +1,23 @@
-import Link from 'next/link';
-import JsonLd from '@/components/JsonLd';
-import Breadcrumb from '@/components/Breadcrumb';
+import Link from "next/link";
+import { getPostsByCategory } from "@/lib/content";
 
-export const metadata = {
-    title: "Spiritual Practices | Neuroscience and Psychology",
-    description: "Explore the scientific basis of spiritual practices like meditation, prayer, and yoga.",
-};
+export default function PracticesPage() {
+  const posts = getPostsByCategory("practices");
 
-export default function PracticesPillar() {
-    const articles = [
-        {
-            title: "The Cognitive Benefits of Centering Prayer: A Psychobiological Review",
-            slug: "the-cognitive-benefits-of-centering-prayer",
-            excerpt: "Analyzing the default mode network (DMN) deactivation during centering prayer."
-        }
-    ];
+  return (
+    <div>
+      <h1>Practices</h1>
 
-    const breadcrumbSchema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://thescienceoffaith.com"
-        }, {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Practices",
-            "item": "https://thescienceoffaith.com/practices"
-        }]
-    };
-
-    return (
-        <div className="container" style={{ marginTop: '2rem' }}>
-            <div style={{ gridColumn: 'span 12' }}>
-                <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Practices', href: '/practices' }]} />
-            </div>
-            <JsonLd data={breadcrumbSchema} />
-
-            <main className="main-content">
-                <h1>Spiritual Practices: The Science</h1>
-                <p className="mb-4">
-                    We investigate the neuroscience (fMRI studies), endocrinology (hormonal changes), and psychology behind common spiritual practices.
-                </p>
-
-                <div className="article-list">
-                    {articles.map(article => (
-                        <div key={article.slug} className="card mb-4">
-                            <h2>
-                                <Link href={`/practices/${article.slug}`}>{article.title}</Link>
-                            </h2>
-                            <p>{article.excerpt}</p>
-                        </div>
-                    ))}
-                </div>
-            </main>
-
-            <aside className="sidebar">
-                <div className="ads-sidebar">
-                    <div className="text-center p-4">Ad Space</div>
-                </div>
-            </aside>
+      {posts.map((post) => (
+        <div key={post.slug} style={{ marginBottom: "20px" }}>
+          <h2>
+            <Link href={`/practices/${post.slug}`}>
+              {post.title}
+            </Link>
+          </h2>
+          <p>{post.description}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
