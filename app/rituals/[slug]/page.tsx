@@ -50,7 +50,7 @@ export default async function RitualPage({
   const contentHtml = processedContent.toString();
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
   
     headline: post.title,
     description: post.description,
@@ -83,15 +83,51 @@ export default async function RitualPage({
     }
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://sacredsanskriti.com"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mantras & Chants",
+        item: "https://sacredsanskriti.com/mantras-chants"
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://sacredsanskriti.com/rituals/${post.slug}`
+      }
+    ]
+  };
+  
+
   return (
     <div>
+  
+      {/* Article Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
   
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+  
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+  
     </div>
   );
+  
 }

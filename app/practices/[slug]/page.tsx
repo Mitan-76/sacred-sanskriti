@@ -54,12 +54,12 @@ export default async function PracticeArticle({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
   
     headline: post.title,
     description: post.description,
   
-    url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
+    url: `https://sacredsanskriti.com/practices/${post.slug}`,
   
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
@@ -86,15 +86,51 @@ export default async function PracticeArticle({
       "@id": `https://sacredsanskriti.com/practices/${post.slug}`
     }
   };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://sacredsanskriti.com"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mantras & Chants",
+        item: "https://sacredsanskriti.com/mantras-chants"
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://sacredsanskriti.com/mantras-chants/${post.slug}`
+      }
+    ]
+  };
+    
   return (
     <div>
+  
+      {/* Article Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
   
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+  
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+  
     </div>
   );
+  
 }
