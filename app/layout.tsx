@@ -83,21 +83,15 @@ export default function RootLayout({
                             "url": "https://sacredsanskriti.com",
                             "logo": "https://sacredsanskriti.com/logo.jpg",
                             "description": "A premier digital platform exploring Hindu traditions through scientific reasoning, historical context, and logical analysis.",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "addressLocality": "Hyderabad",
-                                "addressRegion": "Telangana",
-                                "addressCountry": "IN"
-                            },
                             "contactPoint": {
-                                "@type": "ContactPoint",
-                                "email": "contactus@sacredsanskriti.com",
-                                "contactType": "Customer Service"
+                              "@type": "ContactPoint",
+                              "email": "contactus@sacredsanskriti.com",
+                              "contactType": "Customer Service"
                             },
                             "sameAs": [
-                                "https://www.youtube.com/@sacredsanskriti"
+                              "https://www.youtube.com/@sacredsanskriti"
                             ]
-                        })
+                          })
                     }}
                 />
             </head>

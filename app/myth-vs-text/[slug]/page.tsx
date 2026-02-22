@@ -51,9 +51,47 @@ export default async function MythVsTextArticle({
     .process(post.content);
 
   const contentHtml = processedContent.toString();
-
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+  
+    headline: post.title,
+    description: post.description,
+  
+    url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
+  
+    datePublished: new Date(post.date).toISOString(),
+    dateModified: new Date(post.date).toISOString(),
+  
+    image: `https://sacredsanskriti.com/logo.jpg`,
+  
+    author: {
+      "@type": "Organization",
+      name: "Sacred Sanskriti",
+      url: "https://sacredsanskriti.com"
+    },
+  
+    publisher: {
+      "@type": "Organization",
+      name: "Sacred Sanskriti",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://sacredsanskriti.com/logo.jpg"
+      }
+    },
+  
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://sacredsanskriti.com/myth-vs-text/${post.slug}`
+    }
+  };
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+  
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
