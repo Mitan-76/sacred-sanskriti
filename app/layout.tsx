@@ -73,6 +73,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
+                {/* Organization Schema */}
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -92,6 +93,23 @@ export default function RootLayout({
                               "https://www.youtube.com/@sacredsanskriti"
                             ]
                           })
+                    }}
+                />
+                {/* Website Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "name": "Sacred Sanskriti",
+                            "url": "https://sacredsanskriti.com",
+                            "potentialAction": {
+                                "@type": "SearchAction",
+                                "target": "https://sacredsanskriti.com/?q={search_term_string}",
+                                "query-input": "required name=search_term_string"
+                            }
+                        })
                     }}
                 />
             </head>

@@ -58,7 +58,7 @@ export default async function MythVsTextArticle({
     headline: post.title,
     description: post.description,
   
-    url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
+    url: `https://sacredsanskriti.com/myth-vs-text/${post.slug}`,
   
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
