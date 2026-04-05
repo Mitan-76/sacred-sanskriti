@@ -44,7 +44,7 @@ export default async function RitualPage({
   if (!post) return notFound();
 
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false, allowDangerousHtml: true })
     .process(post.content);
 
   const contentHtml = processedContent.toString();
@@ -110,23 +110,23 @@ export default async function RitualPage({
   
 
   return (
-    <div>
-  
+    <div className="article-content">
+
       {/* Article Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-  
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
-  
+
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-  
+
     </div>
   );
   

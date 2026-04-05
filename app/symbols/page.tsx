@@ -5,7 +5,7 @@ export default function SymbolsPage() {
   const posts = getPostsByCategory("symbols");
 
   return (
-    <div>
+    <div className="article-content">
       <h1>Symbols</h1>
 
       {posts.map((post) => (

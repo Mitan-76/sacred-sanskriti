@@ -5,7 +5,7 @@ export default function MythVsTextPage() {
   const posts = getPostsByCategory("myth-vs-text");
 
   return (
-    <div>
+    <div className="article-content">
       <h1>Myth vs Text</h1>
 
       {posts.map((post) => (

@@ -2,6 +2,7 @@
 title: 33 Koti Devta
 description: Clarifying the meaning of '33 Koti Devtas' in Vedic texts.
 date: 2026-02-16
+image: /images/33-koti-devta.jpg
 ---
 
 The phrase "33 Koti Devtas" does not mean 33 crore gods.

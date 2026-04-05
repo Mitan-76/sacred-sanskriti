@@ -8,6 +8,7 @@ export interface Post {
   description: string;
   content: string;
   date: string;
+  image?: string;
 }
 
 export function getPostsByCategory(category: string): Post[] {
@@ -26,6 +27,7 @@ export function getPostsByCategory(category: string): Post[] {
       title: data.title,
       description: data.description,
       date: data.date,
+      image: data.image || "/logo.jpg",
       content,
     };
   });

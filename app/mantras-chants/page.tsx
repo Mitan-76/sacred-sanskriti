@@ -5,7 +5,7 @@ export default function MantrasChantsPage() {
   const posts = getPostsByCategory("mantras-chants");
 
   return (
-    <div>
+    <div className="article-content">
       <h1>Mantras & Chants</h1>
 
       {posts.map((post) => (

@@ -5,7 +5,7 @@ export default function PracticesPage() {
   const posts = getPostsByCategory("practices");
 
   return (
-    <div>
+    <div className="article-content">
       <h1>Practices</h1>
 
       {posts.map((post) => (

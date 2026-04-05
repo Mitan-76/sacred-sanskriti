@@ -3,13 +3,14 @@ import { getPostsByCategory } from "@/lib/content";
 import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
+import type { Post } from "@/lib/content";
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const posts = getPostsByCategory("mantras-chants");
+  const posts: Post[] = getPostsByCategory("mantras-chants");
   const post = posts.find((p) => p.slug === params.slug);
 
   if (!post) {
@@ -25,14 +26,22 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
-    siteName: "Sacred Sanskriti",
     type: "article",
+    images: [
+      {
+        url: `https://sacredsanskriti.com${post.image}`,
+        width: 1200,
+        height: 630,
+        alt: post.title,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: post.title,
     description: post.description,
-    },
+    images: [`https://sacredsanskriti.com${post.image}`],
+  },
   };
 }
 
@@ -48,7 +57,7 @@ export default async function MantraPage({
   if (!post) return notFound();
 
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false, allowDangerousHtml: true })
     .process(post.content);
 
   const contentHtml = processedContent.toString();
@@ -64,7 +73,7 @@ export default async function MantraPage({
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
   
-    image: `https://sacredsanskriti.com/logo.jpg`,
+    image: `https://sacredsanskriti.com${post.image}`,
   
     author: {
       "@type": "Organization",
@@ -113,23 +122,23 @@ export default async function MantraPage({
 
 
   return (
-    <div>
-  
+    <div className="article-content">
+
       {/* Article Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-  
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
-  
+
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-  
+
     </div>
   );
 }

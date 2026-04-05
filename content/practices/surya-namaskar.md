@@ -2,6 +2,7 @@
 title: Surya Namaskar
 description: Scientific and spiritual aspects of Surya Namaskar practice.
 date: 2026-02-16
+image: /images/surya-namaskar.jpg
 ---
 
 Surya Namaskar is a dynamic yogic sequence.
