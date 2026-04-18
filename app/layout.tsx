@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     creator: "Sacred Sanskriti",
     publisher: "Sacred Sanskriti",
     icons: {
-        icon: '/logo.jpg',
+        icon: '/logo.png',
     },
     metadataBase: new URL('https://sacredsanskriti.com'),
     openGraph: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         description: 'Exploring Hindu traditions through scientific reasoning, historical context, and logical analysis. Evidence-based insights into mantras, rituals, symbols, and ancient wisdom.',
         images: [
             {
-                url: '/logo.jpg',
+                url: '/logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Sacred Sanskriti Logo',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Sacred Sanskriti | Scientific Study of Religious Phenomena',
         description: 'Evidence-based exploration of Hindu traditions through science and logic.',
-        images: ['/logo.jpg'],
+        images: ['/logo.png'],
         creator: '@sacredsanskriti',
     },
     robots: {
@@ -82,7 +82,7 @@ export default function RootLayout({
                             "@type": "Organization",
                             "name": "Sacred Sanskriti",
                             "url": "https://sacredsanskriti.com",
-                            "logo": "https://sacredsanskriti.com/logo.jpg",
+                            "logo": "https://sacredsanskriti.com/logo.png",
                             "description": "A premier digital platform exploring Hindu traditions through scientific reasoning, historical context, and logical analysis.",
                             "contactPoint": {
                               "@type": "ContactPoint",

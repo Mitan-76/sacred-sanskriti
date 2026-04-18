@@ -63,7 +63,7 @@ export default async function MythVsTextArticle({
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
   
-    image: `https://sacredsanskriti.com/logo.jpg`,
+    image: `https://sacredsanskriti.com/logo.png`,
   
     author: {
       "@type": "Organization",
@@ -76,7 +76,7 @@ export default async function MythVsTextArticle({
       name: "Sacred Sanskriti",
       logo: {
         "@type": "ImageObject",
-        url: "https://sacredsanskriti.com/logo.jpg"
+        url: "https://sacredsanskriti.com/logo.png"
       }
     },
   
