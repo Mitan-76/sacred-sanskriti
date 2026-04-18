@@ -86,7 +86,7 @@ export default async function MantraPage({
       name: "Sacred Sanskriti",
       logo: {
         "@type": "ImageObject",
-        url: "https://sacredsanskriti.com/logo.jpg"
+        url: "https://sacredsanskriti.com/logo.png"
       }
     },
   

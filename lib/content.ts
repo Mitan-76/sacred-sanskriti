@@ -27,7 +27,7 @@ export function getPostsByCategory(category: string): Post[] {
       title: data.title,
       description: data.description,
       date: data.date,
-      image: data.image || "/logo.jpg",
+      image: data.image || "/logo.png",
       content,
     };
   });

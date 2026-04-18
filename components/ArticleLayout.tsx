@@ -51,7 +51,7 @@ export default function ArticleLayout({
             "name": "Sacred Sanskriti",
             "logo": {
                 "@type": "ImageObject",
-                "url": `${siteUrl}/logo.jpg`
+                "url": `${siteUrl}/logo.png`
             }
         },
         "mainEntityOfPage": {

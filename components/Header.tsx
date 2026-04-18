@@ -24,7 +24,7 @@ export default function Header() {
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
                 <div className="logo" style={{ zIndex: 1002 }}>
                     <Link href="/" onClick={() => setIsMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary-color)', fontFamily: 'var(--font-heading)', textDecoration: 'none' }}>
-                        <Image src="/logo.jpg" alt="Sacred Sanskriti - Exploring Hindu Traditions Through Science" width={40} height={40} style={{ borderRadius: '50%' }} priority />
+                        <Image src="/logo.png" alt="Sacred Sanskriti - Exploring Hindu Traditions Through Science" width={40} height={40} style={{ borderRadius: '50%' }} priority />
                         <span className="site-title">Sacred Sanskriti</span>
                     </Link>
                 </div>
