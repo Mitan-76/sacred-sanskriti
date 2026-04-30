@@ -9,6 +9,7 @@ export default async function Home() {
         { title: "Symbols", slug: "symbols", desc: "Semiologists and psychological impact of sacred geometry" },
         { title: "Myth vs Text", slug: "myth-vs-text", desc: "Comparative linguistics and historical accuracy" },
         { title: "Practices", slug: "practices", desc: "Neuroscience and Psychology behind spiritual acts" },
+        { title: "Hinduism Q & A", slug: "hinduism-qa", desc: "Clear answers to commonly asked questions about Hinduism, culture, and traditions" },
     ];
     const categories = [
   "mantras-chants",
@@ -16,6 +17,7 @@ export default async function Home() {
   "symbols",
   "myth-vs-text",
   "practices",
+  "hinduism-qa",
 ];
 
 const allPosts = categories.flatMap((category) =>

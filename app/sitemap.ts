@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/symbols",
     "/myth-vs-text",
     "/practices",
+    "/hinduism-qa",
   ];
 
   const staticRoutes = staticPages.map((route) => ({
@@ -32,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "symbols",
     "myth-vs-text",
     "practices",
+    "hinduism-qa",
   ];
 
   const dynamicRoutes = categories.flatMap((category) => {

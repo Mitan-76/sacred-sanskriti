@@ -15,6 +15,7 @@ export default function Footer() {
                         <li><Link href="/rituals" style={{ color: '#ccc' }}>Rituals</Link></li>
                         <li><Link href="/practices" style={{ color: '#ccc' }}>Practices</Link></li>
                         <li><Link href="/symbols" style={{ color: '#ccc' }}>Symbols</Link></li>
+                        <li><Link href="/hinduism-qa" style={{ color: '#ccc' }}>Hinduism Q &amp; A</Link></li>
                     </ul>
                 </div>
                 <div>
