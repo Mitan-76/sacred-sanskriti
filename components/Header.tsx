@@ -38,6 +38,7 @@ export default function Header() {
                         <li><Link href="/symbols" className="nav-link">Symbols</Link></li>
                         <li><Link href="/myth-vs-text" className="nav-link">Myth vs Text</Link></li>
                         <li><Link href="/practices" className="nav-link">Practices</Link></li>
+                        <li><Link href="/hinduism-qa" className="nav-link">Hinduism Q &amp; A</Link></li>
                     </ul>
                 </nav>
 
@@ -81,6 +82,7 @@ export default function Header() {
                     <Link href="/symbols" onClick={toggleMenu} className="nav-link" style={{ fontSize: '1.2rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>Symbols</Link>
                     <Link href="/myth-vs-text" onClick={toggleMenu} className="nav-link" style={{ fontSize: '1.2rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>Myth vs Text</Link>
                     <Link href="/practices" onClick={toggleMenu} className="nav-link" style={{ fontSize: '1.2rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>Practices</Link>
+                    <Link href="/hinduism-qa" onClick={toggleMenu} className="nav-link" style={{ fontSize: '1.2rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>Hinduism Q &amp; A</Link>
                     <Link href="/faq" onClick={toggleMenu} className="nav-link" style={{ fontSize: '1.2rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>FAQ</Link>
 
                     <div style={{ marginTop: 'auto', borderTop: '1px solid #eee', paddingTop: '1rem' }}>
