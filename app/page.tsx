@@ -1,6 +1,24 @@
+import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Sacred Sanskriti | Where Science Meets the Sacred",
+  description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+  openGraph: {
+    title: "Sacred Sanskriti | Where Science Meets the Sacred",
+    description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+    url: "https://sacredsanskriti.com",
+    siteName: "Sacred Sanskriti",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sacred Sanskriti | Where Science Meets the Sacred",
+    description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+  },
+};
 
 export default async function Home() {
     const silos = [
