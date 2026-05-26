@@ -1,4 +1,22 @@
+import type { Metadata } from "next";
 import Breadcrumb from '@/components/Breadcrumb';
+
+export const metadata: Metadata = {
+  title: "Contact Us | Sacred Sanskriti",
+  description: "Get in touch with the Sacred Sanskriti team. Share your questions, feedback, or research about Hindu traditions, Vedic science, and spiritual phenomena.",
+  openGraph: {
+    title: "Contact Us | Sacred Sanskriti",
+    description: "Get in touch with the Sacred Sanskriti team. Share your questions, feedback, or research about Hindu traditions.",
+    url: "https://sacredsanskriti.com/contact",
+    siteName: "Sacred Sanskriti",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Sacred Sanskriti",
+    description: "Get in touch with the Sacred Sanskriti team. Share your questions, feedback, or research about Hindu traditions.",
+  },
+};
 
 export default function ContactPage() {
     return (
