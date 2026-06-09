@@ -9,7 +9,7 @@ Karna is one of the most compelling and tragic figures in the [Mahabharata](/hin
 
 Known also as Vasusena, Radheya, Sutaputra, and Anga-Raja, Karna's story is not simply that of a great warrior who died in battle. It is an exploration of identity, gratitude, and the weight of choices made when no path is clean.
 
-This article answers the most commonly asked questions about Karna, drawing from the Mahabharata text and its commentaries.
+This article answers the most commonly asked questions about Karna, drawing from the <a href="https://en.wikipedia.org/wiki/Karna" target="_blank" rel="noopener noreferrer">Mahabharata text</a> and its commentaries.
 
 ---
 
@@ -61,7 +61,7 @@ Karna refused. He told Krishna that he could not undo thirteen years of friendsh
 
 ## Was Karna Stronger Than Arjuna?
 
-The Mahabharata itself does not offer a simple answer — and it is worth noting that it does not need to.
+<a href="https://www.britannica.com/topic/Mahabharata" target="_blank" rel="noopener noreferrer">The Mahabharata</a> itself does not offer a simple answer — and it is worth noting that it does not need to.
 
 Duryodhana considered Karna the equal of Arjuna, and the epic supports this view in most contexts. Karna was born with divine armour, trained under Parashurama — one of the greatest masters of arms in the tradition — and possessed several celestial weapons including the *Vasava Shakti*, an irresistible weapon given to him by Indra.
 
@@ -129,7 +129,7 @@ He regretted specific acts — particularly his conduct during Draupadi's humili
 
 ### What made Karna a tragic hero?
 
-His tragedy is that his finest qualities — loyalty, generosity, self-discipline — operated in a context that turned them against him. His generosity stripped him of his protection. His loyalty bound him to injustice. His birth excluded him from recognition his abilities warranted. He was not defeated by weakness. He was defeated by the full expression of his virtues in a situation that could not reward them.
+His tragedy is that his finest qualities — loyalty, generosity, self-discipline — operated in a context that turned them against him. His generosity stripped him of his protection. His loyalty bound him to injustice. His birth excluded him from recognition his abilities warranted. He was not defeated by weakness. He was defeated by the full expression of his virtues in a situation that could not reward them. For a deeper exploration of this moral complexity, see <a href="https://aeon.co/essays/the-indian-epic-mahabharata-imparts-a-dark-nuanced-moral-vision" target="_blank" rel="noopener noreferrer">Aeon's essay on the Mahabharata's dark moral vision</a>.
 
 ### What was the significance of Karna's armour and earrings?
 

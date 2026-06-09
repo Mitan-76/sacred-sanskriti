@@ -58,7 +58,7 @@ Hindu scriptures describe Dharma as resting on four pillars, sometimes described
 3. **Tapas** — Discipline and austerity
 4. **Dāna** — Generosity and compassion
 
-In the Kali Yuga (the current age, according to Hindu cosmology), it is said that Dharma stands on only one leg — Truth — as the other three have declined. This is why speaking truth is especially emphasised in this era.
+In the [Kali Yuga](/myth-vs-text/kali-yuga-everything-you-need-to-know) (the current age, according to Hindu cosmology), it is said that Dharma stands on only one leg — Truth — as the other three have declined. This is why speaking truth is especially emphasised in this era.
 
 ---
 

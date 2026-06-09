@@ -34,6 +34,35 @@ export async function generateMetadata({
   };
 }
 
+function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const lines = content.split('\n');
+  const faqIndex = lines.findIndex(l => l.startsWith('## Frequently Asked Questions'));
+  if (faqIndex === -1) return [];
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  let question = '';
+  let answerLines: string[] = [];
+
+  for (let i = faqIndex + 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.startsWith('### ')) {
+      if (question && answerLines.length) {
+        faqs.push({ question, answer: answerLines.join(' ').trim() });
+      }
+      question = line.replace(/^### /, '').trim();
+      answerLines = [];
+    } else if (line.startsWith('## ')) {
+      break;
+    } else if (question && line.trim() && !line.startsWith('---')) {
+      answerLines.push(line.trim());
+    }
+  }
+  if (question && answerLines.length) {
+    faqs.push({ question, answer: answerLines.join(' ').trim() });
+  }
+  return faqs;
+}
+
 export default async function HinduismQAArticle({
   params,
 }: {
@@ -49,6 +78,17 @@ export default async function HinduismQAArticle({
     .process(post.content);
 
   const contentHtml = processedContent.toString();
+
+  const faqs = extractFAQs(post.content);
+  const faqLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": { "@type": "Answer", "text": answer },
+    })),
+  } : null;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -110,6 +150,14 @@ export default async function HinduismQAArticle({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {/* FAQ Schema */}
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       {/* Breadcrumb Schema */}
       <script

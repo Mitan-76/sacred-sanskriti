@@ -23,7 +23,7 @@ This article answers the most commonly asked questions about the Mahabharat, dra
 
 ## Where Was the Mahabharat War Fought?
 
-The Mahabharat War was fought in Kurukshetra, a region in north India in present-day Haryana. The epic names this site *Kurukshetra* — literally "the field of the Kurus" — and also calls it *Dharmakshetra*, meaning "the field of dharma."
+The Mahabharat War was fought in <a href="https://kurukshetra.gov.in" target="_blank" rel="noopener noreferrer">Kurukshetra</a>, a region in north India in present-day Haryana. The epic names this site *Kurukshetra* — literally "the field of the Kurus" — and also calls it *Dharmakshetra*, meaning "the field of dharma."
 
 The text suggests this location was chosen for its sanctity, with the implication that acts committed there would be answered by dharma. Despite the war spanning only eighteen days, the battle narrative constitutes over a quarter of the entire Mahabharata — a measure of its centrality to the epic.
 
@@ -71,9 +71,9 @@ This vast lineage and their alliances gave the Kaurava army its numerical superi
 
 ## Was the Mahabharat War a Real Historical Event?
 
-This remains one of the most debated questions in the study of the epic.
+Most historians treat the Mahabharata as preserving the memory of a real historical event, though not as a literal account. The debate is not about whether something happened, but about when — and how much of the narrative is myth layered over fact.
 
-While the Mahabharata is a poem — not a historical chronicle — many scholars believe it preserves the memory of a real conflict. Historian A. L. Basham considered the popular tradition placing the war in 3102 BCE historically impossible, and suggested a more credible estimate of around the beginning of the 9th century BCE, broadly consistent with archaeological findings from the early Iron Age and with the dating of Brahmana literature.
+While the Mahabharata is a poem — not a historical chronicle — many scholars believe it preserves the memory of a real conflict. Historian <a href="https://en.wikipedia.org/wiki/Arthur_Llewellyn_Basham" target="_blank" rel="noopener noreferrer">A. L. Basham</a> considered the popular tradition placing the war in 3102 BCE historically impossible, and suggested a more credible estimate of around the beginning of the 9th century BCE, broadly consistent with archaeological findings from the early Iron Age and with the dating of Brahmana literature.
 
 Archaeological work at Hastinapura, the capital associated with the Kuru clan in the epic, has revealed cultural layers from the early Iron Age — though no direct evidence has been found linking specific figures or events to the poem's narrative.
 
@@ -99,7 +99,7 @@ Krishna made one final peace attempt before the battle began. It was refused. Th
 The epic features warriors of extraordinary ability. Among the most prominent:
 
 - **Arjuna** — The third Pandava, considered the finest archer of his age, wielding the divine Gandiva bow under Krishna's guidance
-- **Karna** — Eldest son of Kunti and half-brother to the Pandavas, who fought for the Kauravas. He possessed divine armour and earrings that rendered him effectively invincible until they were surrendered
+- **[Karna](/hinduism-qa/karna-the-forgotten-hero)** — Eldest son of Kunti and half-brother to the Pandavas, who fought for the Kauravas. He possessed divine armour and earrings that rendered him effectively invincible until they were surrendered
 - **Bhishma** — Grand-uncle to both sides, a peerless warrior and strategist who held the boon of choosing the moment of his own death
 - **Dronacharya** — Royal preceptor and master of archery and military science, teacher of both the Pandavas and Kauravas
 - **Bhima** — The second Pandava, renowned for immense physical strength and mastery of the mace
@@ -119,7 +119,7 @@ The Pandavas won, but at enormous cost — nearly everyone they held dear was lo
 
 ### What is the main theme of the Mahabharat?
 
-The epic's central themes are dharma, duty, justice, and the consequences of war — set against a dynastic struggle that pulls every character toward impossible choices.
+The epic's central themes are [dharma](/hinduism-qa/what-is-dharma-in-hinduism), duty, justice, and the consequences of war — set against a dynastic struggle that pulls every character toward impossible choices.
 
 ### Who wrote the Mahabharat?
 
@@ -127,7 +127,7 @@ According to tradition, the Mahabharata was composed by Krishna-Dwaipayan Vyasa,
 
 ### What is the significance of the Bhagavad Gita in the Mahabharat?
 
-The Bhagavad Gita forms part of the Mahabharat — a dialogue between Krishna and Arjuna on the eve of battle. It addresses duty, the self, action without attachment, and the relationship between the individual and the divine. It has become one of the most widely studied philosophical texts in the world.
+The <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener noreferrer">Bhagavad Gita</a> forms part of the Mahabharat — a dialogue between Krishna and Arjuna on the eve of battle. It addresses duty, the self, action without attachment, and the relationship between the individual and the divine. It has become one of the most widely studied philosophical texts in the world.
 
 ### How many verses are in the Mahabharat?
 

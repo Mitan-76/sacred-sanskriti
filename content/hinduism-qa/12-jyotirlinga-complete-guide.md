@@ -32,7 +32,7 @@ If you prefer a visual, engaging walkthrough, watch the video above before conti
 
 ## Shivlinga vs Jyotirlinga — Why the Distinction Matters
 
-Before diving into the 12 shrines, it is important to understand what separates a Jyotirlinga from any other Shivlinga.
+A Jyotirlinga is not simply another Shivlinga — it is a self-manifested form of Shiva, a site where the divine is believed to have appeared as a column of infinite light. Understanding this distinction explains why these 12 shrines hold a different category of significance from the millions of Shivlingas found across India.
 
 ### What is a Shivlinga?
 
@@ -60,6 +60,7 @@ According to the Shiva Purana, Brahma and Vishnu once argued over who was suprem
 - **Location:** Prabhas Patan, Saurashtra coast, Gujarat
 - **Significance:** The first and foremost Jyotirlinga. Associated with abundance, resilience, and protection. Somnath was destroyed and rebuilt 17 times throughout history — its survival itself is a spiritual statement.
 - **Travel:** Nearest airport is Rajkot (170 km) or Diu (85 km). Well connected by road from Ahmedabad and Junagadh.
+- **Official site:** <a href="https://somnath.org" target="_blank" rel="noopener noreferrer">Somnath Temple Trust</a>
 
 ### 2. Mallikarjuna — Andhra Pradesh
 
@@ -150,6 +151,8 @@ Rather than chasing a sequence, plan **region-wise**:
 - **Madhya Pradesh** — Mahakaleshwar, Omkareshwar
 - **North India** — Kedarnath, Kashi Vishwanath
 - **South & East India** — Mallikarjuna, Ramanathaswamy, Baidyanath
+
+For official travel information, accommodation options, and shrine timings across all locations, refer to <a href="https://www.incredibleindia.org" target="_blank" rel="noopener noreferrer">Incredible India</a> — the Government of India's official tourism portal.
 
 ---
 
