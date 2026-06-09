@@ -39,7 +39,7 @@ Researchers observed participants while chanting OM inside an fMRI scanner. The 
 
 The implication is that OM chanting may help calm stress-related brain circuits — though it is important to note this was a small pilot study, and larger-scale research is still needed before firm conclusions can be drawn.
 
-[Read the study on PubMed](https://pubmed.ncbi.nlm.nih.gov/21654968/)
+<a href="https://pubmed.ncbi.nlm.nih.gov/21654968/" target="_blank" rel="noopener noreferrer">Read the study on PubMed</a>
 
 ## OM Chanting and the Vagus Nerve
 
@@ -61,7 +61,7 @@ Heart Rate Variability (HRV) measures the variation between heartbeats. Higher H
 
 Research on short OM chanting sessions found increased parasympathetic activity and improved relaxation markers, suggesting that even a few minutes may help the body move into a calmer physiological state.
 
-[Read the study on PubMed](https://pubmed.ncbi.nlm.nih.gov/35444369/)
+<a href="https://pubmed.ncbi.nlm.nih.gov/35444369/" target="_blank" rel="noopener noreferrer">Read the study on PubMed</a>
 
 ## OM Chanting and Blood Pressure
 
@@ -138,7 +138,7 @@ Generally yes for healthy individuals. If you have respiratory conditions, cardi
 ## Research Sources
 
 1. Kalyani BG et al. — *Neurohemodynamic Correlates of 'OM' Chanting: A Pilot fMRI Study*, International Journal of Yoga
-   [https://pubmed.ncbi.nlm.nih.gov/21654968/](https://pubmed.ncbi.nlm.nih.gov/21654968/)
+   <a href="https://pubmed.ncbi.nlm.nih.gov/21654968/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/21654968/</a>
 
 2. OM Chanting and Heart Rate Variability Study
-   [https://pubmed.ncbi.nlm.nih.gov/35444369/](https://pubmed.ncbi.nlm.nih.gov/35444369/)
+   <a href="https://pubmed.ncbi.nlm.nih.gov/35444369/" target="_blank" rel="noopener noreferrer">https://pubmed.ncbi.nlm.nih.gov/35444369/</a>

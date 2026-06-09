@@ -49,7 +49,7 @@ While he experienced what appeared to be death as a child after Indra's thunderb
 
 ## Why Did He Tear His Chest?
 
-This is perhaps the most iconic story associated with Hanuman, and it speaks directly to the nature of his devotion.
+Hanuman tore open his chest to prove that Rama's name was inscribed on every bone and across his heart — that Rama lived within him literally, not merely as devotion. The story begins in the court of Ayodhya after Rama's return from Lanka.
 
 After Rama's victory over Ravana and his return to Ayodhya, gifts were distributed to all who had aided in the war. When Rama offered Hanuman a gift — specifically a pearl necklace given by Sita — Hanuman accepted it, examined each pearl carefully, and then discarded them. The court was bewildered. Officials questioned him: what was he looking for?
 
@@ -65,7 +65,7 @@ This story is not merely dramatic — it is considered the definitive illustrati
 
 ## Why Do We Apply Sindoor to Lord Hanuman?
 
-The tradition of applying sindoor — red vermilion — to Hanuman's idol has its roots in a simple and touching story from the Ramayana.
+Sindoor is applied to Hanuman because he once covered his entire body with it — reasoning that if a small mark on Sita's forehead protected Rama, then covering himself completely would protect Rama far more. The story comes from the Ramayana.
 
 Hanuman once observed Sita applying sindoor to the parting of her hair. Curious, he asked her why. Sita explained that the sindoor was a symbol of her love for Rama and her prayer for his long life and well-being. A small mark on her forehead, she said, brought him health and protection.
 
@@ -96,7 +96,7 @@ Hanuman's power is understood through multiple dimensions — divine lineage, bl
 - **Forgotten and remembered** — As a child, Hanuman's mischievous nature led powerful sages to place a curse on him, causing him to forget his divine powers until reminded. It was Jambavan, the elder bear king, who reminded Hanuman of his latent abilities when the army needed someone to leap across the ocean to Lanka
 - **Devotion as power** — Perhaps most significantly, the tradition holds that Hanuman's devotion to Rama is itself a source of power — that *bhakti* is not separate from strength but is its highest expression
 
-His feats in the Ramayana reflect all of this: leaping across the ocean to Lanka in a single bound, burning Lanka with his own tail after Ravana's soldiers set it alight, carrying an entire Himalayan mountain peak back to the battlefield to find the Sanjeevani herb that would save Lakshmana's life. The shore from which he leapt — Rameswaram — is today the site of the [Ramanathaswamy Jyotirlinga](/hinduism-qa/12-jyotirlinga-complete-guide), one of the 12 most sacred Shiva shrines in India, installed there by Lord Rama himself after the war.
+His feats in the Ramayana reflect all of this: leaping across the ocean to Lanka in a single bound, burning Lanka with his own tail after Ravana's soldiers set it alight, carrying an entire Himalayan mountain peak back to the battlefield to find the Sanjeevani herb that would save Lakshmana's life. Among the most visited shrines dedicated to him today is the <a href="https://en.wikipedia.org/wiki/Salasar_Balaji_Temple" target="_blank" rel="noopener noreferrer">Salasar Balaji Temple</a> in Rajasthan, which draws millions of pilgrims every year. The shore from which he leapt — Rameswaram — is today the site of the [Ramanathaswamy Jyotirlinga](/hinduism-qa/12-jyotirlinga-complete-guide), one of the 12 most sacred Shiva shrines in India, installed there by Lord Rama himself after the war.
 
 ---
 
@@ -115,6 +115,8 @@ Its power is attributed to several interlocking reasons:
 - **Protection** — The Chalisa is widely recited for protection from fear, illness, negative forces, and obstacles. This stems from Hanuman's own role as a protector — the one who guarded Rama, crossed impossible distances, and subdued powerful demons
 - **Accessibility** — Its rhythmic, melodic structure makes it easy to memorise and recite daily. Tulsidas wrote it in the vernacular, not Sanskrit, deliberately making it available to all — regardless of caste, education, or background
 - **Tradition of results** — Centuries of lived testimony across India give the Chalisa a cultural and spiritual weight that amplifies the faith of each new practitioner
+
+The tradition of Chalisa recitation continues to this day — the <a href="https://nkbashram.org" target="_blank" rel="noopener noreferrer">Neem Karoli Baba Ashram</a>, one of the most beloved Hanuman devotee communities in the world, streams eleven Hanuman Chalisa recitations every Sunday, drawing devotees from across the globe.
 
 ---
 
@@ -138,7 +140,7 @@ His celibacy is an expression of complete devotion — all his energy, undivided
 
 ### What is the Hanuman Chalisa?
 
-A devotional hymn of forty verses composed by Tulsidas in the 16th century. It praises Hanuman's qualities and deeds, and is widely recited for courage, protection, and spiritual strength.
+A devotional hymn of forty verses composed by Tulsidas in the 16th century. It praises Hanuman's qualities and deeds, and is widely recited for courage, protection, and spiritual strength. Read the full text and background on the <a href="https://en.wikipedia.org/wiki/Hanuman_Chalisa" target="_blank" rel="noopener noreferrer">Hanuman Chalisa — Wikipedia</a>.
 
 ### Did Hanuman have children?
 

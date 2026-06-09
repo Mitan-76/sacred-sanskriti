@@ -36,6 +36,35 @@ export async function generateMetadata({
   };
 }
 
+function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const lines = content.split('\n');
+  const faqIndex = lines.findIndex(l => l.startsWith('## Frequently Asked Questions'));
+  if (faqIndex === -1) return [];
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  let question = '';
+  let answerLines: string[] = [];
+
+  for (let i = faqIndex + 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.startsWith('### ')) {
+      if (question && answerLines.length) {
+        faqs.push({ question, answer: answerLines.join(' ').trim() });
+      }
+      question = line.replace(/^### /, '').trim();
+      answerLines = [];
+    } else if (line.startsWith('## ')) {
+      break;
+    } else if (question && line.trim() && !line.startsWith('---')) {
+      answerLines.push(line.trim());
+    }
+  }
+  if (question && answerLines.length) {
+    faqs.push({ question, answer: answerLines.join(' ').trim() });
+  }
+  return faqs;
+}
+
 export default async function MythVsTextArticle({
   params,
 }: {
@@ -51,6 +80,18 @@ export default async function MythVsTextArticle({
     .process(post.content);
 
   const contentHtml = processedContent.toString();
+
+  const faqs = extractFAQs(post.content);
+  const faqLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": { "@type": "Answer", "text": answer },
+    })),
+  } : null;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -98,14 +139,14 @@ export default async function MythVsTextArticle({
       {
         "@type": "ListItem",
         position: 2,
-        name: "Mantras & Chants",
-        item: "https://sacredsanskriti.com/mantras-chants"
+        name: "Myth vs Text",
+        item: "https://sacredsanskriti.com/myth-vs-text"
       },
       {
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `https://sacredsanskriti.com/mantras-chants/${post.slug}`
+        item: `https://sacredsanskriti.com/myth-vs-text/${post.slug}`
       }
     ]
   };
@@ -119,6 +160,14 @@ export default async function MythVsTextArticle({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {/* FAQ Schema */}
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       {/* Breadcrumb Schema */}
       <script
