@@ -22,16 +22,16 @@ const MAX_ARTICLES      = 20; // cap sent to Claude to keep prompt cost reasonab
 
 const RSS_SOURCES = [
   {
-    name: 'Google Search Central Blog',
-    url:  'https://developers.google.com/search/blog/rss',
-  },
-  {
     name: 'Search Engine Journal',
     url:  'https://www.searchenginejournal.com/feed/',
   },
   {
-    name: 'Search Engine Land',
-    url:  'https://searchengineland.com/feed',
+    name: 'Search Engine Land — GEO',
+    url:  'https://searchengineland.com/library/generative-engine-optimization/feed',
+  },
+  {
+    name: 'Search Engine Land — Google Algorithm Updates',
+    url:  'https://searchengineland.com/library/platforms/google/google-algorithm-updates/feed',
   },
   {
     name: 'Moz Blog',
