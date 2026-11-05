@@ -21,16 +21,28 @@ function isHorizontalRule(line: string): boolean {
   return /^-{3,}$/.test(line);
 }
 
-export function extractFAQs(markdownContent: string): FAQItem[] {
+interface SplitResult {
+  body: string;
+  faqs: FAQItem[];
+}
+
+/**
+ * Finds the "## Frequently Asked Questions" heading (if any) once, and
+ * returns both the markdown body with that section removed (so it can be
+ * rendered once, as a structured accordion, instead of twice — once as raw
+ * HTML and once via extractFAQs) and the parsed Q/A pairs.
+ */
+function splitFAQSection(markdownContent: string): SplitResult {
   const lines = markdownContent.split("\n");
   const faqHeadingIndex = lines.findIndex((line) =>
     /^##\s+Frequently Asked Questions/i.test(line.trim())
   );
 
   if (faqHeadingIndex === -1) {
-    return [];
+    return { body: markdownContent, faqs: [] };
   }
 
+  const body = lines.slice(0, faqHeadingIndex).join("\n");
   const faqs: FAQItem[] = [];
   let currentQuestion: string | null = null;
   let answerLines: string[] = [];
@@ -83,5 +95,14 @@ export function extractFAQs(markdownContent: string): FAQItem[] {
 
   flush();
 
-  return faqs;
+  return { body, faqs };
+}
+
+export function extractFAQs(markdownContent: string): FAQItem[] {
+  return splitFAQSection(markdownContent).faqs;
+}
+
+/** The article body with the FAQ section (if any) stripped out. */
+export function getArticleBody(markdownContent: string): string {
+  return splitFAQSection(markdownContent).body;
 }

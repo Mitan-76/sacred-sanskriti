@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google"; // Using Google Fonts
+import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-main", display: 'swap' });
 const merriweather = Merriweather({
-    weight: ["300", "400", "700"],
+    weight: ["400", "700"],
     subsets: ["latin"],
     variable: "--font-heading",
     display: 'swap'
@@ -71,51 +72,43 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="font-sans">
             <head>
-                {/* Organization Schema */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "Organization",
-                            "name": "Sacred Sanskriti",
-                            "url": "https://sacredsanskriti.com",
-                            "logo": "https://sacredsanskriti.com/logo.png",
-                            "description": "A premier digital platform exploring Hindu traditions through scientific reasoning, historical context, and logical analysis.",
-                            "contactPoint": {
-                              "@type": "ContactPoint",
-                              "email": "contactus@sacredsanskriti.com",
-                              "contactType": "Customer Service"
-                            },
-                            "sameAs": [
-                              "https://www.youtube.com/@sacredsanskriti"
-                            ]
-                          })
+                <JsonLd
+                    data={{
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Sacred Sanskriti",
+                        "url": "https://sacredsanskriti.com",
+                        "logo": "https://sacredsanskriti.com/logo.png",
+                        "description": "A premier digital platform exploring Hindu traditions through scientific reasoning, historical context, and logical analysis.",
+                        "contactPoint": {
+                          "@type": "ContactPoint",
+                          "email": "contactus@sacredsanskriti.com",
+                          "contactType": "Customer Service"
+                        },
+                        "sameAs": [
+                          "https://www.youtube.com/@sacredsanskriti"
+                        ]
                     }}
                 />
-                {/* Website Schema */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "WebSite",
-                            "name": "Sacred Sanskriti",
-                            "url": "https://sacredsanskriti.com",
-                            "potentialAction": {
-                                "@type": "SearchAction",
-                                "target": "https://sacredsanskriti.com/?q={search_term_string}",
-                                "query-input": "required name=search_term_string"
-                            }
-                        })
+                <JsonLd
+                    data={{
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "name": "Sacred Sanskriti",
+                        "url": "https://sacredsanskriti.com",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": "https://sacredsanskriti.com/?q={search_term_string}",
+                            "query-input": "required name=search_term_string"
+                        }
                     }}
                 />
             </head>
             <body className={`${inter.variable} ${merriweather.variable}`}>
                 <Header />
-                <main className="page-transition" style={{ minHeight: '80vh' }}>
+                <main className="min-h-[80vh]">
                     {children}
                 </main>
                 <BackToTop />

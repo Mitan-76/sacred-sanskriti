@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Mantras & Chants | Sacred Sanskriti",
@@ -26,24 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MantrasChantsPage() {
+export default function Page() {
   const posts = getPostsByCategory("mantras-chants");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Mantras & Chants", href: "/mantras-chants" }]} />
-      <h1>Mantras & Chants</h1>
-
-      {posts.map((post) => (
-        <div key={post.slug} style={{ marginBottom: "20px" }}>
-          <h2>
-            <Link href={`/mantras-chants/${post.slug}`}>
-              {post.title}
-            </Link>
-          </h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryPage
+      category="mantras-chants"
+      categoryLabel="Mantras & Chants"
+      intro="The science and meaning behind Vedic mantras and chants — from the Gayatri Mantra to Om chanting."
+      posts={posts}
+    />
   );
 }

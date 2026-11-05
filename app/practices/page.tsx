@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Practices | Sacred Sanskriti",
@@ -26,24 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PracticesPage() {
+export default function Page() {
   const posts = getPostsByCategory("practices");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Practices", href: "/practices" }]} />
-      <h1>Practices</h1>
-
-      {posts.map((post) => (
-        <div key={post.slug} style={{ marginBottom: "20px" }}>
-          <h2>
-            <Link href={`/practices/${post.slug}`}>
-              {post.title}
-            </Link>
-          </h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryPage
+      category="practices"
+      categoryLabel="Practices"
+      intro="Ancient Hindu practices — pranayama, meditation, Surya Namaskar, and Om chanting — explained through modern science."
+      posts={posts}
+    />
   );
 }

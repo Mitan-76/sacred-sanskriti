@@ -1,0 +1,106 @@
+import Image from "next/image";
+import type { Post } from "@/lib/content";
+import { getRelatedPosts } from "@/lib/content";
+import { getCategoryLabel } from "@/lib/navigation";
+import { getArticleBody, extractFAQs } from "@/lib/faq";
+import { markdownToHtml } from "@/lib/markdown";
+import { buildArticleJsonLd } from "@/lib/seo";
+import Breadcrumb from "@/components/Breadcrumb";
+import JsonLd from "@/components/JsonLd";
+import { Badge } from "@/components/ui/badge";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import FAQAccordion from "@/components/FAQAccordion";
+import ShareButtons from "@/components/ShareButtons";
+import RelatedArticles from "@/components/RelatedArticles";
+
+const SITE_URL = "https://sacredsanskriti.com";
+
+function formatDate(date: string): string {
+  return new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
+function estimateReadingTime(content: string): number {
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+interface ArticlePageProps {
+  post: Post;
+  category: string;
+}
+
+export default async function ArticlePage({ post, category }: ArticlePageProps) {
+  const categoryLabel = getCategoryLabel(category);
+  const bodyMarkdown = getArticleBody(post.content);
+  const contentHtml = await markdownToHtml(bodyMarkdown);
+  const faqs = extractFAQs(post.content);
+  const { blogPostingLd, faqLd } = buildArticleJsonLd(post, category);
+  const relatedPosts = getRelatedPosts(category, post.slug);
+  const url = `${SITE_URL}/${category}/${post.slug}`;
+
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <JsonLd data={blogPostingLd} />
+      {faqLd && <JsonLd data={faqLd} />}
+
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: categoryLabel, href: `/${category}` },
+          { label: post.title, href: `/${category}/${post.slug}` },
+        ]}
+      />
+
+      <Badge variant="secondary" className="bg-sage-100 text-teal-800">
+        {categoryLabel}
+      </Badge>
+
+      <h1 className="mt-3 font-heading text-3xl font-bold leading-tight text-ink-700 sm:text-4xl">
+        {post.title}
+      </h1>
+
+      <p className="mt-3 text-sm text-ink-500">
+        Published {formatDate(post.date)} · {estimateReadingTime(post.content)} min read
+      </p>
+
+      <div className="mt-8 overflow-hidden rounded-xl">
+        <AspectRatio ratio={1200 / 630} className="bg-sage-100">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </AspectRatio>
+      </div>
+
+      <div
+        className="prose-article mt-8"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
+
+      {faqs.length > 0 && (
+        <section className="mt-10 border-t border-ink-100 pt-8">
+          <h2 className="font-heading text-2xl font-semibold text-ink-700">
+            Frequently Asked Questions
+          </h2>
+          <div className="mt-4">
+            <FAQAccordion faqs={faqs} />
+          </div>
+        </section>
+      )}
+
+      <div className="mt-8">
+        <ShareButtons url={url} title={post.title} />
+      </div>
+
+      <RelatedArticles posts={relatedPosts} />
+    </div>
+  );
+}

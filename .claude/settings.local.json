@@ -11,7 +11,23 @@
       "WebFetch(domain:www.inderscienceonline.com)",
       "WebFetch(domain:www.sacred-texts.com)",
       "WebFetch(domain:www.wisdomlib.org)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --help)",
+      "Bash(npx shadcn@latest init -d)",
+      "Bash(npm uninstall *)",
+      "Bash(npx shadcn@latest add card badge accordion sheet separator skeleton aspect-ratio breadcrumb -y)",
+      "Bash(node -e \"const icons = require\\('lucide-react'\\); console.log\\(Object.keys\\(icons\\).filter\\(k => /youtube/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const icons = require\\('lucide-react'\\); console.log\\(Object.keys\\(icons\\).filter\\(k => /^\\(Video|Play|Mail|ArrowUp|Menu|ChevronDown|ChevronUp|X$\\)/i.test\\(k\\)\\)\\)\")",
+      "Bash(sleep 2 && cat /tmp/startfinal.log)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/hinduism-qa)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/practices/Why-Do-We-Ring-Bells-in-Temples-practices\")",
+      "Bash(curl -s http://localhost:3000/symbols/om-symbol)",
+      "Bash(grep -v \"^href=\\\\\"/symbols/om-symbol\\\\\"$\")",
+      "Bash(netstat -ano)",
+      "Bash(tasklist)"
     ]
   }
 }

@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Myth vs Text | Sacred Sanskriti",
@@ -26,24 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MythVsTextPage() {
+export default function Page() {
   const posts = getPostsByCategory("myth-vs-text");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Myth vs Text", href: "/myth-vs-text" }]} />
-      <h1>Myth vs Text</h1>
-
-      {posts.map((post) => (
-        <div key={post.slug} style={{ marginBottom: "20px" }}>
-          <h2>
-            <Link href={`/myth-vs-text/${post.slug}`}>
-              {post.title}
-            </Link>
-          </h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryPage
+      category="myth-vs-text"
+      categoryLabel="Myth vs Text"
+      intro="What Hindu texts actually say versus common misconceptions — evidence-based readings of Vedic and Puranic literature."
+      posts={posts}
+    />
   );
 }

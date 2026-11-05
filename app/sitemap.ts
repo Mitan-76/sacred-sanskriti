@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { getPostsByCategory } from "@/lib/content";
+import { getPostsByCategory, getAllCategories } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://sacredsanskriti.com";
@@ -27,16 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.8,
   }));
 
-  const categories = [
-    "mantras-chants",
-    "rituals",
-    "symbols",
-    "myth-vs-text",
-    "practices",
-    "hinduism-qa",
-  ];
-
-  const dynamicRoutes = categories.flatMap((category) => {
+  const dynamicRoutes = getAllCategories().flatMap((category) => {
     const posts = getPostsByCategory(category);
 
     return posts.map((post) => ({

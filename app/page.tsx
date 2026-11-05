@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { getPostsByCategory } from "@/lib/content";
-import Image from 'next/image';
-import Link from 'next/link';
+import { AudioLines, Flame, Infinity as InfinityIcon, BookOpen, Sunrise, HelpCircle } from "lucide-react";
+import { getLatestPosts } from "@/lib/content";
+import Hero from "@/components/Hero";
+import CategoryCard from "@/components/CategoryCard";
+import ArticleCard from "@/components/ArticleCard";
 
 export const metadata: Metadata = {
   title: "Sacred Sanskriti | Where Science Meets the Sacred",
-  description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+  description:
+    "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Sacred Sanskriti | Where Science Meets the Sacred",
-    description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+    description:
+      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
     url: "https://sacredsanskriti.com",
     siteName: "Sacred Sanskriti",
     type: "website",
@@ -19,86 +23,47 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sacred Sanskriti | Where Science Meets the Sacred",
-    description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+    description:
+      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
   },
 };
 
-export default async function Home() {
-    const silos = [
-        { title: "Mantras & Chants", slug: "mantras-chants", desc: "Meaning, Structure, Rhythm, and Sound Science" },
-        { title: "Rituals", slug: "rituals", desc: "Evolutionary biology and sociology of rituals" },
-        { title: "Symbols", slug: "symbols", desc: "Semiologists and psychological impact of sacred geometry" },
-        { title: "Myth vs Text", slug: "myth-vs-text", desc: "Comparative linguistics and historical accuracy" },
-        { title: "Practices", slug: "practices", desc: "Neuroscience and Psychology behind spiritual acts" },
-        { title: "Hinduism Q & A", slug: "hinduism-qa", desc: "Clear answers to commonly asked questions about Hinduism, culture, and traditions" },
-    ];
-    const categories = [
-  "mantras-chants",
-  "rituals",
-  "symbols",
-  "myth-vs-text",
-  "practices",
-  "hinduism-qa",
+const PILLARS = [
+  { title: "Mantras & Chants", slug: "mantras-chants", description: "Meaning, structure, rhythm, and sound science.", icon: AudioLines },
+  { title: "Rituals", slug: "rituals", description: "Evolutionary biology and sociology of rituals.", icon: Flame },
+  { title: "Symbols", slug: "symbols", description: "Semiotics and the psychological impact of sacred geometry.", icon: InfinityIcon },
+  { title: "Myth vs Text", slug: "myth-vs-text", description: "Comparative linguistics and historical accuracy.", icon: BookOpen },
+  { title: "Practices", slug: "practices", description: "Neuroscience and psychology behind spiritual acts.", icon: Sunrise },
+  { title: "Hinduism Q & A", slug: "hinduism-qa", description: "Clear answers to commonly asked questions about Hinduism, culture, and traditions.", icon: HelpCircle },
 ];
 
-const allPosts = categories.flatMap((category) =>
-  getPostsByCategory(category).map((post) => ({
-    ...post,
-    category,
-  }))
-);
+export default function Home() {
+  const latestPosts = getLatestPosts(5);
 
-const latestPosts = allPosts
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  .slice(0, 5);
+  return (
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+      <Hero />
 
-    return (
-        <div className="container">
-            <section className="hero" style={{ gridColumn: 'span 12', position: 'relative', height: '500px', display: 'flex', alignItems: 'center', borderRadius: '12px', overflow: 'hidden', marginBottom: '3rem' }}>
-                <Image
-                    src="/home-banner.png"
-                    alt="Sacred lotus flower symbolizing spiritual enlightenment and Hindu philosophy"
-                    fill
-                    style={{ objectFit: 'cover', zIndex: -1 }}
-                    priority
-                    sizes="(max-width: 1200px) 100vw, 1200px"
-                />
-                <div style={{ position: 'relative', zIndex: 1, padding: '3rem', maxWidth: '600px', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', borderRadius: '12px', margin: '2rem' }}>
-                    <h1 style={{ fontSize: '3rem', color: '#1a365d', marginBottom: '1rem', textShadow: '0 2px 4px rgba(255,255,255,0.5)' }}>Where Science Meets the Sacred</h1>
-                    <p style={{ fontSize: '1.2rem', color: '#2d3748', textShadow: '0 1px 2px rgba(255,255,255,0.5)', fontWeight: '500' }}>
-                        An evidence-based exploration of religious phenomena, dissecting the psychological, biological, and acoustic mechanisms behind spiritual experiences.
-                    </p>
-                </div>
-            </section>
+      <section id="explore" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {PILLARS.map((pillar) => (
+          <CategoryCard
+            key={pillar.slug}
+            slug={pillar.slug}
+            title={pillar.title}
+            description={pillar.description}
+            icon={pillar.icon}
+          />
+        ))}
+      </section>
 
-            <section className="silo-grid" style={{ gridColumn: 'span 12', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-                {silos.map((silo) => (
-                    <div key={silo.slug} className="card">
-                        <h3>
-                            <Link href={`/${silo.slug}`}>{silo.title}</Link>
-                        </h3>
-                        <p>{silo.desc}</p>
-                    </div>
-                ))}
-            </section>
-            <section style={{ gridColumn: 'span 12', marginTop: '3rem' }}>
-                <h2 style={{ marginBottom: '1.5rem' }}>Latest Articles</h2>
-                
-                {latestPosts.map((post) => (
-                    <div key={`${post.category}-${post.slug}`} style={{ marginBottom: '1.5rem' }}>
-                        <h3>
-                            <Link href={`/${post.category}/${post.slug}`}>
-                                {post.title}
-                            </Link>
-                        </h3>
-                        <p>{post.description}</p>
-                    </div>
-                ))}
-            </section>
-
-            <section className="ads-above-fold" style={{ gridColumn: 'span 12' }}>
-                <span style={{ color: '#888' }}>Advertisement Space (CLS Protected)</span>
-            </section>
+      <section className="mt-14">
+        <h2 className="font-heading text-2xl font-semibold text-ink-700">Latest Articles</h2>
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {latestPosts.map((post) => (
+            <ArticleCard key={`${post.category}-${post.slug}`} post={post} />
+          ))}
         </div>
-    );
+      </section>
+    </div>
+  );
 }

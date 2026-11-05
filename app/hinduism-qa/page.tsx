@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Hinduism Q & A | Sacred Sanskriti",
@@ -26,30 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HinduismQAPage() {
+export default function Page() {
   const posts = getPostsByCategory("hinduism-qa");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Hinduism Q & A", href: "/hinduism-qa" }]} />
-      <h1>Hinduism Q &amp; A</h1>
-      <p style={{ marginBottom: "2rem", color: "#4a5568" }}>
-        Clear, thoughtful answers to the most commonly asked questions about
-        Hinduism — covering philosophy, culture, practices, and traditions.
-      </p>
-
-      {posts.length === 0 ? (
-        <p>Articles coming soon.</p>
-      ) : (
-        posts.map((post) => (
-          <div key={post.slug} style={{ marginBottom: "20px" }}>
-            <h2>
-              <Link href={`/hinduism-qa/${post.slug}`}>{post.title}</Link>
-            </h2>
-            <p>{post.description}</p>
-          </div>
-        ))
-      )}
-    </div>
+    <CategoryPage
+      category="hinduism-qa"
+      categoryLabel="Hinduism Q & A"
+      intro="Clear, thoughtful answers to the most commonly asked questions about Hinduism — covering philosophy, culture, practices, and traditions."
+      posts={posts}
+    />
   );
 }

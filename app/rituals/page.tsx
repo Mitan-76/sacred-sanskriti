@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Rituals | Sacred Sanskriti",
@@ -26,24 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RitualsPage() {
+export default function Page() {
   const posts = getPostsByCategory("rituals");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Rituals", href: "/rituals" }]} />
-      <h1>Rituals</h1>
-
-      {posts.map((post) => (
-        <div key={post.slug} style={{ marginBottom: "20px" }}>
-          <h2>
-            <Link href={`/rituals/${post.slug}`}>
-              {post.title}
-            </Link>
-          </h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryPage
+      category="rituals"
+      categoryLabel="Rituals"
+      intro="The science and tradition behind Hindu rituals — from Agnihotra to daily worship — and why these practices have endured for thousands of years."
+      posts={posts}
+    />
   );
 }

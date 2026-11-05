@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
-import Breadcrumb from "@/components/Breadcrumb";
+import CategoryPage from "@/components/CategoryPage";
 
 export const metadata: Metadata = {
   title: "Symbols | Sacred Sanskriti",
@@ -26,24 +25,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SymbolsPage() {
+export default function Page() {
   const posts = getPostsByCategory("symbols");
 
   return (
-    <div className="article-content">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Symbols", href: "/symbols" }]} />
-      <h1>Symbols</h1>
-
-      {posts.map((post) => (
-        <div key={post.slug} style={{ marginBottom: "20px" }}>
-          <h2>
-            <Link href={`/symbols/${post.slug}`}>
-              {post.title}
-            </Link>
-          </h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
+    <CategoryPage
+      category="symbols"
+      categoryLabel="Symbols"
+      intro="The deep meaning behind Hindu sacred symbols — Om, the lotus, and more — through modern research and traditional understanding."
+      posts={posts}
+    />
   );
 }

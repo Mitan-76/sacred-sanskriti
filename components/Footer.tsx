@@ -1,37 +1,70 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { PlayCircle, Mail } from "lucide-react";
+import { CATEGORIES, FOOTER_LINKS } from "@/lib/navigation";
 
 export default function Footer() {
-    return (
-        <footer style={{ backgroundColor: '#2D3748', color: 'white', padding: '3rem 0', marginTop: '4rem' }}>
-            <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem' }}>
-                <div>
-                    <h3 style={{ color: 'var(--primary-color)' }}>Sacred Sanskriti</h3>
-                    <p>Bridging the gap between spiritual tradition and empirical science.</p>
-                </div>
-                <div>
-                    <h4>Silos</h4>
-                    <ul style={{ listStyle: 'none' }}>
-                        <li><Link href="/mantras-chants" style={{ color: '#ccc' }}>Mantras</Link></li>
-                        <li><Link href="/rituals" style={{ color: '#ccc' }}>Rituals</Link></li>
-                        <li><Link href="/practices" style={{ color: '#ccc' }}>Practices</Link></li>
-                        <li><Link href="/symbols" style={{ color: '#ccc' }}>Symbols</Link></li>
-                        <li><Link href="/hinduism-qa" style={{ color: '#ccc' }}>Hinduism Q &amp; A</Link></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Legal</h4>
-                    <ul style={{ listStyle: 'none' }}>
-                        <li><Link href="/about" style={{ color: '#ccc' }}>About Us</Link></li>
-                        <li><Link href="/contact" style={{ color: '#ccc' }}>Contact</Link></li>
-                        <li><Link href="/faq" style={{ color: '#ccc' }}>FAQ</Link></li>
-                        <li><Link href="/privacy" style={{ color: '#ccc' }}>Privacy Policy</Link></li>
-                        <li><Link href="/terms" style={{ color: '#ccc' }}>Terms of Service</Link></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="text-center" style={{ marginTop: '2rem', borderTop: '1px solid #4A5568', paddingTop: '1rem' }}>
-                &copy; {new Date().getFullYear()} Sacred Sanskriti. All rights reserved.
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="mt-16 bg-ink-900 text-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
+        <div>
+          <h3 className="font-heading text-lg font-semibold text-teal-400">Sacred Sanskriti</h3>
+          <p className="mt-3 text-sm text-ink-300">
+            Bridging the gap between spiritual tradition and empirical science.
+          </p>
+          <div className="mt-4 flex gap-3">
+            <a
+              href="https://www.youtube.com/@sacredsanskriti"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sacred Sanskriti on YouTube"
+              className="text-ink-300 transition-colors hover:text-teal-400"
+            >
+              <PlayCircle className="size-5" />
+            </a>
+            <a
+              href="mailto:contactus@sacredsanskriti.com"
+              aria-label="Email Sacred Sanskriti"
+              className="text-ink-300 transition-colors hover:text-teal-400"
+            >
+              <Mail className="size-5" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-heading text-sm font-semibold uppercase tracking-wide text-ink-300">
+            Explore
+          </h4>
+          <ul className="mt-3 flex flex-col gap-2 text-sm">
+            {CATEGORIES.map((category) => (
+              <li key={category.slug}>
+                <Link href={`/${category.slug}`} className="text-ink-300 hover:text-teal-400">
+                  {category.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-heading text-sm font-semibold uppercase tracking-wide text-ink-300">
+            Company
+          </h4>
+          <ul className="mt-3 flex flex-col gap-2 text-sm">
+            {FOOTER_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-ink-300 hover:text-teal-400">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10 py-6 text-center text-sm text-ink-300">
+        &copy; {new Date().getFullYear()} Sacred Sanskriti. All rights reserved.
+      </div>
+    </footer>
+  );
 }
