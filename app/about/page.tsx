@@ -4,6 +4,9 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
     title: 'About Us | Sacred Sanskriti - Where Vedic Wisdom Meets Science',
     description: 'Learn about Sacred Sanskriti\'s mission to explore Hindu traditions through scientific reasoning, historical accuracy, and evidence-based research. Discover our E-E-A-T approach and core pillars.',
+    alternates: {
+        canonical: '/about',
+    },
     openGraph: {
         title: 'About Sacred Sanskriti - Bridging Faith and Science',
         description: 'A premier platform exploring Hindu philosophy through peer-reviewed research and logical analysis.',

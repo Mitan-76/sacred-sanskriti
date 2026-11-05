@@ -3,6 +3,7 @@ import { getPostsByCategory } from "@/lib/content";
 import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
+import { extractFAQs } from "@/lib/faq";
 
 export async function generateMetadata({
   params,
@@ -18,15 +19,27 @@ export async function generateMetadata({
     };
   }
 
+  const imageUrl = `https://sacredsanskriti.com${post.image}`;
+
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: `/rituals/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       url: `https://sacredsanskriti.com/rituals/${post.slug}`,
       siteName: "Sacred Sanskriti",
       type: "article",
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [imageUrl],
     },
   };
 }
@@ -48,26 +61,38 @@ export default async function RitualPage({
     .process(post.content);
 
   const contentHtml = processedContent.toString();
+
+  const faqs = extractFAQs(post.content);
+  const faqLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": { "@type": "Answer", "text": answer },
+    })),
+  } : null;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-  
+
     headline: post.title,
     description: post.description,
-  
-    url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
-  
+
+    url: `https://sacredsanskriti.com/rituals/${post.slug}`,
+
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
-  
-    image: `https://sacredsanskriti.com/logo.png`,
-  
+
+    image: `https://sacredsanskriti.com${post.image}`,
+
     author: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
       url: "https://sacredsanskriti.com"
     },
-  
+
     publisher: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
@@ -76,7 +101,7 @@ export default async function RitualPage({
         url: "https://sacredsanskriti.com/logo.png"
       }
     },
-  
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://sacredsanskriti.com/rituals/${post.slug}`
@@ -96,8 +121,8 @@ export default async function RitualPage({
       {
         "@type": "ListItem",
         position: 2,
-        name: "Mantras & Chants",
-        item: "https://sacredsanskriti.com/mantras-chants"
+        name: "Rituals",
+        item: "https://sacredsanskriti.com/rituals"
       },
       {
         "@type": "ListItem",
@@ -107,7 +132,7 @@ export default async function RitualPage({
       }
     ]
   };
-  
+
 
   return (
     <div className="article-content">
@@ -118,6 +143,14 @@ export default async function RitualPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* FAQ Schema */}
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
@@ -125,9 +158,12 @@ export default async function RitualPage({
       />
 
       <h1>{post.title}</h1>
+      <p className="article-date" style={{ color: "#666", fontSize: "0.9rem", marginTop: "-0.5rem" }}>
+        Published {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      </p>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
     </div>
   );
-  
+
 }

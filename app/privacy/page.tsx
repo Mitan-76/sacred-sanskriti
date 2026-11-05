@@ -1,4 +1,13 @@
+import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
+
+export const metadata: Metadata = {
+    title: 'Privacy Policy | Sacred Sanskriti',
+    description: 'Read how Sacred Sanskriti collects, uses, and protects visitor data, in compliance with India\'s DPDP Act, GDPR, and CCPA.',
+    alternates: {
+        canonical: '/privacy',
+    },
+};
 
 export default function PrivacyPage() {
     const currentDate = new Date().toLocaleDateString('en-US', {

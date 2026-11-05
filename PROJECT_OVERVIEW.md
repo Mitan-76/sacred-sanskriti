@@ -51,8 +51,7 @@ Sacred Sanskriti is an educational content platform that explores Hindu traditio
 │   ├── myth-vs-text/           # Same pattern
 │   ├── practices/
 │   │   ├── page.tsx
-│   │   ├── [slug]/page.tsx
-│   │   └── the-cognitive-benefits-of-centering-prayer/page.tsx  # Hardcoded exception
+│   │   └── [slug]/page.tsx
 │   └── hinduism-qa/            # Same pattern
 │       ├── page.tsx
 │       └── [slug]/page.tsx

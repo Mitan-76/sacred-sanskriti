@@ -4,6 +4,9 @@ import Breadcrumb from '@/components/Breadcrumb';
 export const metadata: Metadata = {
   title: "Contact Us | Sacred Sanskriti",
   description: "Get in touch with the Sacred Sanskriti team. Share your questions, feedback, or research about Hindu traditions, Vedic science, and spiritual phenomena.",
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "Contact Us | Sacred Sanskriti",
     description: "Get in touch with the Sacred Sanskriti team. Share your questions, feedback, or research about Hindu traditions.",

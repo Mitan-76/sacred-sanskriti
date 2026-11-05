@@ -122,6 +122,12 @@ Every new article should link to relevant existing articles. Current site articl
 | 12 Jyotirlinga guide | `/hinduism-qa/12-jyotirlinga-complete-guide` |
 | Tirupati Balaji guide | `/hinduism-qa/sri-venkateswara-swamy-temple-tirupati-balaji-guide` |
 | Kali Yuga | `/myth-vs-text/kali-yuga-everything-you-need-to-know` |
+| 33 Koti Devta (myth vs. 33 crore gods) | `/myth-vs-text/33-koti-devta` |
+| Gayatri Mantra meaning | `/mantras-chants/real-meaning-gayatri-mantra` |
+| Agnihotra ritual | `/rituals/agnihotra` |
+| Om symbol | `/symbols/om-symbol` |
+| Surya Namaskar | `/practices/surya-namaskar` |
+| Why Do We Ring Bells in Temples | `/practices/Why-Do-We-Ring-Bells-in-Temples-practices` |
 
 Update this table whenever a new article is published.
 
@@ -162,7 +168,12 @@ Update this table whenever a new article is published.
 - **Mahabharat article:** Kurukshetra Govt. of Haryana, Wikipedia A. L. Basham, Vedabase Bhagavad Gita
 - **Tirupati article:** Incredible India Tirupati, Wikipedia Venkateswara Temple, tirumala.org, Tirupati District Govt Religious Tourism, TTD booking portal
 - **Kali Yuga article:** Isha Foundation / Sadhguru
-- **OM Chanting article:** PubMed (two studies)
+- **Gayatri Mantra article:** Wikipedia (Gayatri Mantra), PubMed Central (OM chanting fMRI study, PMC3099099)
+- **Why Do We Ring Bells in Temples article:** PubMed Central (copper antimicrobial mechanisms, PMC3239771), PubMed Central (OM chanting fMRI study, PMC3099099)
+- **Agnihotra article:** Wikipedia (Agnihotra)
+- **Om Symbol article:** Wikipedia (Mandukya Upanishad), PubMed Central (OM chanting fMRI study, PMC3099099)
+- **33 Koti Devta article:** Wikipedia (Deva, Hinduism), Wisdomlib (Sanskrit dictionary entry for "koti")
+- **Surya Namaskar article:** Wikipedia (Surya Namaskar), PubMed Central (HRV comparison study, PMC10919408)
 
 ---
 

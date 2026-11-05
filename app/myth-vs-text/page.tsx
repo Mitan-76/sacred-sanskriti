@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Myth vs Text | Sacred Sanskriti",
   description:
     "Separating myth from scripture — what Hindu texts actually say versus common misconceptions. Evidence-based readings of Vedic and Puranic literature.",
+  alternates: {
+    canonical: "/myth-vs-text",
+  },
   openGraph: {
     title: "Myth vs Text | Sacred Sanskriti",
     description:
@@ -27,6 +31,7 @@ export default function MythVsTextPage() {
 
   return (
     <div className="article-content">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Myth vs Text", href: "/myth-vs-text" }]} />
       <h1>Myth vs Text</h1>
 
       {posts.map((post) => (

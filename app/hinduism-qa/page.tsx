@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Hinduism Q & A | Sacred Sanskriti",
   description:
     "Answers to commonly asked questions about Hinduism, Hindu culture, practices, philosophy, and traditions — explained clearly and thoughtfully.",
+  alternates: {
+    canonical: "/hinduism-qa",
+  },
   openGraph: {
     title: "Hinduism Q & A | Sacred Sanskriti",
     description:
@@ -27,6 +31,7 @@ export default function HinduismQAPage() {
 
   return (
     <div className="article-content">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Hinduism Q & A", href: "/hinduism-qa" }]} />
       <h1>Hinduism Q &amp; A</h1>
       <p style={{ marginBottom: "2rem", color: "#4a5568" }}>
         Clear, thoughtful answers to the most commonly asked questions about

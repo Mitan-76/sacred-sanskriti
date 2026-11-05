@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
 import type { Post } from "@/lib/content";
+import { extractFAQs } from "@/lib/faq";
 
 export async function generateMetadata({
   params,
@@ -22,6 +23,9 @@ export async function generateMetadata({
   return {
     title: post.title,
   description: post.description,
+  alternates: {
+    canonical: `/mantras-chants/${post.slug}`,
+  },
   openGraph: {
     title: post.title,
     description: post.description,
@@ -61,26 +65,38 @@ export default async function MantraPage({
     .process(post.content);
 
   const contentHtml = processedContent.toString();
+
+  const faqs = extractFAQs(post.content);
+  const faqLd = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": { "@type": "Answer", "text": answer },
+    })),
+  } : null;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-  
+
     headline: post.title,
     description: post.description,
-  
+
     url: `https://sacredsanskriti.com/mantras-chants/${post.slug}`,
-  
+
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
-  
+
     image: `https://sacredsanskriti.com${post.image}`,
-  
+
     author: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
       url: "https://sacredsanskriti.com"
     },
-  
+
     publisher: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
@@ -89,7 +105,7 @@ export default async function MantraPage({
         url: "https://sacredsanskriti.com/logo.png"
       }
     },
-  
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://sacredsanskriti.com/mantras-chants/${post.slug}`
@@ -130,6 +146,14 @@ export default async function MantraPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* FAQ Schema */}
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
@@ -137,6 +161,9 @@ export default async function MantraPage({
       />
 
       <h1>{post.title}</h1>
+      <p className="article-date" style={{ color: "#666", fontSize: "0.9rem", marginTop: "-0.5rem" }}>
+        Published {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      </p>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
     </div>

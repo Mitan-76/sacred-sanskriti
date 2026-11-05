@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Symbols | Sacred Sanskriti",
   description:
     "Explore the deep meaning behind Hindu sacred symbols — Om, the lotus, and more — and what modern research reveals about their psychological, cultural, and spiritual significance.",
+  alternates: {
+    canonical: "/symbols",
+  },
   openGraph: {
     title: "Symbols | Sacred Sanskriti",
     description:
@@ -27,6 +31,7 @@ export default function SymbolsPage() {
 
   return (
     <div className="article-content">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Symbols", href: "/symbols" }]} />
       <h1>Symbols</h1>
 
       {posts.map((post) => (

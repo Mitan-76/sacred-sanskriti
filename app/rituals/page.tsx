@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getPostsByCategory } from "@/lib/content";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Rituals | Sacred Sanskriti",
   description:
     "Understand the science and tradition behind Hindu rituals — from Agnihotra to daily worship — and the evidence-based reasons these practices have endured for thousands of years.",
+  alternates: {
+    canonical: "/rituals",
+  },
   openGraph: {
     title: "Rituals | Sacred Sanskriti",
     description:
@@ -27,6 +31,7 @@ export default function RitualsPage() {
 
   return (
     <div className="article-content">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Rituals", href: "/rituals" }]} />
       <h1>Rituals</h1>
 
       {posts.map((post) => (

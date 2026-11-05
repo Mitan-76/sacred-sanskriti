@@ -3,6 +3,7 @@ import { getPostsByCategory } from "@/lib/content";
 import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
+import { extractFAQs } from "@/lib/faq";
 
 export async function generateMetadata({
   params,
@@ -18,51 +19,29 @@ export async function generateMetadata({
     };
   }
 
+  const imageUrl = `https://sacredsanskriti.com${post.image}`;
+
   return {
     title: post.title,
-  description: post.description,
-  openGraph: {
-    title: post.title,
     description: post.description,
-    url: `https://sacredsanskriti.com/myth-vs-text/${post.slug}`,
-    siteName: "Sacred Sanskriti",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: post.title,
-    description: post.description,
+    alternates: {
+      canonical: `/myth-vs-text/${post.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://sacredsanskriti.com/myth-vs-text/${post.slug}`,
+      siteName: "Sacred Sanskriti",
+      type: "article",
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [imageUrl],
     },
   };
-}
-
-function extractFAQs(content: string): Array<{ question: string; answer: string }> {
-  const lines = content.split('\n');
-  const faqIndex = lines.findIndex(l => l.startsWith('## Frequently Asked Questions'));
-  if (faqIndex === -1) return [];
-
-  const faqs: Array<{ question: string; answer: string }> = [];
-  let question = '';
-  let answerLines: string[] = [];
-
-  for (let i = faqIndex + 1; i < lines.length; i++) {
-    const line = lines[i];
-    if (line.startsWith('### ')) {
-      if (question && answerLines.length) {
-        faqs.push({ question, answer: answerLines.join(' ').trim() });
-      }
-      question = line.replace(/^### /, '').trim();
-      answerLines = [];
-    } else if (line.startsWith('## ')) {
-      break;
-    } else if (question && line.trim() && !line.startsWith('---')) {
-      answerLines.push(line.trim());
-    }
-  }
-  if (question && answerLines.length) {
-    faqs.push({ question, answer: answerLines.join(' ').trim() });
-  }
-  return faqs;
 }
 
 export default async function MythVsTextArticle({
@@ -95,23 +74,23 @@ export default async function MythVsTextArticle({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-  
+
     headline: post.title,
     description: post.description,
-  
+
     url: `https://sacredsanskriti.com/myth-vs-text/${post.slug}`,
-  
+
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
-  
-    image: `https://sacredsanskriti.com/logo.png`,
-  
+
+    image: `https://sacredsanskriti.com${post.image}`,
+
     author: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
       url: "https://sacredsanskriti.com"
     },
-  
+
     publisher: {
       "@type": "Organization",
       name: "Sacred Sanskriti",
@@ -120,7 +99,7 @@ export default async function MythVsTextArticle({
         url: "https://sacredsanskriti.com/logo.png"
       }
     },
-  
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://sacredsanskriti.com/myth-vs-text/${post.slug}`
@@ -150,7 +129,7 @@ export default async function MythVsTextArticle({
       }
     ]
   };
-  
+
 
   return (
     <div className="article-content">
@@ -176,9 +155,12 @@ export default async function MythVsTextArticle({
       />
 
       <h1>{post.title}</h1>
+      <p className="article-date" style={{ color: "#666", fontSize: "0.9rem", marginTop: "-0.5rem" }}>
+        Published {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      </p>
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
     </div>
   );
-  
+
 }

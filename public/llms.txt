@@ -1,10 +1,24 @@
-User-Agent: *
-Disallow:
+# Sacred Sanskriti
 
-# Site Map
-https://thescienceoffaith.com/sitemap.xml
+> An evidence-based exploration of Hindu traditions — the neuroscience of
+> mantras, psychology of rituals, meaning of sacred symbols, and clear
+> answers about Hinduism, grounded in citations and historical accuracy.
 
-# Key Content for LLMs
-https://thescienceoffaith.com/practices/the-cognitive-benefits-of-centering-prayer
-https://thescienceoffaith.com/mantras-chants
-https://thescienceoffaith.com/rituals
+Sitemap: https://sacredsanskriti.com/sitemap.xml
+
+## Key Content
+
+- [Karna, the Forgotten Hero](https://sacredsanskriti.com/hinduism-qa/karna-the-forgotten-hero)
+- [Interesting Facts About Hanuman](https://sacredsanskriti.com/hinduism-qa/interesting-facts-about-hanuman)
+- [Mahabharat Facts You Should Know](https://sacredsanskriti.com/hinduism-qa/mahabharat-facts-you-should-know)
+- [Sri Venkateswara Swamy Temple, Tirupati Balaji — Complete Guide](https://sacredsanskriti.com/hinduism-qa/sri-venkateswara-swamy-temple-tirupati-balaji-guide)
+- [Kali Yuga: Everything You Need to Know](https://sacredsanskriti.com/myth-vs-text/kali-yuga-everything-you-need-to-know)
+
+## Categories
+
+- [Hinduism Q & A](https://sacredsanskriti.com/hinduism-qa)
+- [Mantras & Chants](https://sacredsanskriti.com/mantras-chants)
+- [Rituals](https://sacredsanskriti.com/rituals)
+- [Symbols](https://sacredsanskriti.com/symbols)
+- [Myth vs Text](https://sacredsanskriti.com/myth-vs-text)
+- [Practices](https://sacredsanskriti.com/practices)

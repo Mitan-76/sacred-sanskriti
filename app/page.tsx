@@ -6,6 +6,9 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: "Sacred Sanskriti | Where Science Meets the Sacred",
   description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Sacred Sanskriti | Where Science Meets the Sacred",
     description: "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",

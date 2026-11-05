@@ -5,17 +5,15 @@ date: 2026-04-30
 image: /images/what-is-dharma-in-hinduism.jpg
 ---
 
-Few words in the Sanskrit language carry as much weight as **Dharma**. It appears in the Vedas, the Upanishads, the Bhagavad Gita, and virtually every major text in the Hindu tradition — yet it is notoriously difficult to translate into English.
+**Dharma** is that which upholds the natural and moral order of the universe — derived from the Sanskrit root *dhṛ* ("to hold" or "to sustain"), it names the principle that holds the cosmos, society, and the individual together, rather than mapping onto any single English word like "religion" or "duty."
 
-So what does Dharma actually mean?
+The concept appears in the Vedas, the Upanishads, the Bhagavad Gita, and virtually every major text in the Hindu tradition, and it drives the moral dilemmas at the heart of stories like [Karna's](/hinduism-qa/karna-the-forgotten-hero). Because the same root idea applies differently at the level of cosmic law, social duty, and personal nature, Dharma resists a single, fixed translation — each dimension is broken down below.
 
 ---
 
 ## The Literal Meaning
 
-The word *Dharma* comes from the Sanskrit root **dhṛ** (धृ), meaning "to hold", "to sustain", or "to uphold". At its core, Dharma is that which upholds the natural and moral order of the universe.
-
-It is often translated as:
+Written in Devanagari, the root is **dhṛ** (धृ). Translators reach for several different English words depending on which facet of Dharma a given passage emphasises:
 - Religion
 - Duty
 - Righteousness

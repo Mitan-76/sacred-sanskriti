@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebSearch",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:www.mdpi.com)",
+      "WebFetch(domain:www.inderscienceonline.com)",
+      "WebFetch(domain:www.sacred-texts.com)",
+      "WebFetch(domain:www.wisdomlib.org)",
+      "Bash(npm run *)"
     ]
   }
 }

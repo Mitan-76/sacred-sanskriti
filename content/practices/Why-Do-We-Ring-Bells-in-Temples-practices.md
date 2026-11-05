@@ -65,7 +65,7 @@ Some research suggests that sound vibrations can influence brain activity:
 - **Alpha waves** are associated with relaxation
 - **Theta waves** are associated with deep meditation
 
-Sound therapies have been shown to help guide the brain into calmer states. That said, there is no strong evidence that temple bells produce specific frequencies that directly induce these states — however, **sound itself can indirectly promote relaxation and focus**.
+Sound therapies have been shown to help guide the brain into calmer states — a mechanism explored further in our piece on the <a href="/symbols/om-symbol">science of chanting Om</a>. That said, there is no strong evidence that temple bells produce specific frequencies that directly induce these states — however, **sound itself can indirectly promote relaxation and focus**.
 
 ---
 
@@ -77,11 +77,7 @@ The **vagus nerve** plays a key role in:
 - Digestion
 - Stress response
 
-Research published in journals such as _Frontiers in Psychology_ indicates that sound and music can influence vagal activity, potentially leading to:
-
-- Reduced stress
-- Improved calmness
-- Better emotional balance
+Temple bells themselves have not been directly studied this way — but research on a related sound-based practice offers a useful parallel. An <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3099099/" target="_blank" rel="noopener noreferrer">fMRI study of OM chanting</a> found measurable deactivation in limbic brain regions, with researchers proposing that the vibration may stimulate the vagus nerve similarly to clinical vagus-nerve-stimulation therapy. If sustained vocal vibration can influence vagal activity, a sharp, resonant bell strike plausibly works through a related pathway — but this remains a reasonable hypothesis extended from a different practice, not a finding about bells specifically.
 
 ---
 
@@ -89,7 +85,7 @@ Research published in journals such as _Frontiers in Psychology_ indicates that 
 
 Temple bells are traditionally made from **copper or copper alloys** — and this is backed by science.
 
-According to NIH-referenced research, copper surfaces can kill bacteria and viruses through what is known as the **oligodynamic effect**.
+A <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3239771/" target="_blank" rel="noopener noreferrer">study on the antimicrobial mechanisms of copper surfaces</a> found that moist copper alloy surfaces rapidly kill bacterial, viral, and fungal pathogens — the metal releases copper ions that collapse microbial membranes and break down genomic material, a process known as the **oligodynamic effect**.
 
 An important distinction: it is the copper **material** that carries this benefit — not the sound itself.
 
@@ -136,4 +132,4 @@ Ringing a temple bell is not just a ritual — it is a **multi-layered practice*
 - **Physiology** — vagus nerve response
 - **Material science** — copper's proven benefits
 
-Ancient traditions often encoded practical benefits into spiritual practices. Temple bells are a perfect example of that wisdom.
+Ancient traditions often encoded practical benefits into spiritual practices. Temple bells are a perfect example of that wisdom — alongside other sound- and fire-based rituals such as <a href="/rituals/agnihotra">Agnihotra</a>.

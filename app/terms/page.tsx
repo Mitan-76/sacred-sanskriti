@@ -1,4 +1,13 @@
+import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
+
+export const metadata: Metadata = {
+    title: 'Terms of Service | Sacred Sanskriti',
+    description: 'Review the terms and conditions governing use of Sacred Sanskriti, including intellectual property, content disclaimers, and governing law.',
+    alternates: {
+        canonical: '/terms',
+    },
+};
 
 export default function TermsPage() {
     const currentDate = new Date().toLocaleDateString('en-US', {
