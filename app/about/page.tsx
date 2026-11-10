@@ -98,8 +98,9 @@ export default function AboutPage() {
             research.
           </li>
           <li>
-            <strong>Expertise:</strong> Content created and reviewed by scholars, researchers, and
-            practitioners.
+            <strong>Expertise:</strong> Every article is written only after research across multiple trusted,
+            reliable sources — primary texts, academic studies, and established reference works — cited directly
+            within the piece.
           </li>
           <li>
             <strong>Authoritativeness:</strong> All claims backed by credible sources and academic references.

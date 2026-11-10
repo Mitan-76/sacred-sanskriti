@@ -4,6 +4,34 @@ This file is automatically loaded by Claude Code. Apply every rule below wheneve
 
 ---
 
+## 0. Standing Rules — Brand, Accuracy & Technical (read first; highest priority)
+
+Added 10 Nov 2026 from the site's implementation instructions (`sacredsanskriti-claude-code-instructions.md`). These take precedence over anything below if the two ever conflict. Rollout status (what's live vs. still pending) is tracked in `docs/phase0-report.md`.
+
+### Brand and editorial
+- **Byline:** every article shows "By Sacred Sanskriti Editorial" — never a named person, pen name, persona, photo, or invented credential.
+- **Never claim** content is written or reviewed by scholars, researchers, or practitioners. Say instead that it is researched from trusted, reliable sources — and actually name those sources inline or in a Sources section. The research itself is the trust signal, not an unverifiable claim about who performed it.
+- Every article should show a published date, a last-updated date, an AI-assistance disclosure, and a Sources section (in progress — see §4 and `docs/phase0-report.md` for current rollout status).
+- **Tone:** respectful to tradition, honest about evidence. Use "tradition says," "the text says," "studies suggest" precisely — never present a belief as scientific fact.
+- English only. Sanskrit terms are fine but explain them in plain English on first use.
+- **Audience:** the Hindu diaspora worldwide (US, UK, Canada, Australia, Gulf, etc.), not an India-only readership — avoid India-only assumptions (INR-only prices, "near you" travel framing, IST-only timings).
+
+### Accuracy (hard rule)
+- **Never invent** a citation, verse number, study, author, journal, year, statistic, or URL. This hardens the "never guess URLs" rule in §9 to cover every factual claim, not just link destinations.
+- If a claim has no verifiable source, mark it `<!-- TODO-SOURCE: ... -->` in the draft rather than guessing, and flag it for review.
+- **Health claims** (stress, cortisol, blood pressure, vagus nerve, sleep, etc.) need a named study with a working, verified link, or must be softened to "practitioners report" / "early research suggests," or removed entirely.
+- Don't change the meaning of existing published content without flagging the change for owner approval first.
+
+### Technical
+- URLs: lowercase, hyphenated, no underscores, no trailing category suffixes (e.g. `/practices/why-do-we-ring-bells-in-temples`, not `/practices/Why-Do-We-Ring-Bells-in-Temples-practices`).
+- Any URL change needs a permanent 301 redirect from the old URL, and every internal link to the old URL must be updated in the same change.
+- Don't add new dependencies without saying why; prefer small, standard packages.
+- Don't break existing routes — run the build and a local smoke test after every change.
+- Keep ad slots CLS-safe (reserved height) once ads go live.
+- Secrets and IDs (GA4, AdSense, email provider) go in environment variables, never hard-coded.
+
+---
+
 ## 1. File Placement
 
 | Category | Folder | Use for |
@@ -29,7 +57,7 @@ image: /images/article-slug.jpg
 ---
 ```
 
-**Always remove:** `slug`, `author`, `keywords`, `lastUpdated` — these are not used by the site.
+**Always remove:** `slug`, `keywords` — these are not used by the site. Don't add an `author` field — the byline shown on every article (see §0) is a fixed "Sacred Sanskriti Editorial" string in the template, not sourced from frontmatter. A real `updatedAt` field is planned (Phase 5 of `docs/phase0-report.md`) but not yet in use — until then, keep updating `date` itself whenever an article is significantly revised (see §6).
 
 **Description format:** One sentence, ~20 words, starts with a verb (Explore / Discover / Learn), lists the key topics. Match the style of existing articles.
 
@@ -59,9 +87,9 @@ Also check for and fix encoding corruption: `MahÄbhÄrata` → `Mahabharata`, `
 
 ### What to Remove from GPT/AI-generated drafts
 - TL;DR blockquotes
-- Author bylines (`*By Anya Sharma...*`)
+- Fabricated personal bylines, pen names, or personas (`*By Anya Sharma...*`) — never invent a person (see §0). The one standard byline, "By Sacred Sanskriti Editorial," is added automatically by the article template; don't write it into the markdown draft.
 - Inline citation numbers `[1]` `[2]` `[3]`
-- `## Sources` / `## References` sections with external links
+- A raw, unverified `## Sources` / `## References` dump copied straight from a GPT draft — strip it, but don't leave the article with nothing in its place: per §0, every article should end with its own curated Sources section (numbered list: title, author/publisher where known, link), built from citations you've actually verified, not the draft's own list
 - `<script type="application/ld+json">` JSON-LD blocks (the renderers generate these automatically)
 - Duplicate headings (article title repeated as `#` heading)
 - `### Internal Link Suggestions` blocks
@@ -81,7 +109,7 @@ Also check for and fix encoding corruption: `MahÄbhÄrata` → `Mahabharata`, `
 - Title format for category pages: `"Category Name | Sacred Sanskriti"`
 - Run `npm run indexnow` after every deployment to notify Bing immediately
 - Check Core Web Vitals periodically via PageSpeed Insights
-- The `app/hinduism-qa/[slug]/page.tsx` and `app/myth-vs-text/[slug]/page.tsx` renderers automatically generate `BlogPosting`, `BreadcrumbList`, and `FAQPage` JSON-LD schema — do not add these manually to markdown files
+- `components/ArticlePage.tsx` (the shared template used by all 6 category route wrappers) and `lib/seo.ts` automatically generate `BlogPosting`, `FAQPage`, and `BreadcrumbList` JSON-LD schema for every article — do not add these manually to markdown files
 
 ---
 
@@ -190,9 +218,9 @@ Run through this checklist before marking any article as complete:
 ### Content Cleaning
 - [ ] No invisible Unicode watermarks
 - [ ] No TL;DR blockquote
-- [ ] No author byline
+- [ ] No fabricated personal byline (the standard "By Sacred Sanskriti Editorial" byline is template-generated, not written in the draft)
 - [ ] No inline citation numbers `[1]` `[2]`
-- [ ] No Sources / References section
+- [ ] No raw, unverified GPT-dumped Sources/References list — replaced with a curated one (see §0)
 - [ ] No JSON-LD script blocks
 - [ ] No duplicate headings
 - [ ] No Internal Link Suggestions block
