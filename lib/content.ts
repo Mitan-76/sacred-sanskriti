@@ -14,6 +14,8 @@ export interface Post {
   image: string;
   category: string;
   healthContent: boolean;
+  tags: string[];
+  youtubeId?: string;
 }
 
 export function getAllCategories(): string[] {
@@ -30,6 +32,8 @@ function toPost(data: Record<string, unknown>, content: string, slug: string, ca
     image: (data.image as string) || "/logo.png",
     category,
     healthContent: Boolean(data.healthContent),
+    tags: Array.isArray(data.tags) ? (data.tags as string[]) : [],
+    youtubeId: (data.youtubeId as string) || undefined,
     content,
   };
 }
@@ -81,26 +85,45 @@ export function getLatestPosts(limit = 5): Post[] {
   return sortByDateDesc(all).slice(0, limit);
 }
 
+function sharedTagCount(a: Post, b: Post): number {
+  return a.tags.filter((tag) => b.tags.includes(tag)).length;
+}
+
+/** Shared-tag count first (descending), recency as the tiebreak — used
+ * within each priority bucket in getRelatedPosts, not across them. */
+function sortByTagOverlapThenDate(posts: Post[], current: Post): Post[] {
+  return [...posts].sort((a, b) => {
+    const tagDiff = sharedTagCount(b, current) - sharedTagCount(a, current);
+    if (tagDiff !== 0) return tagDiff;
+    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+  });
+}
+
 /**
- * Related articles, biased toward the current category but backfilled from
- * other categories' most recent posts when the category has too few siblings
- * (several categories only have 1-2 articles today) — otherwise the section
- * would be empty or near-empty most of the time.
+ * Related articles: same category first (as many as available, up to
+ * limit), backfilled from other categories when the current category is
+ * thin (several categories only have 1-2 articles today) — otherwise the
+ * section would be empty or near-empty most of the time. Within each of
+ * those two buckets, articles sharing more tags with the current one sort
+ * first; recency is only the final tiebreak.
  */
 export function getRelatedPosts(category: string, excludeSlug: string, limit = 3): Post[] {
-  const sameCategory = sortByDateDesc(
-    getPostsByCategory(category).filter((p) => p.slug !== excludeSlug)
-  );
+  const current = getPostBySlug(category, excludeSlug);
+  const allOtherPostsInCategory = getPostsByCategory(category).filter((p) => p.slug !== excludeSlug);
+  const sameCategory = current
+    ? sortByTagOverlapThenDate(allOtherPostsInCategory, current)
+    : sortByDateDesc(allOtherPostsInCategory);
 
   if (sameCategory.length >= limit) {
     return sameCategory.slice(0, limit);
   }
 
-  const others = sortByDateDesc(
-    getAllCategories()
-      .filter((c) => c !== category)
-      .flatMap((c) => getPostsByCategory(c))
-  );
+  const otherCategoryPosts = getAllCategories()
+    .filter((c) => c !== category)
+    .flatMap((c) => getPostsByCategory(c));
+  const others = current
+    ? sortByTagOverlapThenDate(otherCategoryPosts, current)
+    : sortByDateDesc(otherCategoryPosts);
 
   return [...sameCategory, ...others.slice(0, limit - sameCategory.length)];
 }

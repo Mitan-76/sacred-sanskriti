@@ -4,6 +4,7 @@ description: Explains the Om symbol's three sounds, its Mandukya Upanishad meani
 publishedAt: 2026-02-22
 updatedAt: 2026-11-05
 healthContent: true
+tags: [om, mandukya-upanishad, sacred-sound, symbolism]
 image: /images/om-symbol.jpg
 ---
 

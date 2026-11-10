@@ -4,6 +4,7 @@ description: "Explore the tragic life of Karna — his divine lineage, loyalty t
 publishedAt: 2026-06-02
 updatedAt: 2026-06-09
 healthContent: false
+tags: [karna, mahabharata, tragedy, dharma]
 image: /images/karna-the-forgotten-hero.jpg
 ---
 

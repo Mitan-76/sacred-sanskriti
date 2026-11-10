@@ -55,26 +55,30 @@ description: "One sentence, ~20 words, starts with a verb, lists 3-4 key topics 
 publishedAt: YYYY-MM-DD
 updatedAt: YYYY-MM-DD
 healthContent: true | false
+tags: [tag-one, tag-two, tag-three]
 image: /images/article-slug.jpg
+youtubeId: VIDEO_ID   # optional — omit the line entirely if there's no video
 ---
 ```
 
 - `publishedAt`: the real date the article first went live. For a new article this is today; never backdate it.
 - `updatedAt`: bump this to today whenever you make a meaningful edit to a published article (this is what drives the visible "Updated" date, the sitemap's `lastmod`, and the schema's `dateModified` — see `lib/content.ts`). Leave it equal to `publishedAt` on first publish.
 - `healthContent`: `true` if the article makes any claim about a physiological or psychological effect (stress, breathing, brain activity, blood pressure, etc.) — this triggers the medical disclaimer (`components/MedicalDisclaimer.tsx`). `false` otherwise.
-- **Always remove:** `slug`, `keywords`, `date`, `author` — `date` is superseded by `publishedAt`/`updatedAt` above; `author` is never used — the byline shown on every article (see §0) is a fixed "Sacred Sanskriti Editorial" string in the template, not sourced from frontmatter.
-- **Sources section:** don't write one by hand — `components/Sources.tsx` auto-generates it from every external `<a href="https://...">` citation already in the article body (see `lib/sources.ts`), so it can never drift from what's actually cited. Just make sure every real citation in the body is a proper external link per the External Links Guidelines (§9).
-- **YouTube embeds (if any):** must follow this exact shape — `lib/youtube.ts` extracts it into a lightweight click-to-load facade and strictly expects a `## Watch: ...` heading, immediately followed by the iframe wrapper `<div>`, immediately followed by a `---` divider, with nothing else in between:
-  ```markdown
-  ## Watch: Article Title
+- `tags`: 3-5 lowercase-hyphenated keywords for the article's actual subject matter (deity/text/ritual names, themes). Drives `getRelatedPosts()` in `lib/content.ts`, which ranks same-category articles by tag overlap before falling back to recency, then backfills from other categories if needed. Don't skip this — an article with no tags still gets related-article suggestions, just untargeted ones.
+- `youtubeId`: optional. Just the raw YouTube video ID (e.g. `b0zAEzJz6R0`, not the full URL). The `YouTubeFacade` component (`components/ArticlePage.tsx`) renders it as a lightweight click-to-load embed near the top of the article regardless of where this field sits in the frontmatter — don't write the embed inline in the markdown body anymore.
+- **Always remove:** `slug`, `keywords`, `date`, `author`, `category`, `sources` — `date` is superseded by `publishedAt`/`updatedAt` above; `author` is never used (the byline shown on every article, see §0, is a fixed "Sacred Sanskriti Editorial" string in the template); `slug` and `category` are already fully derivable from the article's file path (`content/<category>/<slug>.md`) so hand-duplicating them would just risk drifting out of sync; `sources` is likewise never hand-authored — see below.
+- **Sources section:** don't write one by hand and don't add a `sources:` frontmatter field — `components/Sources.tsx` auto-generates it from every external `<a href="https://...">` citation already in the article body (see `lib/sources.ts`), including an inferred `type` (`scripture` / `study` / `web`, by matching the URL's domain against known source-type domains), so it can never drift from what's actually cited. Just make sure every real citation in the body is a proper external link per the External Links Guidelines (§9), and that a health-related claim's study citation resolves to a recognized study domain (PubMed/PMC/DOI/mdpi.com, or add a new one to `STUDY_DOMAINS` in both `lib/sources.ts` and `scripts/check-content.js` if you cite a different institutional repository).
 
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
-    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/VIDEO_ID" title="Video Title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+### Pre-publish content checker
 
-  ---
-  ```
-  Don't embed a video inline mid-paragraph or add commentary sentences between the `</div>` and the `---` — the facade renders near the top of the article regardless of where this section sits, so write the surrounding prose without assuming the video appears exactly where this block is.
+Run `npm run check:content` before publishing or editing any article. It reads every article's raw frontmatter and body (not through `lib/content.ts`'s defaulting, so it can tell "missing" apart from "present but falsy") and fails the build on:
+- a missing required frontmatter field (`title`, `description`, `publishedAt`, `updatedAt`, `image`), or `healthContent` not being a strict boolean
+- a description over 160 characters, or a duplicate `title`/`description` across the whole site
+- a `TODO-SOURCE` marker left unresolved (see §0's accuracy hard rule)
+- `healthContent: true` with no study-type source cited
+- a broken internal link (href doesn't match any real route)
+
+It warns (doesn't fail) on fewer than 3 sources cited, and on missing `tags`. Wired into CI at `.github/workflows/content-check.yml`, running on any PR or push to `main` that touches `content/**`, `lib/sources.ts`, or `scripts/check-content.js`. A blank starting point for new articles — frontmatter plus the Phase 5.2 signature structure as scaffolding comments — lives at `content/_template.md`; copy it into the right category folder and rename it rather than starting from an existing published article.
 
 **Description format:** One sentence, ~20 words, starts with a verb (Explore / Discover / Learn), lists the key topics. Match the style of existing articles.
 

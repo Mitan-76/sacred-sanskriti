@@ -1,0 +1,34 @@
+name: Content Quality Check
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'lib/sources.ts'
+      - 'scripts/check-content.js'
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'lib/sources.ts'
+      - 'scripts/check-content.js'
+
+jobs:
+  check-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run content checker
+        run: npm run check:content

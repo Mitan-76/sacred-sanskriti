@@ -4,6 +4,7 @@ description: "Explore Kali Yuga — the fourth and current age in Hindu cosmolog
 publishedAt: 2026-06-09
 updatedAt: 2026-06-09
 healthContent: false
+tags: [kali-yuga, cosmology, yuga-cycle, myth-vs-text]
 image: /images/kali-yuga-everything-you-need-to-know.jpg
 ---
 

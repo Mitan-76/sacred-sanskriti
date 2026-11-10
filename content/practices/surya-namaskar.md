@@ -4,6 +4,7 @@ description: Explains the Surya Namaskar sequence, its traditional purpose, and 
 publishedAt: 2026-02-22
 updatedAt: 2026-11-05
 healthContent: true
+tags: [surya-namaskar, yoga, sun-salutation, physiology]
 image: /images/surya-namaskar.jpg
 ---
 

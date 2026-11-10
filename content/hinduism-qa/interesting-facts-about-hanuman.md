@@ -4,6 +4,8 @@ description: "Explore fascinating facts about Hanuman — his immortality, immen
 publishedAt: 2026-05-15
 updatedAt: 2026-06-09
 healthContent: false
+tags: [hanuman, ramayana, devotion, hanuman-chalisa]
+youtubeId: AQU84QztL7I
 image: /images/interesting-facts-about-hanuman.jpg
 ---
 
@@ -99,14 +101,6 @@ Hanuman's power is understood through multiple dimensions — divine lineage, bl
 - **Devotion as power** — Perhaps most significantly, the tradition holds that Hanuman's devotion to Rama is itself a source of power — that *bhakti* is not separate from strength but is its highest expression
 
 His feats in the Ramayana reflect all of this: leaping across the ocean to Lanka in a single bound, burning Lanka with his own tail after Ravana's soldiers set it alight, carrying an entire Himalayan mountain peak back to the battlefield to find the Sanjeevani herb that would save Lakshmana's life. Among the most visited shrines dedicated to him today is the <a href="https://en.wikipedia.org/wiki/Salasar_Balaji_Temple" target="_blank" rel="noopener noreferrer">Salasar Balaji Temple</a> in Rajasthan, which draws millions of pilgrims every year. The shore from which he leapt — Rameswaram — is today the site of the [Ramanathaswamy Jyotirlinga](/hinduism-qa/12-jyotirlinga-complete-guide), one of the 12 most sacred Shiva shrines in India, installed there by Lord Rama himself after the war.
-
----
-
-## Watch: Hanuman Chalisa
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
-  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/AQU84QztL7I" title="Hanuman Chalisa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ---
 

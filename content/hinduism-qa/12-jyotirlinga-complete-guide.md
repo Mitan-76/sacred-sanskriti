@@ -4,6 +4,8 @@ description: A complete guide to the 12 Jyotirlinga — what they are, where the
 publishedAt: 2026-05-01
 updatedAt: 2026-06-09
 healthContent: false
+tags: [jyotirlinga, shiva, temple-guide, pilgrimage]
+youtubeId: LtqVSygNkAQ
 image: /images/12-jyotirlinga-complete-guide.jpg
 ---
 
@@ -19,14 +21,6 @@ This article covers:
 - Travel insights for each shrine
 - Which Jyotirlinga is associated with which life purpose
 - The significance of the Dvādaśa Jyotirlinga Stotram
-
----
-
-## Watch: 12 Jyotirlinga — The Complete Video Guide
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
-  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/LtqVSygNkAQ" title="12 Jyotirlinga Complete Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ---
 

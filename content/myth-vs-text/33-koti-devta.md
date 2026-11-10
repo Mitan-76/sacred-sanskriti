@@ -4,6 +4,7 @@ description: Clarifies that "33 koti devtas" means 33 categories of Vedic deitie
 publishedAt: 2026-02-22
 updatedAt: 2026-11-10
 healthContent: false
+tags: [33-koti-devta, deva, myth-vs-text, vedic-deities]
 image: /images/33-koti-devta.jpg
 ---
 

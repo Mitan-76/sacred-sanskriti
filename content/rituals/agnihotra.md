@@ -4,6 +4,7 @@ description: Explains what Agnihotra is, its Vedic timing and mantras, and what 
 publishedAt: 2026-02-22
 updatedAt: 2026-11-05
 healthContent: true
+tags: [agnihotra, fire-ritual, vedic-ritual, air-quality]
 image: /images/agnihotra.jpg
 ---
 
@@ -31,7 +32,7 @@ Two short mantras are used, one for each time of day. At sunset, the practitione
 
 This is where tradition and evidence diverge, and it is worth being precise about what has and has not been shown. Several smaller studies — including air-quality monitoring in parts of India — have reported reductions in airborne particulate matter, sulfur dioxide, and microbial load in spaces where Agnihotra was performed regularly. These findings are often cited by practitioners as confirmation of the ritual's purifying effect.
 
-However, the most carefully controlled test of the specific claim did not support it. A study by Kratz and Schauss testing Agnihotra ash's effect on soil phosphorus found the same results whether the ceremony was performed "at the prescribed times with mantras, or not" — meaning the specific ritual elements (exact solar timing, mantra recitation) made no measurable difference to that outcome, as <a href="https://en.wikipedia.org/wiki/Agnihotra" target="_blank" rel="noopener noreferrer">Wikipedia's summary of the research notes</a>. Burning organic matter can change local air chemistry in ways that are measurable but not necessarily unique to Agnihotra's ritual form — a candle, incense, or any small fire can also alter particulate counts in an enclosed space. The honest summary: some effect from burning *something* is plausible and has been measured in places; a specific effect from the Vedic ritual elements themselves, as opposed to the physical act of burning, has not been clearly demonstrated by controlled research.
+However, the most carefully controlled test of the specific claim did not support it. A <a href="https://literatur.thuenen.de/digbib_extern/bitv/dk038377.pdf" target="_blank" rel="noopener noreferrer">2007 study by Kratz and Schnug</a> testing Agnihotra ash's effect on soil phosphorus found the same results whether the ceremony was performed at the prescribed times with mantras, or not — meaning the specific ritual elements (exact solar timing, mantra recitation) made no measurable difference to that outcome. Burning organic matter can change local air chemistry in ways that are measurable but not necessarily unique to Agnihotra's ritual form — a candle, incense, or any small fire can also alter particulate counts in an enclosed space. The honest summary: some effect from burning *something* is plausible and has been measured in places; a specific effect from the Vedic ritual elements themselves, as opposed to the physical act of burning, has not been clearly demonstrated by controlled research.
 
 ## What Is the Spiritual or Psychological Purpose of Agnihotra?
 

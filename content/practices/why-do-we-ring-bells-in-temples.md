@@ -4,6 +4,8 @@ description: Why do we ring temple bells? Discover the scientific and spiritual 
 publishedAt: 2026-04-05
 updatedAt: 2026-11-05
 healthContent: true
+tags: [temple-bells, ritual-science, vagus-nerve, copper]
+youtubeId: evyDBPMi1wY
 image: /images/why-we-ring-bells-in-temples-benefits.jpg
 ---
 
@@ -16,14 +18,6 @@ In this article, we explore:
 - The correct way to ring a temple bell
 - The scientific reasons behind it
 - The real benefits for your brain and body
-
----
-
-## Watch: Science Behind Temple Bells
-
-<div style="display:flex;justify-content:center;margin:1.5rem 0;">
-  <iframe width="315" height="560" src="https://www.youtube.com/embed/evyDBPMi1wY" title="Science Behind Temple Bell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:12px;"></iframe>
-</div>
 
 ---
 

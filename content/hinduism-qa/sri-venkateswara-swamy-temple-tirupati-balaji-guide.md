@@ -4,6 +4,7 @@ description: "Explore the Sri Venkateswara Swamy Temple at Tirumala — its hist
 publishedAt: 2026-05-26
 updatedAt: 2026-06-09
 healthContent: false
+tags: [tirupati, temple-guide, pilgrimage, venkateswara]
 image: /images/sri-venkateswara-swamy-temple-tirupati-balaji-guide.jpg
 ---
 

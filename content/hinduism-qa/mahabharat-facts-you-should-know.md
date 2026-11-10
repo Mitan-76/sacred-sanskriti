@@ -4,6 +4,8 @@ description: "Discover key facts about the Mahabharat — the Kurukshetra War, E
 publishedAt: 2026-05-22
 updatedAt: 2026-06-09
 healthContent: false
+tags: [mahabharata, kurukshetra, history, epic]
+youtubeId: b0zAEzJz6R0
 image: /images/mahabharat-facts-you-should-know.jpg
 ---
 
@@ -12,14 +14,6 @@ The Mahabharat is one of the longest and most profound epic poems ever written. 
 But the Mahabharat is far more than a war story. It is an exploration of dharma, duty, sacrifice, and the moral complexity of human nature — questions as relevant today as they were when the epic was first composed.
 
 This article answers the most commonly asked questions about the Mahabharat, drawing from the epic itself and scholarly historical analysis.
-
----
-
-## Watch: The Mahabharat — Facts Behind the Epic War
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
-  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/b0zAEzJz6R0" title="The Mahabharat — Facts Behind the Epic War" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ---
 

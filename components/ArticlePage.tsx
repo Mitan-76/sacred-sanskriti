@@ -17,7 +17,6 @@ import RelatedArticles from "@/components/RelatedArticles";
 import Sources from "@/components/Sources";
 import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 import YouTubeFacade from "@/components/YouTubeFacade";
-import { extractYouTubeEmbed, stripYouTubeSection } from "@/lib/youtube";
 import AdSlot from "@/components/AdSlot";
 import YouTubeCTA from "@/components/YouTubeCTA";
 import TableOfContents from "@/components/TableOfContents";
@@ -40,8 +39,7 @@ interface ArticlePageProps {
 
 export default async function ArticlePage({ post, category }: ArticlePageProps) {
   const categoryLabel = getCategoryLabel(category);
-  const youtubeEmbed = extractYouTubeEmbed(post.content);
-  const bodyMarkdown = stripYouTubeSection(getArticleBody(post.content));
+  const bodyMarkdown = getArticleBody(post.content);
   const contentHtmlRaw = await markdownToHtml(bodyMarkdown);
   const contentHtml = addHeadingIds(contentHtmlRaw);
   const tocItems = countWords(bodyMarkdown) > 1200 ? extractHeadings(contentHtml) : [];
@@ -98,7 +96,7 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
         </AspectRatio>
       </div>
 
-      {youtubeEmbed && <YouTubeFacade videoId={youtubeEmbed.videoId} title={youtubeEmbed.title} />}
+      {post.youtubeId && <YouTubeFacade videoId={post.youtubeId} title={post.title} />}
 
       {post.healthContent && <MedicalDisclaimer />}
 

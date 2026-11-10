@@ -4,6 +4,7 @@ description: Explore the true meaning of Dharma in Hinduism, its four pillars, c
 publishedAt: 2026-05-01
 updatedAt: 2026-11-10
 healthContent: false
+tags: [dharma, philosophy, bhagavad-gita, ethics]
 image: /images/what-is-dharma-in-hinduism.jpg
 ---
 
