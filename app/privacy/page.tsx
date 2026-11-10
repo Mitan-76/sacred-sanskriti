@@ -29,8 +29,9 @@ export default function PrivacyPage() {
       <div className="mt-6 rounded-md border-l-4 border-teal-500 bg-sage-50 p-5">
         <p className="m-0 text-sm leading-relaxed">
           <strong>Legal Compliance:</strong> This policy complies with India&apos;s Digital Personal Data
-          Protection Act (DPDP) 2023, GDPR (General Data Protection Regulation), and CCPA (California Consumer
-          Privacy Act).
+          Protection Act (DPDP) 2023, the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules 2021,
+          GDPR (General Data Protection Regulation), and CCPA (California Consumer Privacy Act). It also meets
+          Google AdSense&apos;s publisher policy requirements for disclosing the use of cookies for advertising.
         </p>
       </div>
 
@@ -65,7 +66,39 @@ export default function PrivacyPage() {
           third-party platforms.
         </p>
 
-        <h2>4. How We Use Your Information</h2>
+        <h2>4. Advertising &amp; Google AdSense</h2>
+        <p>
+          This website may display advertisements served by Google AdSense and other third-party ad networks.
+          Google and its partners use cookies — including the DoubleClick cookie — to serve ads based on a
+          visitor&apos;s prior visits to this and other websites.
+        </p>
+        <ul>
+          <li>
+            Google&apos;s use of advertising cookies enables it and its partners to serve ads based on your visit
+            to this site and/or other sites on the Internet.
+          </li>
+          <li>
+            You may opt out of personalized advertising by visiting{" "}
+            <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
+              Google Ads Settings
+            </a>
+            . Alternatively, visit{" "}
+            <a href="https://www.aboutads.info/choices" target="_blank" rel="noopener noreferrer">
+              www.aboutads.info/choices
+            </a>{" "}
+            to opt out of third-party vendor personalized advertising more broadly.
+          </li>
+          <li>
+            Third-party vendors, including Google, may combine data collected from this site with data from other
+            sites visited to serve relevant ads and measure ad performance. See{" "}
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+              Google&apos;s Advertising Technologies policy
+            </a>{" "}
+            for details.
+          </li>
+        </ul>
+
+        <h2>5. How We Use Your Information</h2>
         <ul>
           <li>To provide, operate, and maintain our website.</li>
           <li>To improve, personalize, and expand our content.</li>
@@ -73,14 +106,14 @@ export default function PrivacyPage() {
           <li>To prevent fraudulent activities.</li>
         </ul>
 
-        <h2>5. Data Protection Rights</h2>
+        <h2>6. Data Protection Rights</h2>
         <p>
           Under the DPDP Act and GDPR, you have the right to access, rectify, or request the erasure of your
           personal data. If you wish to exercise these rights, please contact us at{" "}
           <a href="mailto:contactus@sacredsanskriti.com">contactus@sacredsanskriti.com</a>.
         </p>
 
-        <h2>6. Your Rights Include</h2>
+        <h2>7. Your Rights Include</h2>
         <ul>
           <li>
             <strong>Right to Access:</strong> Request copies of your personal data.
@@ -102,19 +135,53 @@ export default function PrivacyPage() {
           </li>
         </ul>
 
-        <h2>7. Cookies Policy</h2>
+        <h2>8. Cookies Policy</h2>
         <p>
-          We use cookies to improve your browsing experience. You can choose to disable cookies through your
-          browser settings, though this may affect website functionality.
+          We use cookies to improve your browsing experience, analyze website traffic, and — where advertising is
+          enabled — serve relevant ads (see Section 4). You can choose to disable cookies through your browser
+          settings, though this may affect website functionality and ad relevance.
         </p>
 
-        <h2>8. Children&apos;s Privacy</h2>
+        <h2>9. Data Retention</h2>
         <p>
-          Our website does not knowingly collect personal information from children under 18. If you believe we
-          have inadvertently collected such information, please contact us immediately.
+          We retain personal data (such as newsletter or comment details) only for as long as necessary to
+          fulfil the purpose it was collected for, or as required by applicable law. Log file data is retained
+          for a limited period for security and diagnostic purposes and is then deleted or anonymized. You may
+          request earlier deletion of your personal data at any time (see Section 7).
         </p>
 
-        <h2>9. Changes to This Policy</h2>
+        <h2>10. Children&apos;s Privacy</h2>
+        <p>
+          In line with India&apos;s DPDP Act 2023, our website does not knowingly collect personal information
+          from children under 18 without verifiable parental or guardian consent. If you believe we have
+          inadvertently collected such information, please contact us immediately so we can delete it.
+        </p>
+
+        <h2>11. Grievance Redressal</h2>
+        <p>
+          In accordance with the Digital Personal Data Protection Act, 2023 and the Information Technology
+          (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the following Grievance Officer /
+          Data Protection Contact has been designated to address any questions, complaints, or grievances
+          regarding your personal data:
+        </p>
+        <p>
+          <strong>Grievance Officer:</strong> The Website Administrator, Sacred Sanskriti
+          <br />
+          <strong>Email:</strong> <a href="mailto:contactus@sacredsanskriti.com">contactus@sacredsanskriti.com</a>
+          <br />
+          <strong>Address:</strong> Hyderabad, Telangana, India
+        </p>
+        <p>
+          We aim to acknowledge grievances within 7 working days and resolve them within 30 days. If you remain
+          unsatisfied with our response, you may approach the Data Protection Board of India, constituted under
+          the DPDP Act, 2023, via the{" "}
+          <a href="https://www.meity.gov.in/" target="_blank" rel="noopener noreferrer">
+            Ministry of Electronics and Information Technology
+          </a>
+          .
+        </p>
+
+        <h2>12. Changes to This Policy</h2>
         <p>
           We may update this Privacy Policy from time to time. We will notify you of any changes by posting the
           new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.

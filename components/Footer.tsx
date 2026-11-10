@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
           <div className="mt-4 flex gap-3">
             <a
-              href="https://www.youtube.com/@sacredsanskriti"
+              href="https://www.youtube.com/@SacredSanskriti4all"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Sacred Sanskriti on YouTube"

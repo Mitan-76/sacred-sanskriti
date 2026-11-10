@@ -32,7 +32,9 @@ The misreading comes from collapsing *koti*'s two meanings into one. Because "cr
 
 ## Is There Textual Evidence for a Larger Number of Gods Elsewhere?
 
-Yes, but it does not support the "330 million" figure either, and it comes from a different passage entirely. The Brihadaranyaka Upanishad records a dialogue in which the sage Yajnavalkya is asked how many gods there are, and gives several answers that step down from "three thousand and three," through smaller numbers, before settling on thirty-three — immediately clarifying that all the larger figures are poetic restatements and manifestations of the same 33. The number 33 is the Upanishad's own resolution of the question, not a rejected lower bound in favor of a much larger "true" figure.
+Yes, and it argues against the "330 million" figure even more directly. In the <a href="https://www.wisdomlib.org/hinduism/book/the-brihadaranyaka-upanishad/d/doc118360.html" target="_blank" rel="noopener noreferrer">Brihadaranyaka Upanishad (3.9)</a>, the sage Yajnavalkya is asked how many gods there are, and gives a chain of answers that steps *down* — not up — from "three thousand and three," through thirty-three, then six, three, two, one and a half, and finally **one**, which he identifies with the vital force (*prana*) and Brahman itself. At each step he clarifies that the larger numbers are restatements of the smaller ones, not additional gods.
+
+Thirty-three appears early in that descent, and the Upanishad's own breakdown of it — eight Vasus, eleven Rudras, twelve Adityas, plus Indra and Prajapati — differs slightly from the Vedic Samhitas' list above, which pairs the Adityas, Rudras, and Vasus with the two Ashvins instead. Both versions agree on the count of 33 and its categorical structure; they differ only on which two deities complete the final pair, a known variation across Vedic sources. Either way, the textual trajectory moves toward fewer, not more, named entities — the opposite direction from "330 million."
 
 ## Why Does This Distinction Matter?
 
@@ -52,7 +54,7 @@ No. The "33 crore" figure comes from mistranslating *koti*, a Sanskrit word that
 
 ### Where does the phrase "33 koti devta" come from?
 
-It appears in the Vedic Samhitas' enumeration of deities, and is also connected to a passage in the Brihadaranyaka Upanishad where the sage Yajnavalkya resolves several candidate counts of gods down to 33.
+It appears in the Vedic Samhitas' enumeration of deities, and is also connected to a passage in the Brihadaranyaka Upanishad where the sage Yajnavalkya walks through a descending chain of answers — 3,003, then 33, then 6, 3, 2, 1½, and finally one — about how many gods there are.
 
 ### Why do people say there are 330 million Hindu gods?
 

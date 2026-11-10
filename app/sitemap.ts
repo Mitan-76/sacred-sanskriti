@@ -3,40 +3,42 @@ import { getPostsByCategory, getAllCategories } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://sacredsanskriti.com";
-  const currentDate = new Date();
 
-  const staticPages = [
-    "",
-    "/about",
-    "/contact",
-    "/faq",
-    "/privacy",
-    "/terms",
-    "/mantras-chants",
-    "/rituals",
-    "/symbols",
-    "/myth-vs-text",
-    "/practices",
-    "/hinduism-qa",
-  ];
+  // No real per-page edit-date tracking exists for these pages, so lastModified
+  // is omitted rather than faking a fresh "updated today" stamp on every build.
+  const staticPages = ["", "/about", "/contact", "/faq", "/privacy", "/terms"];
 
   const staticRoutes = staticPages.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: currentDate,
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.8,
   }));
 
-  const dynamicRoutes = getAllCategories().flatMap((category) => {
+  const categoryRoutes = getAllCategories().map((category) => {
     const posts = getPostsByCategory(category);
+    const mostRecent = posts.reduce(
+      (latest, post) => Math.max(latest, new Date(post.date).getTime()),
+      0
+    );
 
-    return posts.map((post) => ({
+    return {
+      url: `${baseUrl}/${category}`,
+      // The hub's own content (its article list) genuinely changes with the
+      // newest post in it, so this is a real signal, not a fabricated one.
+      ...(mostRecent > 0 ? { lastModified: new Date(mostRecent) } : {}),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    };
+  });
+
+  const articleRoutes = getAllCategories().flatMap((category) =>
+    getPostsByCategory(category).map((post) => ({
       url: `${baseUrl}/${category}/${post.slug}`,
       lastModified: new Date(post.date),
       changeFrequency: "monthly" as const,
       priority: 0.7,
-    }));
-  });
+    }))
+  );
 
-  return [...staticRoutes, ...dynamicRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...articleRoutes];
 }

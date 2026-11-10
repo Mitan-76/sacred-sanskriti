@@ -1,6 +1,6 @@
 ---
 title: What is Dharma in Hinduism?
-description: Dharma is one of the most central concepts in Hinduism. Discover what it truly means, how it applies to everyday life, and why it is so much more than just "religion" or "duty".
+description: Explore the true meaning of Dharma in Hinduism, its four pillars, cosmic and personal dimensions, and why it is far more than religion or duty.
 date: 2026-04-30
 image: /images/what-is-dharma-in-hinduism.jpg
 ---
@@ -49,14 +49,14 @@ This means that each person has a unique path aligned with their nature, stage o
 
 ## The Four Pillars of Dharma
 
-Hindu scriptures describe Dharma as resting on four pillars, sometimes described as the four feet of the sacred bull (*Nandi*):
+The <a href="https://vedabase.io/en/library/sb/1/17/24" target="_blank" rel="noopener noreferrer">Bhagavata Purana (1.17.24)</a> describes Dharma itself taking the form of a bull standing on four legs during Satya Yuga:
 
 1. **Satya** — Truth
-2. **Ahimsa** — Non-violence
-3. **Tapas** — Discipline and austerity
-4. **Dāna** — Generosity and compassion
+2. **Tapas** — Austerity and discipline
+3. **Shaucha** — Cleanliness and purity
+4. **Daya** — Mercy and compassion
 
-In the [Kali Yuga](/myth-vs-text/kali-yuga-everything-you-need-to-know) (the current age, according to Hindu cosmology), it is said that Dharma stands on only one leg — Truth — as the other three have declined. This is why speaking truth is especially emphasised in this era.
+The same text describes each successive age breaking one of those legs — through pride, attachment, and intoxication — until, in the [Kali Yuga](/myth-vs-text/kali-yuga-everything-you-need-to-know) (the current age), only Truth remains standing. This is why speaking truth is especially emphasised in this era.
 
 ---
 
@@ -64,7 +64,7 @@ In the [Kali Yuga](/myth-vs-text/kali-yuga-everything-you-need-to-know) (the cur
 
 Many Hindus prefer to describe Hinduism not as a "religion" but as a *Dharma* — specifically, **Sanātana Dharma**, meaning the "eternal" or "timeless" Dharma.
 
-This distinction is important. "Religion" in the Western sense often implies a fixed set of beliefs, dogma, and institutionalised worship. Dharma, by contrast, is a living set of principles that each person must discover and apply according to their own nature, context, and stage of life.
+This distinction is important. "Religion" in the Western sense often implies a fixed set of beliefs, dogma, and institutionalised worship. Dharma, by contrast, is a living set of principles that each person must discover and apply according to their own nature, context, and stage of life — a distinction <a href="https://www.britannica.com/topic/dharma-religious-concept" target="_blank" rel="noopener noreferrer">Britannica's entry on the concept</a> also draws out, noting both a general dharma shared by everyone and a role-specific dharma tied to one's own station in life.
 
 There is no single correct way to follow Dharma. It is contextual, evolving, and deeply personal.
 
@@ -90,6 +90,26 @@ Whether you are navigating a difficult decision at work, a conflict in a relatio
 | Spiritual | The path toward liberation (Moksha) |
 
 Dharma is not a rigid code. It is a living, breathing principle — one that calls each of us to act with awareness, integrity, and a deep respect for the order that connects all things.
+
+---
+
+## Frequently Asked Questions
+
+### What does Dharma literally mean?
+
+Dharma comes from the Sanskrit root *dhṛ*, "to hold" or "to sustain." It names whatever upholds order — cosmic, social, or personal — rather than mapping onto a single English word like "religion" or "duty."
+
+### What are the four pillars of Dharma?
+
+According to the Bhagavata Purana (1.17.24), the four pillars are Satya (truth), Tapas (austerity), Shaucha (cleanliness), and Daya (mercy). The text says three were broken over successive ages, leaving only Truth standing in the Kali Yuga.
+
+### Is Dharma the same as religion?
+
+Not exactly. "Religion" in the Western sense usually implies a fixed set of beliefs and institutionalised worship. Dharma is a living set of principles each person applies according to their own nature, context, and stage of life.
+
+### What is Svadharma?
+
+Svadharma is one's own personal Dharma — the Bhagavad Gita (3.35) says it is better to imperfectly follow one's own Dharma than to perfectly follow someone else's.
 
 ---
 

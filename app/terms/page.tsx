@@ -29,7 +29,8 @@ export default function TermsPage() {
       <div className="mt-6 rounded-md border-l-4 border-destructive bg-destructive/5 p-5">
         <p className="m-0 text-sm leading-relaxed">
           <strong>Important:</strong> By accessing Sacred Sanskriti, you agree to be bound by these Terms and
-          Conditions and all applicable laws and regulations in India.
+          Conditions and all applicable laws and regulations in India, including the Information Technology Act,
+          2000 and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021.
         </p>
       </div>
 
@@ -66,12 +67,26 @@ export default function TermsPage() {
         </ul>
 
         <h2>4. User Conduct</h2>
-        <p>We foster a community of intellectual discussion. We reserve the right to remove comments that are:</p>
+        <p>
+          We foster a community of intellectual discussion. In accordance with Rule 3(1)(b) of the IT
+          (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, you agree not to post, and we
+          reserve the right to remove without notice, any content that:
+        </p>
         <ul>
-          <li>Hate speech or derogatory toward any community.</li>
-          <li>Spam or promotional links.</li>
-          <li>Factually incorrect or misleading.</li>
+          <li>Is hate speech, defamatory, obscene, or derogatory toward any individual, religion, or community.</li>
+          <li>Is invasive of another person&apos;s privacy, including bodily privacy.</li>
+          <li>Impersonates another person or misrepresents its origin.</li>
+          <li>Threatens the unity, integrity, defence, security, or sovereignty of India, or public order.</li>
+          <li>Infringes any patent, trademark, copyright, or other proprietary right.</li>
+          <li>Is spam, a promotional link, or otherwise deceptive or misleading.</li>
+          <li>Is factually incorrect or misleading, particularly regarding historical or scientific claims.</li>
         </ul>
+        <p>
+          To report content that violates these Terms, or to raise any grievance, contact our Grievance Officer
+          as listed in Section 11 of our{" "}
+          <a href="/privacy">Privacy Policy</a>. We aim to acknowledge reports within 24 hours and act on
+          verified violations as required under applicable law.
+        </p>
 
         <h2>5. Limitation of Liability</h2>
         <p>

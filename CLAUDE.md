@@ -172,8 +172,9 @@ Update this table whenever a new article is published.
 - **Why Do We Ring Bells in Temples article:** PubMed Central (copper antimicrobial mechanisms, PMC3239771), PubMed Central (OM chanting fMRI study, PMC3099099)
 - **Agnihotra article:** Wikipedia (Agnihotra)
 - **Om Symbol article:** Wikipedia (Mandukya Upanishad), PubMed Central (OM chanting fMRI study, PMC3099099)
-- **33 Koti Devta article:** Wikipedia (Deva, Hinduism), Wisdomlib (Sanskrit dictionary entry for "koti")
+- **33 Koti Devta article:** Wikipedia (Deva, Hinduism), Wisdomlib (Sanskrit dictionary entry for "koti"), Wisdomlib (Brihadaranyaka Upanishad 3.9, Shakalya-Brahmana)
 - **Surya Namaskar article:** Wikipedia (Surya Namaskar), PubMed Central (HRV comparison study, PMC10919408)
+- **What is Dharma article:** Vedabase.io (Bhagavata Purana 1.17.24), Britannica (dharma — religious concept)
 
 ---
 

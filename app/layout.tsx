@@ -88,7 +88,7 @@ export default function RootLayout({
                           "contactType": "Customer Service"
                         },
                         "sameAs": [
-                          "https://www.youtube.com/@sacredsanskriti"
+                          "https://www.youtube.com/@SacredSanskriti4all"
                         ]
                     }}
                 />
