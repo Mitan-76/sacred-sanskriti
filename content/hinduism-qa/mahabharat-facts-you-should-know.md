@@ -1,7 +1,9 @@
 ---
 title: "Mahabharat Facts You Should Know"
 description: "Discover key facts about the Mahabharat — the Kurukshetra War, Eklavya's story, who fought, why the war happened, and what historians say about its origins."
-date: "2026-05-22"
+publishedAt: 2026-05-22
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/mahabharat-facts-you-should-know.jpg
 ---
 

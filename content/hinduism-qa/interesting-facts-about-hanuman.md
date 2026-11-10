@@ -1,7 +1,9 @@
 ---
 title: "Interesting Facts About Hanuman: The Immortal Devotee"
 description: "Explore fascinating facts about Hanuman — his immortality, immense powers, unwavering devotion to Lord Rama, and the story behind why he tore open his chest."
-date: "2026-05-14"
+publishedAt: 2026-05-15
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/interesting-facts-about-hanuman.jpg
 ---
 

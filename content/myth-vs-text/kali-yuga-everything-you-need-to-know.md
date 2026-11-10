@@ -1,7 +1,9 @@
 ---
 title: "Kali Yuga: Everything You Need to Know About the Age of Darkness"
 description: "Explore Kali Yuga — the fourth and current age in Hindu cosmology, its 432,000-year duration, signs of its presence, and what the texts say happens when it ends."
-date: 2026-05-29
+publishedAt: 2026-06-09
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/kali-yuga-everything-you-need-to-know.jpg
 ---
 

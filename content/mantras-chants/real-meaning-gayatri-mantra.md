@@ -1,7 +1,9 @@
 ---
 title: "Understanding the Real Meaning of the Gayatri Mantra"
 description: "Explore the true meaning of the Gayatri Mantra, its benefits, the right time to recite it, and how many times to chant it for spiritual growth."
-date: 2026-05-08
+publishedAt: 2026-05-08
+updatedAt: 2026-11-05
+healthContent: true
 image: /images/real-meaning-gayatri-mantra.jpg
 ---
 

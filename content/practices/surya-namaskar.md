@@ -1,7 +1,9 @@
 ---
 title: Surya Namaskar
 description: Explains the Surya Namaskar sequence, its traditional purpose, and what research shows about its cardiovascular and psychological effects.
-date: 2026-02-16
+publishedAt: 2026-02-22
+updatedAt: 2026-11-05
+healthContent: true
 image: /images/surya-namaskar.jpg
 ---
 

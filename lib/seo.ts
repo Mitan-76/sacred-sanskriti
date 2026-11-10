@@ -40,8 +40,8 @@ export function buildArticleJsonLd(post: Post, category: string) {
     headline: post.title,
     description: post.description,
     url,
-    datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.date).toISOString(),
+    datePublished: new Date(post.publishedAt).toISOString(),
+    dateModified: new Date(post.updatedAt).toISOString(),
     image: `${SITE_URL}${post.image}`,
     author: {
       "@type": "Organization",

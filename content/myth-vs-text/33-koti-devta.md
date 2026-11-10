@@ -1,7 +1,9 @@
 ---
 title: 33 Koti Devta
 description: Clarifies that "33 koti devtas" means 33 categories of Vedic deities, not 33 crore gods, and names all 33.
-date: 2026-02-16
+publishedAt: 2026-02-22
+updatedAt: 2026-11-10
+healthContent: false
 image: /images/33-koti-devta.jpg
 ---
 

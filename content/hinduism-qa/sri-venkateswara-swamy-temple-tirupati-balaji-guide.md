@@ -1,7 +1,9 @@
 ---
 title: "Sri Venkateswara Swamy Temple: A Complete Guide to Tirupati Balaji Darshan"
 description: "Explore the Sri Venkateswara Swamy Temple at Tirumala — its history, how to book darshan tickets, the best time to visit, and nearby temples."
-date: 2026-05-23
+publishedAt: 2026-05-26
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/sri-venkateswara-swamy-temple-tirupati-balaji-guide.jpg
 ---
 

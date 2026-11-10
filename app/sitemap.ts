@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // No real per-page edit-date tracking exists for these pages, so lastModified
   // is omitted rather than faking a fresh "updated today" stamp on every build.
-  const staticPages = ["", "/about", "/contact", "/faq", "/privacy", "/terms"];
+  const staticPages = ["", "/about", "/contact", "/faq", "/privacy", "/terms", "/how-we-research"];
 
   const staticRoutes = staticPages.map((route) => ({
     url: `${baseUrl}${route}`,
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryRoutes = getAllCategories().map((category) => {
     const posts = getPostsByCategory(category);
     const mostRecent = posts.reduce(
-      (latest, post) => Math.max(latest, new Date(post.date).getTime()),
+      (latest, post) => Math.max(latest, new Date(post.updatedAt).getTime()),
       0
     );
 
@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const articleRoutes = getAllCategories().flatMap((category) =>
     getPostsByCategory(category).map((post) => ({
       url: `${baseUrl}/${category}/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: new Date(post.updatedAt),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))

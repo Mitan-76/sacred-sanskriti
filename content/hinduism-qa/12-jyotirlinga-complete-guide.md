@@ -1,7 +1,9 @@
 ---
 title: "12 Jyotirlinga: A Complete Guide to India's Sacred Shiva Shrines"
 description: A complete guide to the 12 Jyotirlinga — what they are, where they are located, the travel approach for each, and the spiritual significance behind every shrine.
-date: 2026-05-01
+publishedAt: 2026-05-01
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/12-jyotirlinga-complete-guide.jpg
 ---
 

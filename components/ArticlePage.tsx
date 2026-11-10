@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Post } from "@/lib/content";
 import { getRelatedPosts } from "@/lib/content";
 import { getCategoryLabel } from "@/lib/navigation";
 import { getArticleBody, extractFAQs } from "@/lib/faq";
 import { markdownToHtml } from "@/lib/markdown";
 import { buildArticleJsonLd } from "@/lib/seo";
+import { extractSources } from "@/lib/sources";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +14,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import FAQAccordion from "@/components/FAQAccordion";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedArticles from "@/components/RelatedArticles";
+import Sources from "@/components/Sources";
+import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 
 const SITE_URL = "https://sacredsanskriti.com";
 
@@ -21,11 +25,6 @@ function formatDate(date: string): string {
     month: "long",
     day: "numeric",
   });
-}
-
-function estimateReadingTime(content: string): number {
-  const words = content.trim().split(/\s+/).length;
-  return Math.max(1, Math.round(words / 200));
 }
 
 interface ArticlePageProps {
@@ -38,6 +37,7 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
   const bodyMarkdown = getArticleBody(post.content);
   const contentHtml = await markdownToHtml(bodyMarkdown);
   const faqs = extractFAQs(post.content);
+  const sources = extractSources(post.content);
   const { blogPostingLd, faqLd } = buildArticleJsonLd(post, category);
   const relatedPosts = getRelatedPosts(category, post.slug);
   const url = `${SITE_URL}/${category}/${post.slug}`;
@@ -64,7 +64,14 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
       </h1>
 
       <p className="mt-3 text-sm text-ink-500">
-        Published {formatDate(post.date)} · {estimateReadingTime(post.content)} min read
+        By Sacred Sanskriti Editorial · Published {formatDate(post.publishedAt)} · Updated{" "}
+        {formatDate(post.updatedAt)}
+      </p>
+      <p className="mt-1 text-sm text-ink-500">
+        Researched with AI tools and checked against the sources listed below.{" "}
+        <Link href="/how-we-research" className="text-teal-600 hover:underline">
+          How we research →
+        </Link>
       </p>
 
       <div className="mt-8 overflow-hidden rounded-xl">
@@ -79,6 +86,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
           />
         </AspectRatio>
       </div>
+
+      {post.healthContent && <MedicalDisclaimer />}
 
       <div
         className="prose-article mt-8"
@@ -95,6 +104,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
           </div>
         </section>
       )}
+
+      <Sources sources={sources} />
 
       <div className="mt-8">
         <ShareButtons url={url} title={post.title} />

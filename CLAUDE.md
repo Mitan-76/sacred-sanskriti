@@ -11,7 +11,7 @@ Added 10 Nov 2026 from the site's implementation instructions (`sacredsanskriti-
 ### Brand and editorial
 - **Byline:** every article shows "By Sacred Sanskriti Editorial" — never a named person, pen name, persona, photo, or invented credential.
 - **Never claim** content is written or reviewed by scholars, researchers, or practitioners. Say instead that it is researched from trusted, reliable sources — and actually name those sources inline or in a Sources section. The research itself is the trust signal, not an unverifiable claim about who performed it.
-- Every article should show a published date, a last-updated date, an AI-assistance disclosure, and a Sources section (in progress — see §4 and `docs/phase0-report.md` for current rollout status).
+- Every article shows a published date, a last-updated date, an AI-assistance disclosure, and a Sources section — live as of 10 Nov 2026 (`components/ArticlePage.tsx`, `components/Sources.tsx`).
 - **Tone:** respectful to tradition, honest about evidence. Use "tradition says," "the text says," "studies suggest" precisely — never present a belief as scientific fact.
 - English only. Sanskrit terms are fine but explain them in plain English on first use.
 - **Audience:** the Hindu diaspora worldwide (US, UK, Canada, Australia, Gulf, etc.), not an India-only readership — avoid India-only assumptions (INR-only prices, "near you" travel framing, IST-only timings).
@@ -47,17 +47,23 @@ Added 10 Nov 2026 from the site's implementation instructions (`sacredsanskriti-
 
 ## 2. Frontmatter Standards
 
-**Required fields only:**
+**Required fields:**
 ```yaml
 ---
 title: "Article Title Here"
 description: "One sentence, ~20 words, starts with a verb, lists 3-4 key topics covered."
-date: YYYY-MM-DD
+publishedAt: YYYY-MM-DD
+updatedAt: YYYY-MM-DD
+healthContent: true | false
 image: /images/article-slug.jpg
 ---
 ```
 
-**Always remove:** `slug`, `keywords` — these are not used by the site. Don't add an `author` field — the byline shown on every article (see §0) is a fixed "Sacred Sanskriti Editorial" string in the template, not sourced from frontmatter. A real `updatedAt` field is planned (Phase 5 of `docs/phase0-report.md`) but not yet in use — until then, keep updating `date` itself whenever an article is significantly revised (see §6).
+- `publishedAt`: the real date the article first went live. For a new article this is today; never backdate it.
+- `updatedAt`: bump this to today whenever you make a meaningful edit to a published article (this is what drives the visible "Updated" date, the sitemap's `lastmod`, and the schema's `dateModified` — see `lib/content.ts`). Leave it equal to `publishedAt` on first publish.
+- `healthContent`: `true` if the article makes any claim about a physiological or psychological effect (stress, breathing, brain activity, blood pressure, etc.) — this triggers the medical disclaimer (`components/MedicalDisclaimer.tsx`). `false` otherwise.
+- **Always remove:** `slug`, `keywords`, `date`, `author` — `date` is superseded by `publishedAt`/`updatedAt` above; `author` is never used — the byline shown on every article (see §0) is a fixed "Sacred Sanskriti Editorial" string in the template, not sourced from frontmatter.
+- **Sources section:** don't write one by hand — `components/Sources.tsx` auto-generates it from every external `<a href="https://...">` citation already in the article body (see `lib/sources.ts`), so it can never drift from what's actually cited. Just make sure every real citation in the body is a proper external link per the External Links Guidelines (§9).
 
 **Description format:** One sentence, ~20 words, starts with a verb (Explore / Discover / Learn), lists the key topics. Match the style of existing articles.
 
@@ -123,7 +129,7 @@ Also check for and fix encoding corruption: `MahÄbhÄrata` → `Mahabharata`, `
   Replace these with a direct statement that answers the heading question immediately.
 - **Heading hierarchy:** Always use `##` → `###` — never skip levels
 - **FAQ section:** Required on every article — the page renderer automatically extracts these into `FAQPage` schema
-- **Content freshness:** Update the `date` field whenever an article is significantly revised
+- **Content freshness:** Update the `updatedAt` field whenever an article is significantly revised (see §2)
 
 ---
 
@@ -211,7 +217,7 @@ Update this table whenever a new article is published.
 Run through this checklist before marking any article as complete:
 
 ### Metadata
-- [ ] Frontmatter has `title`, `description`, `date`, `image` only
+- [ ] Frontmatter has `title`, `description`, `publishedAt`, `updatedAt`, `healthContent`, `image` only
 - [ ] Description is one sentence, ~20 words, starts with a verb
 - [ ] Image path follows `/images/article-slug.jpg` format
 

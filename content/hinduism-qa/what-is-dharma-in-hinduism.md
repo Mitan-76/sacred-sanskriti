@@ -1,7 +1,9 @@
 ---
 title: What is Dharma in Hinduism?
 description: Explore the true meaning of Dharma in Hinduism, its four pillars, cosmic and personal dimensions, and why it is far more than religion or duty.
-date: 2026-04-30
+publishedAt: 2026-05-01
+updatedAt: 2026-11-10
+healthContent: false
 image: /images/what-is-dharma-in-hinduism.jpg
 ---
 

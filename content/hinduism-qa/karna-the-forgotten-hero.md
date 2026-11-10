@@ -1,7 +1,9 @@
 ---
 title: "Karna: The Forgotten Hero of the Mahabharata"
 description: "Explore the tragic life of Karna — his divine lineage, loyalty to Duryodhana, the curses that sealed his fate, and why he is called Danveer Karna."
-date: 2026-05-27
+publishedAt: 2026-06-02
+updatedAt: 2026-06-09
+healthContent: false
 image: /images/karna-the-forgotten-hero.jpg
 ---
 

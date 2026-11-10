@@ -1,7 +1,9 @@
 ---
 title: Agnihotra Ritual
 description: Explains what Agnihotra is, its Vedic timing and mantras, and what current research does and does not support about its claimed effects.
-date: 2026-02-16
+publishedAt: 2026-02-22
+updatedAt: 2026-11-05
+healthContent: true
 image: /images/agnihotra.jpg
 ---
 

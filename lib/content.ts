@@ -9,13 +9,29 @@ export interface Post {
   title: string;
   description: string;
   content: string;
-  date: string;
+  publishedAt: string;
+  updatedAt: string;
   image: string;
   category: string;
+  healthContent: boolean;
 }
 
 export function getAllCategories(): string[] {
   return CATEGORIES.map((c) => c.slug);
+}
+
+function toPost(data: Record<string, unknown>, content: string, slug: string, category: string): Post {
+  return {
+    slug,
+    title: data.title as string,
+    description: data.description as string,
+    publishedAt: (data.publishedAt as string) ?? (data.date as string),
+    updatedAt: (data.updatedAt as string) ?? (data.publishedAt as string) ?? (data.date as string),
+    image: (data.image as string) || "/logo.png",
+    category,
+    healthContent: Boolean(data.healthContent),
+    content,
+  };
 }
 
 export function getPostsByCategory(category: string): Post[] {
@@ -29,15 +45,7 @@ export function getPostsByCategory(category: string): Post[] {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
-    return {
-      slug,
-      title: data.title,
-      description: data.description,
-      date: data.date,
-      image: data.image || "/logo.png",
-      category,
-      content,
-    };
+    return toPost(data, content, slug, category);
   });
 }
 
@@ -51,22 +59,16 @@ export const getPostBySlug = cache(function getPostBySlug(
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
-    return {
-      slug,
-      title: data.title,
-      description: data.description,
-      date: data.date,
-      image: data.image || "/logo.png",
-      category,
-      content,
-    };
+    return toPost(data, content, slug, category);
   } catch {
     return undefined;
   }
 });
 
 function sortByDateDesc(posts: Post[]): Post[] {
-  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return [...posts].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
 }
 
 export function getLatestPosts(limit = 5): Post[] {

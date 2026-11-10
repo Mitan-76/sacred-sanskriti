@@ -1,7 +1,9 @@
 ---
 title: Om Symbol
 description: Explains the Om symbol's three sounds, its Mandukya Upanishad meaning, and why it opens nearly every Hindu mantra and ritual.
-date: 2026-02-16
+publishedAt: 2026-02-22
+updatedAt: 2026-11-05
+healthContent: true
 image: /images/om-symbol.jpg
 ---
 

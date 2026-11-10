@@ -4,13 +4,13 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "About Us | Sacred Sanskriti - Where Vedic Wisdom Meets Science",
   description:
-    "Learn about Sacred Sanskriti's mission to explore Hindu traditions through scientific reasoning, historical accuracy, and evidence-based research. Discover our E-E-A-T approach and core pillars.",
+    "Sacred Sanskriti explores Hindu traditions for the global diaspora — what the texts actually say, how that compares to popular belief, and what evidence does and doesn't support.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "About Sacred Sanskriti - Bridging Faith and Science",
-    description: "A premier platform exploring Hindu philosophy through peer-reviewed research and logical analysis.",
+    description: "A digital platform exploring Hindu philosophy through primary texts, research, and honest evidence-checking.",
     url: "https://sacredsanskriti.com/about",
   },
 };
@@ -24,91 +24,69 @@ export default function AboutPage() {
         <h1>Decoding the Eternal: Where Vedic Wisdom Meets Modern Science</h1>
 
         <p>
-          Welcome to <strong>Sacred Sanskriti</strong>, a premier digital platform dedicated to exploring the
-          profound intersection of Hindu traditions, scientific logic, and historical accuracy.
+          <strong>Sacred Sanskriti</strong> is a digital platform exploring the intersection of Hindu tradition,
+          what the original texts actually say, and what modern evidence does and doesn&apos;t support. We write
+          for the global Hindu diaspora — readers in the US, UK, Canada, Australia, the Gulf, India, and
+          anywhere else — as well as anyone curious about Hindu philosophy and practice, whether or not they
+          grew up with it.
         </p>
 
         <p>
-          In an era of information overload, the true essence of Sanatana Dharma is often lost between blind
-          faith and modern skepticism. Our mission is to bridge this gap by providing research-backed insights
-          into the Hindu way of life. We don&apos;t just tell you what a tradition is; we explore the <em>why</em>,
-          the <em>how</em>, and the scientific evidence behind it.
+          Our approach is a hybrid one: we start with the tradition itself — what people actually believe and
+          practice, and why it matters to them — then check it against the primary texts, and bring in a
+          logic or science check only where real evidence exists. We don&apos;t force a scientific explanation
+          onto something that doesn&apos;t have one, and we don&apos;t present belief as settled fact. The full
+          detail of how we research and check every article is on our{" "}
+          <a href="/how-we-research">How We Research</a> page.
         </p>
 
         <h2>Our Core Pillars</h2>
 
-        <p>Our content is meticulously categorized into five major dimensions:</p>
+        <p>Our content is organized into six areas:</p>
 
         <ol>
           <li>
-            <strong>Mantras & Chants:</strong> An analysis of linguistic phonetics, rhythmic patterns, and the
-            vibrational impact of Vedic sounds.
+            <strong>Mantras & Chants:</strong> The meaning, structure, and acoustic science of Vedic sounds.
           </li>
           <li>
-            <strong>Rituals:</strong> A historical deep dive into the evolution of Hindu orthopraxy and the
-            logical frameworks behind them.
+            <strong>Rituals:</strong> The history and purpose behind Hindu ritual practice.
           </li>
           <li>
-            <strong>Symbols:</strong> Decoding the complex semiotics of Hinduism—from the Sacred Aum to the
-            geometry of Yantras.
+            <strong>Symbols:</strong> The meaning of Hindu sacred symbols — from Om to sacred geometry.
           </li>
           <li>
-            <strong>Myths vs. Original Texts:</strong> Fact-checking popular folklore against the authentic
-            Shruti and Smriti scriptures (Vedas, Upanishads, Puranas).
+            <strong>Myth vs. Text:</strong> Checking popular folklore against the actual Shruti and Smriti
+            scriptures (Vedas, Upanishads, Puranas).
           </li>
           <li>
-            <strong>Science & Psychology:</strong> Understanding the neurological, psychological, and
-            environmental impact of religious practices through the lens of modern research.
+            <strong>Practices & Science:</strong> What research does and doesn&apos;t show about the
+            neurological and psychological effects of spiritual practices.
+          </li>
+          <li>
+            <strong>Hinduism Q&amp;A:</strong> Direct answers to the questions people actually ask about Hindu
+            tradition, mythology, and deities.
           </li>
         </ol>
 
-        <h2>Our Research Methodology</h2>
-
-        <p>We pride ourselves on authenticity. Every article and video on this platform is rooted in:</p>
-
-        <ul>
-          <li>Peer-reviewed scholarly papers.</li>
-          <li>Reliable government archives and archaeological reports.</li>
-          <li>Verified translations of ancient texts by recognized scholars.</li>
-        </ul>
-
-        <h2>Multi-Platform Learning</h2>
+        <h2>How We Work</h2>
 
         <p>
-          To provide a holistic experience, we integrate our deep-dive blog posts with visual storytelling. We
-          believe in transparency; hence, all our work includes comprehensive citations and credits to original
-          researchers.
+          Every article cites its sources directly, with a Sources list at the end linking to the primary
+          texts, studies, and reference works it draws on. We&apos;d rather an article say "the evidence here is
+          thin" than overstate a claim — see <a href="/how-we-research">How We Research</a> for exactly what
+          that checking process looks like, and what we deliberately don&apos;t claim.
         </p>
 
         <blockquote>
           Whether you are a seeker, a student of history, or a curious mind from any corner of the globe, we
-          invite you to rediscover Hinduism—not just as a religion, but as a sophisticated science of living.
+          invite you to rediscover Hinduism — not just as a religion, but as a sophisticated science of living.
         </blockquote>
 
-        <h2>Our Commitment to E-E-A-T</h2>
-
+        <h2>Follow Along</h2>
         <p>
-          Sacred Sanskriti is built on the principles of{" "}
-          <strong>Experience, Expertise, Authoritativeness, and Trustworthiness</strong>:
+          Our <a href="https://www.youtube.com/@SacredSanskriti4all" target="_blank" rel="noopener noreferrer">YouTube channel</a>{" "}
+          covers the same ground as the articles here, in video form.
         </p>
-
-        <ul>
-          <li>
-            <strong>Experience:</strong> Deep engagement with both traditional practices and modern scientific
-            research.
-          </li>
-          <li>
-            <strong>Expertise:</strong> Every article is written only after research across multiple trusted,
-            reliable sources — primary texts, academic studies, and established reference works — cited directly
-            within the piece.
-          </li>
-          <li>
-            <strong>Authoritativeness:</strong> All claims backed by credible sources and academic references.
-          </li>
-          <li>
-            <strong>Trustworthiness:</strong> Transparent methodology, cited sources, and fact-based analysis.
-          </li>
-        </ul>
       </div>
     </div>
   );
