@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import JsonLd from "@/components/JsonLd";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-main", display: 'swap' });
 const merriweather = Merriweather({
@@ -74,6 +75,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="font-sans">
             <head>
+                <GoogleAnalytics />
                 <JsonLd
                     data={{
                         "@context": "https://schema.org",

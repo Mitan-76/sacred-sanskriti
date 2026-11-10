@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { trackEvent } from "@/lib/gtag";
 
 interface YouTubeFacadeProps {
   videoId: string;
@@ -12,6 +13,11 @@ interface YouTubeFacadeProps {
 
 export default function YouTubeFacade({ videoId, title }: YouTubeFacadeProps) {
   const [loaded, setLoaded] = useState(false);
+
+  const handlePlay = () => {
+    setLoaded(true);
+    trackEvent("youtube_embed_click", { video_id: videoId, video_title: title });
+  };
 
   return (
     <div className="mt-8 overflow-hidden rounded-xl bg-ink-900">
@@ -27,7 +33,7 @@ export default function YouTubeFacade({ videoId, title }: YouTubeFacadeProps) {
         ) : (
           <button
             type="button"
-            onClick={() => setLoaded(true)}
+            onClick={handlePlay}
             aria-label={`Play video: ${title}`}
             className="group relative block h-full w-full"
           >

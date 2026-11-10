@@ -66,7 +66,31 @@ export default function PrivacyPage() {
           third-party platforms.
         </p>
 
-        <h2>4. Advertising &amp; Google AdSense</h2>
+        <h2>4. Analytics (Google Analytics 4)</h2>
+        <p>
+          We use Google Analytics 4 to understand how visitors use this website — which pages are read, how
+          long for, and which links are followed. This data is aggregated and does not identify you personally.
+        </p>
+        <ul>
+          <li>
+            We use <strong>Google Consent Mode</strong>, which keeps analytics storage off by default for every
+            visitor until a consent mechanism explicitly grants it. Until that happens, Google Analytics operates
+            in a restricted mode and does not set tracking cookies.
+          </li>
+          <li>
+            You can opt out of Google Analytics across all websites using the{" "}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Analytics Opt-out Browser Add-on
+            </a>
+            .
+          </li>
+        </ul>
+
+        <h2>5. Advertising &amp; Google AdSense</h2>
         <p>
           This website may display advertisements served by Google AdSense and other third-party ad networks.
           Google and its partners use cookies — including the DoubleClick cookie — to serve ads based on a
@@ -98,7 +122,7 @@ export default function PrivacyPage() {
           </li>
         </ul>
 
-        <h2>5. How We Use Your Information</h2>
+        <h2>6. How We Use Your Information</h2>
         <ul>
           <li>To provide, operate, and maintain our website.</li>
           <li>To improve, personalize, and expand our content.</li>
@@ -106,14 +130,14 @@ export default function PrivacyPage() {
           <li>To prevent fraudulent activities.</li>
         </ul>
 
-        <h2>6. Data Protection Rights</h2>
+        <h2>7. Data Protection Rights</h2>
         <p>
           Under the DPDP Act and GDPR, you have the right to access, rectify, or request the erasure of your
           personal data. If you wish to exercise these rights, please contact us at{" "}
           <a href="mailto:contactus@sacredsanskriti.com">contactus@sacredsanskriti.com</a>.
         </p>
 
-        <h2>7. Your Rights Include</h2>
+        <h2>8. Your Rights Include</h2>
         <ul>
           <li>
             <strong>Right to Access:</strong> Request copies of your personal data.
@@ -135,29 +159,29 @@ export default function PrivacyPage() {
           </li>
         </ul>
 
-        <h2>8. Cookies Policy</h2>
+        <h2>9. Cookies Policy</h2>
         <p>
-          We use cookies to improve your browsing experience, analyze website traffic, and — where advertising is
-          enabled — serve relevant ads (see Section 4). You can choose to disable cookies through your browser
-          settings, though this may affect website functionality and ad relevance.
+          We use cookies to analyze website traffic (see Section 4) and — where advertising is enabled — serve
+          relevant ads (see Section 5). You can choose to disable cookies through your browser settings, though
+          this may affect website functionality and ad relevance.
         </p>
 
-        <h2>9. Data Retention</h2>
+        <h2>10. Data Retention</h2>
         <p>
           We retain personal data (such as newsletter or comment details) only for as long as necessary to
           fulfill the purpose it was collected for, or as required by applicable law. Log file data is retained
           for a limited period for security and diagnostic purposes and is then deleted or anonymized. You may
-          request earlier deletion of your personal data at any time (see Section 7).
+          request earlier deletion of your personal data at any time (see Section 8).
         </p>
 
-        <h2>10. Children&apos;s Privacy</h2>
+        <h2>11. Children&apos;s Privacy</h2>
         <p>
           In line with India&apos;s DPDP Act 2023, our website does not knowingly collect personal information
           from children under 18 without verifiable parental or guardian consent. If you believe we have
           inadvertently collected such information, please contact us immediately so we can delete it.
         </p>
 
-        <h2>11. Grievance Redressal</h2>
+        <h2>12. Grievance Redressal</h2>
         <p>
           In accordance with the Digital Personal Data Protection Act, 2023 and the Information Technology
           (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the following Grievance Officer /
@@ -181,7 +205,7 @@ export default function PrivacyPage() {
           .
         </p>
 
-        <h2>12. Changes to This Policy</h2>
+        <h2>13. Changes to This Policy</h2>
         <p>
           We may update this Privacy Policy from time to time. We will notify you of any changes by posting the
           new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.

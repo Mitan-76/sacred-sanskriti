@@ -28,7 +28,7 @@ Added 10 Nov 2026 from the site's implementation instructions (`sacredsanskriti-
 - Don't add new dependencies without saying why; prefer small, standard packages.
 - Don't break existing routes — run the build and a local smoke test after every change.
 - Keep ad slots CLS-safe (reserved height) once ads go live.
-- Secrets and IDs (GA4, AdSense, email provider) go in environment variables, never hard-coded.
+- Secrets and IDs (GA4, AdSense, email provider) go in environment variables, never hard-coded — see `.env.example` for what's currently defined (`NEXT_PUBLIC_GA4_ID`, `NEXT_PUBLIC_ADS_ENABLED`). Both are safe to leave unset: analytics stays fully off with no GA4 ID, and ad slots render nothing with the flag off.
 
 ---
 

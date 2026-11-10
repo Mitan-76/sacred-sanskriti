@@ -18,6 +18,7 @@ import Sources from "@/components/Sources";
 import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import { extractYouTubeEmbed, stripYouTubeSection } from "@/lib/youtube";
+import AdSlot from "@/components/AdSlot";
 
 const SITE_URL = "https://sacredsanskriti.com";
 
@@ -94,10 +95,14 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
 
       {post.healthContent && <MedicalDisclaimer />}
 
+      <AdSlot position="after-intro" />
+
       <div
         className="prose-article mt-8"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      <AdSlot position="mid-article" />
 
       {faqs.length > 0 && (
         <section className="mt-10 border-t border-ink-100 pt-8">
@@ -109,6 +114,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
           </div>
         </section>
       )}
+
+      <AdSlot position="before-sources" />
 
       <Sources sources={sources} />
 
