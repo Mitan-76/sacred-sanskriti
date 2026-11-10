@@ -1,6 +1,6 @@
 ---
 title: "Interesting Facts About Hanuman: The Immortal Devotee"
-description: "Explore fascinating facts about Hanuman — his immortality, immense powers, unwavering devotion to Lord Rama, and the story behind why he tore open his chest."
+description: "Explore fascinating facts about Hanuman — his immortality, immense powers, and unwavering devotion to Lord Rama."
 publishedAt: 2026-05-15
 updatedAt: 2026-06-09
 healthContent: false
@@ -43,7 +43,7 @@ Rama further affirmed this blessing. Even after Hanuman's act of tearing open hi
 
 ## How Did Hanuman Die?
 
-He did not — at least not in any account recognised across the major Hindu traditions.
+He did not — at least not in any account recognized across the major Hindu traditions.
 
 While he experienced what appeared to be death as a child after Indra's thunderbolt, Lord Shiva revived him immediately. Beyond that childhood episode, the scriptures contain no account of Hanuman's death. He is one of eight chiranjivis in Hindu tradition — beings blessed to live until the end of the current cosmic cycle, the Kali Yuga.
 
@@ -83,7 +83,7 @@ The mainstream Ramayana and most major Hindu texts depict Hanuman as a lifelong 
 
 However, regional traditions — particularly in Telangana and Andhra Pradesh — hold that Hanuman was briefly and symbolically married to **Suvarchala**, the daughter of Surya, the sun god.
 
-According to this tradition, Hanuman wished to learn certain sacred knowledge that only Surya could teach. Surya stipulated that he would only impart this knowledge to a married man. To fulfil the condition and complete his education, Hanuman entered a symbolic marriage with Suvarchala — with the understanding that it involved no physical union and did not compromise his vow of celibacy. Suvarchala is said to have returned to her father after the marriage, leaving Hanuman to continue his celibate life of devotion.
+According to this tradition, Hanuman wished to learn certain sacred knowledge that only Surya could teach. Surya stipulated that he would only impart this knowledge to a married man. To fulfill the condition and complete his education, Hanuman entered a symbolic marriage with Suvarchala — with the understanding that it involved no physical union and did not compromise his vow of celibacy. Suvarchala is said to have returned to her father after the marriage, leaving Hanuman to continue his celibate life of devotion.
 
 This story is not universally accepted, and the predominant image of Hanuman across most of India remains that of the eternal celibate and bachelor ascetic.
 
@@ -102,20 +102,24 @@ His feats in the Ramayana reflect all of this: leaping across the ocean to Lanka
 
 ---
 
-## Why Is the Hanuman Chalisa So Powerful?
-
-The **Hanuman Chalisa** is a devotional hymn of forty verses composed in Awadhi by the poet-saint Tulsidas in the 16th century. It is among the most recited prayers in the Hindu world — chanted daily by tens of millions of people across traditions, regions, and languages.
+## Watch: Hanuman Chalisa
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
   <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/AQU84QztL7I" title="Hanuman Chalisa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+---
+
+## Why Is the Hanuman Chalisa So Powerful?
+
+The **Hanuman Chalisa** is a devotional hymn of forty verses composed in Awadhi by the poet-saint Tulsidas in the 16th century. It is among the most recited prayers in the Hindu world — chanted daily by tens of millions of people across traditions, regions, and languages.
 
 Its power is attributed to several interlocking reasons:
 
 - **Concentrated praise** — Each of the forty verses captures a specific quality, deed, or aspect of Hanuman. Reciting it is a structured meditation on his complete character
 - **Sita's blessing** — Sita declared that Hanuman would be present wherever Rama's name is recited. The Chalisa, by praising Hanuman's devotion to Rama, is believed to invoke his active presence
 - **Protection** — The Chalisa is widely recited for protection from fear, illness, negative forces, and obstacles. This stems from Hanuman's own role as a protector — the one who guarded Rama, crossed impossible distances, and subdued powerful demons
-- **Accessibility** — Its rhythmic, melodic structure makes it easy to memorise and recite daily. Tulsidas wrote it in the vernacular, not Sanskrit, deliberately making it available to all — regardless of caste, education, or background
+- **Accessibility** — Its rhythmic, melodic structure makes it easy to memorize and recite daily. Tulsidas wrote it in the vernacular, not Sanskrit, deliberately making it available to all — regardless of caste, education, or background
 - **Tradition of results** — Centuries of lived testimony across India give the Chalisa a cultural and spiritual weight that amplifies the faith of each new practitioner
 
 The tradition of Chalisa recitation continues to this day — the <a href="https://nkbashram.org" target="_blank" rel="noopener noreferrer">Neem Karoli Baba Ashram</a>, one of the most beloved Hanuman devotee communities in the world, streams eleven Hanuman Chalisa recitations every Sunday, drawing devotees from across the globe.

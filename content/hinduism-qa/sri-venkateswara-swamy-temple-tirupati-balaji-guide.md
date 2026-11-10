@@ -65,7 +65,7 @@ The idol is considered self-manifested (*swayambhu*). Two eternal lamps in the s
 ## Which Places Can You Visit Near Tirupati Balaji Temple?
 
 **Sri Kalyana Venkateswara Swamy Temple, Srinivasamangapuram**
-Located about 10 km west of Tirupati city, this ancient temple is dedicated to Lord Venkateswara and is recognised as an Ancient Monument of National Importance by the Archaeological Survey of India. It has been under TTD management since 1967.
+Located about 10 km west of Tirupati city, this ancient temple is dedicated to Lord Venkateswara and is recognized as an Ancient Monument of National Importance by the Archaeological Survey of India. It has been under TTD management since 1967.
 
 **Sri Prasanna Venkateswara Swamy Temple, Appalayagunta**
 Approximately 16 km from Tirupati, this temple is notable for its presiding deity depicted in the *Abhaya Hasta Posture* — the gesture of blessing. TTD took over its administration in 1988.

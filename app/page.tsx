@@ -8,14 +8,14 @@ import ArticleCard from "@/components/ArticleCard";
 export const metadata: Metadata = {
   title: "Sacred Sanskriti | Where Science Meets the Sacred",
   description:
-    "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+    "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Sacred Sanskriti | Where Science Meets the Sacred",
     description:
-      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
     url: "https://sacredsanskriti.com",
     siteName: "Sacred Sanskriti",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sacred Sanskriti | Where Science Meets the Sacred",
     description:
-      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, meaning of sacred symbols, and clear answers about Hinduism.",
+      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
   },
 };
 

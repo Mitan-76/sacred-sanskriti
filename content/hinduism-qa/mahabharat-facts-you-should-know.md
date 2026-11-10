@@ -1,13 +1,13 @@
 ---
 title: "Mahabharat Facts You Should Know"
-description: "Discover key facts about the Mahabharat — the Kurukshetra War, Eklavya's story, who fought, why the war happened, and what historians say about its origins."
+description: "Discover key facts about the Mahabharat — the Kurukshetra War, Eklavya's story, who fought, and why the war happened."
 publishedAt: 2026-05-22
 updatedAt: 2026-06-09
 healthContent: false
 image: /images/mahabharat-facts-you-should-know.jpg
 ---
 
-The Mahabharat is one of the longest and most profound epic poems ever written. At its centre is the Kurukshetra War — a dynastic struggle between two groups of cousins, the Pandavas and the Kauravas, for the throne of Hastinapura.
+The Mahabharat is one of the longest and most profound epic poems ever written. At its center is the Kurukshetra War — a dynastic struggle between two groups of cousins, the Pandavas and the Kauravas, for the throne of Hastinapura.
 
 But the Mahabharat is far more than a war story. It is an exploration of dharma, duty, sacrifice, and the moral complexity of human nature — questions as relevant today as they were when the epic was first composed.
 

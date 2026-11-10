@@ -5,7 +5,7 @@ import CategoryPage from "@/components/CategoryPage";
 export const metadata: Metadata = {
   title: "Practices | Sacred Sanskriti",
   description:
-    "Discover ancient Hindu practices — pranayama, meditation, Surya Namaskar, Om chanting, and more — explained through modern science and their real benefits for mind and body.",
+    "Discover ancient Hindu practices — pranayama, meditation, Surya Namaskar, and more — explained through modern science and their real benefits.",
   alternates: {
     canonical: "/practices",
   },

@@ -16,6 +16,8 @@ import ShareButtons from "@/components/ShareButtons";
 import RelatedArticles from "@/components/RelatedArticles";
 import Sources from "@/components/Sources";
 import MedicalDisclaimer from "@/components/MedicalDisclaimer";
+import YouTubeFacade from "@/components/YouTubeFacade";
+import { extractYouTubeEmbed, stripYouTubeSection } from "@/lib/youtube";
 
 const SITE_URL = "https://sacredsanskriti.com";
 
@@ -34,7 +36,8 @@ interface ArticlePageProps {
 
 export default async function ArticlePage({ post, category }: ArticlePageProps) {
   const categoryLabel = getCategoryLabel(category);
-  const bodyMarkdown = getArticleBody(post.content);
+  const youtubeEmbed = extractYouTubeEmbed(post.content);
+  const bodyMarkdown = stripYouTubeSection(getArticleBody(post.content));
   const contentHtml = await markdownToHtml(bodyMarkdown);
   const faqs = extractFAQs(post.content);
   const sources = extractSources(post.content);
@@ -69,7 +72,7 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
       </p>
       <p className="mt-1 text-sm text-ink-500">
         Researched with AI tools and checked against the sources listed below.{" "}
-        <Link href="/how-we-research" className="text-teal-600 hover:underline">
+        <Link href="/how-we-research" className="text-teal-600 underline">
           How we research →
         </Link>
       </p>
@@ -86,6 +89,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
           />
         </AspectRatio>
       </div>
+
+      {youtubeEmbed && <YouTubeFacade videoId={youtubeEmbed.videoId} title={youtubeEmbed.title} />}
 
       {post.healthContent && <MedicalDisclaimer />}
 

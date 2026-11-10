@@ -127,11 +127,14 @@
     @apply outline-2 outline-teal-500 outline-offset-2;
   }
 
-  a {
+  /* Excludes shadcn Buttons rendered as <a> (render={<a .../>}) — this rule
+     is for genuine text links; a Button's own variant classes should set
+     its text color, not have it overridden by inheriting this one. */
+  a:not([data-slot="button"]) {
     @apply text-teal-600;
   }
 
-  a:hover {
+  a:not([data-slot="button"]):hover {
     text-decoration: underline;
   }
 }

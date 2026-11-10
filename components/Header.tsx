@@ -93,7 +93,7 @@ export default function Header() {
                   Contact Us
                 </Link>
               </div>
-              <div className="mt-2 flex flex-col gap-2 border-t border-ink-100 pt-4 text-xs text-ink-300">
+              <div className="mt-2 flex flex-col gap-2 border-t border-ink-100 pt-4 text-xs text-ink-500">
                 <Link href="/privacy" onClick={() => setIsOpen(false)}>Privacy Policy</Link>
                 <Link href="/terms" onClick={() => setIsOpen(false)}>Terms of Service</Link>
               </div>

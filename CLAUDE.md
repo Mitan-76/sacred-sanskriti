@@ -13,7 +13,7 @@ Added 10 Nov 2026 from the site's implementation instructions (`sacredsanskriti-
 - **Never claim** content is written or reviewed by scholars, researchers, or practitioners. Say instead that it is researched from trusted, reliable sources — and actually name those sources inline or in a Sources section. The research itself is the trust signal, not an unverifiable claim about who performed it.
 - Every article shows a published date, a last-updated date, an AI-assistance disclosure, and a Sources section — live as of 10 Nov 2026 (`components/ArticlePage.tsx`, `components/Sources.tsx`).
 - **Tone:** respectful to tradition, honest about evidence. Use "tradition says," "the text says," "studies suggest" precisely — never present a belief as scientific fact.
-- English only. Sanskrit terms are fine but explain them in plain English on first use.
+- English only, **American spelling** (color, organize, center, honor, recognized, fulfill, memorize — not colour/organise/centre/honour/recognised/fulfil/memorise). Sanskrit terms are fine but explain them in plain English on first use.
 - **Audience:** the Hindu diaspora worldwide (US, UK, Canada, Australia, Gulf, etc.), not an India-only readership — avoid India-only assumptions (INR-only prices, "near you" travel framing, IST-only timings).
 
 ### Accuracy (hard rule)
@@ -64,6 +64,17 @@ image: /images/article-slug.jpg
 - `healthContent`: `true` if the article makes any claim about a physiological or psychological effect (stress, breathing, brain activity, blood pressure, etc.) — this triggers the medical disclaimer (`components/MedicalDisclaimer.tsx`). `false` otherwise.
 - **Always remove:** `slug`, `keywords`, `date`, `author` — `date` is superseded by `publishedAt`/`updatedAt` above; `author` is never used — the byline shown on every article (see §0) is a fixed "Sacred Sanskriti Editorial" string in the template, not sourced from frontmatter.
 - **Sources section:** don't write one by hand — `components/Sources.tsx` auto-generates it from every external `<a href="https://...">` citation already in the article body (see `lib/sources.ts`), so it can never drift from what's actually cited. Just make sure every real citation in the body is a proper external link per the External Links Guidelines (§9).
+- **YouTube embeds (if any):** must follow this exact shape — `lib/youtube.ts` extracts it into a lightweight click-to-load facade and strictly expects a `## Watch: ...` heading, immediately followed by the iframe wrapper `<div>`, immediately followed by a `---` divider, with nothing else in between:
+  ```markdown
+  ## Watch: Article Title
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:1.5rem 0;">
+    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/VIDEO_ID" title="Video Title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  ---
+  ```
+  Don't embed a video inline mid-paragraph or add commentary sentences between the `</div>` and the `---` — the facade renders near the top of the article regardless of where this section sits, so write the surrounding prose without assuming the video appears exactly where this block is.
 
 **Description format:** One sentence, ~20 words, starts with a verb (Explore / Discover / Learn), lists the key topics. Match the style of existing articles.
 
@@ -161,7 +172,7 @@ Every new article should link to relevant existing articles. Current site articl
 | Agnihotra ritual | `/rituals/agnihotra` |
 | Om symbol | `/symbols/om-symbol` |
 | Surya Namaskar | `/practices/surya-namaskar` |
-| Why Do We Ring Bells in Temples | `/practices/Why-Do-We-Ring-Bells-in-Temples-practices` |
+| Why Do We Ring Bells in Temples | `/practices/why-do-we-ring-bells-in-temples` |
 
 Update this table whenever a new article is published.
 

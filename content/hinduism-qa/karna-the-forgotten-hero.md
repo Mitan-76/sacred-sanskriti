@@ -29,7 +29,7 @@ Karna's loyalty to Duryodhana was built on gratitude, and gratitude was somethin
 
 From his youth, Karna was repeatedly humiliated. At Drona's tournament — where the Pandava princes displayed their martial skills — Karna arrived and challenged Arjuna. Before they could duel, he was disqualified: the contest was for *kshatriyas* (warriors of noble birth), and Karna, raised by a charioteer, was considered a *sutaputra* regardless of his abilities. He was turned away publicly.
 
-It was Duryodhana who stepped forward that day. He immediately crowned Karna the King of Anga, making him a king in his own right and thus eligible to compete. For Karna, this was not a small gesture — it was the first time anyone of rank had recognised him without prejudice.
+It was Duryodhana who stepped forward that day. He immediately crowned Karna the King of Anga, making him a king in his own right and thus eligible to compete. For Karna, this was not a small gesture — it was the first time anyone of rank had recognized him without prejudice.
 
 That bond held for thirteen years. When Krishna later revealed Karna's true identity as the eldest Pandava and offered him the throne of Indraprastha if he switched sides, Karna refused. He stated plainly that it was the bonds built through time and loyalty — not blood — that mattered. He would not abandon the friend who had stood by him when no one else would.
 
@@ -55,7 +55,7 @@ Surya himself had warned Karna beforehand. Karna's response was that his reputat
 
 ## Why Did Krishna Want Karna to Join the Pandavas?
 
-Krishna approached Karna before the war with a striking offer: join the Pandavas, be recognised as their eldest brother, marry Draupadi, and rule as king. He knew that Karna's presence on the Kaurava side was one of the greatest strategic threats the Pandavas faced, and that Karna's defection would potentially end the conflict before a single battle was fought.
+Krishna approached Karna before the war with a striking offer: join the Pandavas, be recognized as their eldest brother, marry Draupadi, and rule as king. He knew that Karna's presence on the Kaurava side was one of the greatest strategic threats the Pandavas faced, and that Karna's defection would potentially end the conflict before a single battle was fought.
 
 Karna refused. He told Krishna that he could not undo thirteen years of friendship for a throne. He also pointed out that if he switched sides now, Duryodhana would be left without his most capable ally — and that abandoning him at the moment of greatest danger would be a form of treachery he could not commit, whatever the personal gain.
 
@@ -89,7 +89,7 @@ Three significant curses shaped Karna's fate:
 
 - **Parashurama's curse** — Parashurama taught only Brahmins. Karna presented himself as one to gain instruction. During a rest, a larva burrowed into Karna's leg. He bore the pain silently rather than disturb his guru. When Parashurama woke and saw the wound, he understood that no Brahmin could endure such pain without crying out — only a warrior trained to suppress pain could do this. He cursed Karna to forget the knowledge of his most powerful weapons at the moment of greatest need
 - **The Brahmin's curse** — Karna accidentally killed a Brahmin's cow with an arrow while hunting. The Brahmin cursed him that the earth would swallow his chariot wheel during a battle when his life depended on it
-- **The circumstances of his birth** — Not a formal curse, but Kunti's abandonment placed Karna outside the social structure that would otherwise have recognised and protected him. The humiliation he faced his entire life was a direct consequence
+- **The circumstances of his birth** — Not a formal curse, but Kunti's abandonment placed Karna outside the social structure that would otherwise have recognized and protected him. The humiliation he faced his entire life was a direct consequence
 
 ---
 
@@ -97,9 +97,9 @@ Three significant curses shaped Karna's fate:
 
 Karna's greatest failing was not disloyalty or cowardice — it was a willingness to follow Duryodhana into territory he knew was wrong.
 
-He was present during the dice game where the Pandavas lost everything and Draupadi was publicly humiliated. He did not intervene. He spoke harshly of Draupadi in that assembly — words he later regretted but could not take back. He accepted honours from Duryodhana while Duryodhana pursued power through increasingly unjust means.
+He was present during the dice game where the Pandavas lost everything and Draupadi was publicly humiliated. He did not intervene. He spoke harshly of Draupadi in that assembly — words he later regretted but could not take back. He accepted honors from Duryodhana while Duryodhana pursued power through increasingly unjust means.
 
-Karna was not blind to this. He frequently advised Duryodhana to fight honourably and pursue peace. But he never withdrew his support. His loyalty — his greatest virtue — was also the mechanism by which he became complicit in injustice. In the framework of [dharma](/hinduism-qa/what-is-dharma-in-hinduism), this is the central tension of his character: a man of genuine nobility who could not find a way to separate his loyalty from his conscience.
+Karna was not blind to this. He frequently advised Duryodhana to fight honorably and pursue peace. But he never withdrew his support. His loyalty — his greatest virtue — was also the mechanism by which he became complicit in injustice. In the framework of [dharma](/hinduism-qa/what-is-dharma-in-hinduism), this is the central tension of his character: a man of genuine nobility who could not find a way to separate his loyalty from his conscience.
 
 ---
 

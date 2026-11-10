@@ -37,7 +37,7 @@ The written Devanagari character ॐ is a single graphic glyph built from three 
 
 ## Is There Scientific Research on Chanting Om?
 
-Yes, though it is narrower in scope than popular claims often suggest. An <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3099099/" target="_blank" rel="noopener noreferrer">fMRI study of OM chanting</a> found measurable deactivation in limbic brain regions associated with emotional processing, with researchers proposing a vagus-nerve-related mechanism — the same mechanism explored in relation to sound ritual in our piece on <a href="/practices/Why-Do-We-Ring-Bells-in-Temples-practices">why temple bells are rung</a>. This research is specific to the chanting practice, not the symbol in the abstract.
+Yes, though it is narrower in scope than popular claims often suggest. An <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3099099/" target="_blank" rel="noopener noreferrer">fMRI study of OM chanting</a> found measurable deactivation in limbic brain regions associated with emotional processing, with researchers proposing a vagus-nerve-related mechanism — the same mechanism explored in relation to sound ritual in our piece on <a href="/practices/why-do-we-ring-bells-in-temples">why temple bells are rung</a>. This research is specific to the chanting practice, not the symbol in the abstract.
 
 ---
 

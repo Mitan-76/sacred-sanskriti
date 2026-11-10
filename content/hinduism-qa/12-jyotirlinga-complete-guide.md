@@ -1,6 +1,6 @@
 ---
 title: "12 Jyotirlinga: A Complete Guide to India's Sacred Shiva Shrines"
-description: A complete guide to the 12 Jyotirlinga — what they are, where they are located, the travel approach for each, and the spiritual significance behind every shrine.
+description: A complete guide to the 12 Jyotirlinga — what they are, where they're located, and the spiritual significance behind every shrine.
 publishedAt: 2026-05-01
 updatedAt: 2026-06-09
 healthContent: false
@@ -28,8 +28,6 @@ This article covers:
   <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/LtqVSygNkAQ" title="12 Jyotirlinga Complete Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-If you prefer a visual, engaging walkthrough, watch the video above before continuing. This article serves as your written reference and deeper reading companion.
-
 ---
 
 ## Shivlinga vs Jyotirlinga — Why the Distinction Matters
@@ -49,7 +47,7 @@ According to the Shiva Purana, Brahma and Vishnu once argued over who was suprem
 ### Key Comparison
 
 - **Nature:** Shivlinga is a symbolic representation; Jyotirlinga is a self-manifested divine light
-- **Count:** Shivlingas are countless; Jyotirlinga are only 12 (traditionally recognised)
+- **Count:** Shivlingas are countless; Jyotirlinga are only 12 (traditionally recognized)
 - **Significance:** Shivlinga is used for general worship; Jyotirlinga are among the most sacred in Shaiva tradition
 - **Location:** Shivlingas can be anywhere; Jyotirlinga are at specific consecrated sites
 
@@ -74,7 +72,7 @@ According to the Shiva Purana, Brahma and Vishnu once argued over who was suprem
 
 - **Location:** Ujjain, Madhya Pradesh
 - **Significance:** The only Jyotirlinga facing south (Dakshinamukhi), considered especially powerful. Mahakal represents Shiva as the lord of time and death — strongly associated with overcoming fear and ego.
-- **Travel:** Ujjain has a railway station with broad-gauge connectivity. The temple is located in the city centre.
+- **Travel:** Ujjain has a railway station with broad-gauge connectivity. The temple is located in the city center.
 
 ### 4. Omkareshwar — Madhya Pradesh
 
@@ -216,7 +214,7 @@ Chanting the stotram is considered equivalent, in a devotional sense, to visitin
 Before embarking on the pilgrimage, it helps to carry a realistic and mature understanding:
 
 - **Jyotirlinga are not vending machines.** They are not places where you insert devotion and extract outcomes.
-- They are **sacred energy centres** — places where, over millennia, the collective intention and practice of countless devotees has created a palpable spiritual atmosphere.
+- They are **sacred energy centers** — places where, over millennia, the collective intention and practice of countless devotees has created a palpable spiritual atmosphere.
 - What you receive depends heavily on your **sincerity, openness, and the clarity of your intention**.
 - The physical journey is an external action. The inner journey — of surrender, reflection, and honest prayer — is what makes it transformative.
 
@@ -243,7 +241,7 @@ Before embarking on the pilgrimage, it helps to carry a realistic and mature und
 
 The 12 Jyotirlinga are not just temples on a map — they are **living spiritual landmarks** that have anchored Hindu civilisation for thousands of years.
 
-If you visit purely as a traveller, you will see magnificent architecture, devotion in action, and remarkable geography.
+If you visit purely as a traveler, you will see magnificent architecture, devotion in action, and remarkable geography.
 
 If you visit with understanding — knowing what each shrine represents, what question it holds, and what it asks of you — it becomes something far more meaningful.
 

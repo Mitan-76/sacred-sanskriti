@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Canonical host: sacredsanskriti.com (no www). If the www subdomain is also
+# pointed at this site in Netlify's domain settings, this sends it to the
+# apex domain instead of serving duplicate content on two hosts.
+[[redirects]]
+  from = "https://www.sacredsanskriti.com/*"
+  to = "https://sacredsanskriti.com/:splat"
+  status = 301
+  force = true

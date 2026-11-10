@@ -5,7 +5,7 @@ import CategoryPage from "@/components/CategoryPage";
 export const metadata: Metadata = {
   title: "Symbols | Sacred Sanskriti",
   description:
-    "Explore the deep meaning behind Hindu sacred symbols — Om, the lotus, and more — and what modern research reveals about their psychological, cultural, and spiritual significance.",
+    "Explore the deep meaning behind Hindu sacred symbols — Om, the lotus, and more — and what modern research reveals about their psychological significance.",
   alternates: {
     canonical: "/symbols",
   },

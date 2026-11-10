@@ -22,7 +22,7 @@ export default function TermsPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms of Service", href: "/terms" }]} />
 
       <h1 className="font-heading text-3xl font-bold text-ink-700">Terms of Service</h1>
-      <p className="mt-2 text-sm text-ink-300">
+      <p className="mt-2 text-sm text-ink-500">
         <strong>Last Updated:</strong> {currentDate}
       </p>
 

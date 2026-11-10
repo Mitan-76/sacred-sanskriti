@@ -35,7 +35,7 @@ export default function ArticleCard({ post }: { post: Post }) {
             {post.title}
           </h3>
           <p className="line-clamp-2 text-sm text-ink-500">{post.description}</p>
-          <p className="mt-1 text-xs text-ink-300">{formatDate(post.publishedAt)}</p>
+          <p className="mt-1 text-xs text-ink-500">{formatDate(post.publishedAt)}</p>
         </CardContent>
       </Card>
     </Link>

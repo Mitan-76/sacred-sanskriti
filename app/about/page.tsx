@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "About Us | Sacred Sanskriti - Where Vedic Wisdom Meets Science",
+  title: "About Us | Sacred Sanskriti",
   description:
-    "Sacred Sanskriti explores Hindu traditions for the global diaspora — what the texts actually say, how that compares to popular belief, and what evidence does and doesn't support.",
+    "Sacred Sanskriti explores Hindu traditions for the global diaspora — what the texts actually say, and what evidence does and doesn't support.",
   alternates: {
     canonical: "/about",
   },

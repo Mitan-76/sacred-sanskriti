@@ -9,7 +9,7 @@ image: /images/agnihotra.jpg
 
 Agnihotra is a twice-daily Vedic fire ritual performed at sunrise and sunset, in which a small offering — traditionally milk, rice, or ghee — is placed in a fire while a short mantra invoking Agni (at sunset) or Surya (at sunrise) is recited. It is one of the oldest and simplest Vedic *homas* (fire offerings), practiced long before the larger, more elaborate *yajnas* it is related to.
 
-Beyond its ritual form, Agnihotra is widely believed in modern practice to purify the surrounding air and support mental clarity. That claim has actually been tested — with mixed results, discussed honestly below rather than repeated as settled fact. For a related ritual built around sound rather than fire, see our piece on <a href="/practices/Why-Do-We-Ring-Bells-in-Temples-practices">why temple bells are rung</a>.
+Beyond its ritual form, Agnihotra is widely believed in modern practice to purify the surrounding air and support mental clarity. That claim has actually been tested — with mixed results, discussed honestly below rather than repeated as settled fact. For a related ritual built around sound rather than fire, see our piece on <a href="/practices/why-do-we-ring-bells-in-temples">why temple bells are rung</a>.
 
 ---
 

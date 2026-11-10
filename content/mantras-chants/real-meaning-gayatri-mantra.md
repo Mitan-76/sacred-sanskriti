@@ -85,7 +85,7 @@ The tradition attributes many benefits to regular recitation of the Gayatri Mant
 
 ### Energetic
 
-According to Vedic tradition, the 24 syllables of the Gayatri Mantra correspond to 24 **shaktis** (divine energies). Chanting them activates subtle energy centres and aligns the practitioner's awareness with the frequencies those syllables represent.
+According to Vedic tradition, the 24 syllables of the Gayatri Mantra correspond to 24 **shaktis** (divine energies). Chanting them activates subtle energy centers and aligns the practitioner's awareness with the frequencies those syllables represent.
 
 Scientific research on the Gayatri Mantra specifically is limited, but neuroimaging studies on a related repetitive Sanskrit vocalisation practice — OM chanting — are more established. An <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3099099/" target="_blank" rel="noopener noreferrer">fMRI study published in the International Journal of Yoga</a> found that OM chanting produced significant deactivation in limbic brain regions (the amygdala, hippocampus, and related structures), with the researchers hypothesizing that the vibration may stimulate the vagus nerve in a manner similar to clinical vagus-nerve-stimulation therapy. This does not mean Gayatri recitation has been studied the same way, but it is evidence that sustained Sanskrit chanting practices can measurably affect the nervous system.
 

@@ -5,7 +5,7 @@ import CategoryPage from "@/components/CategoryPage";
 export const metadata: Metadata = {
   title: "Rituals | Sacred Sanskriti",
   description:
-    "Understand the science and tradition behind Hindu rituals — from Agnihotra to daily worship — and the evidence-based reasons these practices have endured for thousands of years.",
+    "Understand the science and tradition behind Hindu rituals — from Agnihotra to daily worship — and why these practices have endured for millennia.",
   alternates: {
     canonical: "/rituals",
   },

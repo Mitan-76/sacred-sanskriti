@@ -1,6 +1,6 @@
 ---
 title: Why Do We Ring Bells in Temples?
-description: Why do we ring temple bells? Discover the scientific, spiritual, and health benefits of temple bells, including brain activation, vagus nerve stimulation, and more.
+description: Why do we ring temple bells? Discover the scientific and spiritual reasoning behind the ritual, including brain activation and vagus nerve stimulation.
 publishedAt: 2026-04-05
 updatedAt: 2026-11-05
 healthContent: true

@@ -22,7 +22,7 @@ export default function PrivacyPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Privacy Policy", href: "/privacy" }]} />
 
       <h1 className="font-heading text-3xl font-bold text-ink-700">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-ink-300">
+      <p className="mt-2 text-sm text-ink-500">
         <strong>Last Updated:</strong> {currentDate}
       </p>
 
@@ -145,7 +145,7 @@ export default function PrivacyPage() {
         <h2>9. Data Retention</h2>
         <p>
           We retain personal data (such as newsletter or comment details) only for as long as necessary to
-          fulfil the purpose it was collected for, or as required by applicable law. Log file data is retained
+          fulfill the purpose it was collected for, or as required by applicable law. Log file data is retained
           for a limited period for security and diagnostic purposes and is then deleted or anonymized. You may
           request earlier deletion of your personal data at any time (see Section 7).
         </p>

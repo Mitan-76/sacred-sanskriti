@@ -33,7 +33,7 @@ export default function Footer() {
 
         <div>
           <h4 className="font-heading text-sm font-semibold uppercase tracking-wide text-ink-300">
-            Explore
+            Topics
           </h4>
           <ul className="mt-3 flex flex-col gap-2 text-sm">
             {CATEGORIES.map((category) => (
