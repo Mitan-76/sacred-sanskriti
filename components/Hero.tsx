@@ -19,7 +19,9 @@ export default function Hero() {
         </h1>
         <p className="mt-4 text-base text-white/90 sm:text-lg">
           An evidence-based exploration of religious phenomena — the psychological,
-          biological, and acoustic mechanisms behind spiritual experiences.
+          biological, and acoustic mechanisms behind spiritual experiences. Written for
+          the Hindu diaspora and curious readers everywhere, with clear answers checked
+          against original texts and named sources.
         </p>
         <Button className="mt-6" render={<a href="#explore" />}>
           Explore the Pillars

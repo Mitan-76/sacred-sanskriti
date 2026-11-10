@@ -6,25 +6,25 @@ import CategoryCard from "@/components/CategoryCard";
 import ArticleCard from "@/components/ArticleCard";
 
 export const metadata: Metadata = {
-  title: "Sacred Sanskriti | Where Science Meets the Sacred",
+  title: "Sacred Sanskriti: Hindu Traditions, Texts and the Science",
   description:
-    "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
+    "Hindu traditions, mantras and myths explained in plain English: what the original texts say, and what science can and cannot confirm.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Sacred Sanskriti | Where Science Meets the Sacred",
+    title: "Sacred Sanskriti: Hindu Traditions, Texts and the Science",
     description:
-      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
+      "Hindu traditions, mantras and myths explained in plain English: what the original texts say, and what science can and cannot confirm.",
     url: "https://sacredsanskriti.com",
     siteName: "Sacred Sanskriti",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sacred Sanskriti | Where Science Meets the Sacred",
+    title: "Sacred Sanskriti: Hindu Traditions, Texts and the Science",
     description:
-      "An evidence-based exploration of Hindu traditions — the neuroscience of mantras, psychology of rituals, and clear answers about Hinduism.",
+      "Hindu traditions, mantras and myths explained in plain English: what the original texts say, and what science can and cannot confirm.",
   },
 };
 

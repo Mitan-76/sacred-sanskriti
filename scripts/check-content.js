@@ -99,7 +99,14 @@ function main() {
     if (typeof data.description === "string") {
       if (data.description.length > 160) {
         fail(`description is ${data.description.length} chars, over the 160 limit`);
+      } else if (data.description.length < 120) {
+        warn(`description is only ${data.description.length} chars, under the 120-160 target range (ctr-plan.md §6)`);
       }
+    }
+
+    // Title length (ctr-plan.md §6: under 60 chars, no brand suffix).
+    if (typeof data.title === "string" && data.title.length > 60) {
+      warn(`title is ${data.title.length} chars, over the 60-char target (ctr-plan.md §6)`);
     }
 
     // Duplicate title/description across the whole site.
