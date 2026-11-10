@@ -39,7 +39,7 @@ export function getPostsByCategory(category: string): Post[] {
 
   const fileNames = fs.readdirSync(postsDirectory);
 
-  return fileNames.map((fileName) => {
+  const posts = fileNames.map((fileName) => {
     const slug = fileName.replace(".md", "");
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -47,6 +47,11 @@ export function getPostsByCategory(category: string): Post[] {
 
     return toPost(data, content, slug, category);
   });
+
+  // Newest first — this was previously just filesystem/directory read order,
+  // which is why category pages weren't actually listing newest-first per
+  // Phase 4.5's requirement.
+  return sortByDateDesc(posts);
 }
 
 export const getPostBySlug = cache(function getPostBySlug(

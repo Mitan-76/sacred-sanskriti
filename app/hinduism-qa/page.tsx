@@ -32,7 +32,7 @@ export default function Page() {
     <CategoryPage
       category="hinduism-qa"
       categoryLabel="Hinduism Q & A"
-      intro="Clear, thoughtful answers to the most commonly asked questions about Hinduism — covering philosophy, culture, practices, and traditions."
+      intro="Hinduism Q & A exists for the questions people actually ask — about the figures, places, and ideas at the center of Hindu tradition — answered directly and checked against the sources behind them, not left as vague folklore. You'll find out who Karna really was and why the Mahabharata treats him as its most tragic figure, what the Kurukshetra War actually involved, practical guidance for visiting the Sri Venkateswara Swamy Temple at Tirupati or touring all 12 Jyotirlinga shrines, the real scope of Hanuman's strength and devotion, and what Dharma means beneath the single-word translations of 'duty' or 'religion' that rarely capture it. Every answer here starts with a direct response to the question in the title, then works through the textual and historical detail behind it — because 'it's complicated' is rarely a satisfying answer, and it's rarely the whole truth either."
       posts={posts}
     />
   );

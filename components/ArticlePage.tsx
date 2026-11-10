@@ -19,6 +19,9 @@ import MedicalDisclaimer from "@/components/MedicalDisclaimer";
 import YouTubeFacade from "@/components/YouTubeFacade";
 import { extractYouTubeEmbed, stripYouTubeSection } from "@/lib/youtube";
 import AdSlot from "@/components/AdSlot";
+import YouTubeCTA from "@/components/YouTubeCTA";
+import TableOfContents from "@/components/TableOfContents";
+import { addHeadingIds, extractHeadings, countWords } from "@/lib/toc";
 
 const SITE_URL = "https://sacredsanskriti.com";
 
@@ -39,7 +42,9 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
   const categoryLabel = getCategoryLabel(category);
   const youtubeEmbed = extractYouTubeEmbed(post.content);
   const bodyMarkdown = stripYouTubeSection(getArticleBody(post.content));
-  const contentHtml = await markdownToHtml(bodyMarkdown);
+  const contentHtmlRaw = await markdownToHtml(bodyMarkdown);
+  const contentHtml = addHeadingIds(contentHtmlRaw);
+  const tocItems = countWords(bodyMarkdown) > 1200 ? extractHeadings(contentHtml) : [];
   const faqs = extractFAQs(post.content);
   const sources = extractSources(post.content);
   const { blogPostingLd, faqLd } = buildArticleJsonLd(post, category);
@@ -78,6 +83,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
         </Link>
       </p>
 
+      <YouTubeCTA />
+
       <div className="mt-8 overflow-hidden rounded-xl">
         <AspectRatio ratio={1200 / 630} className="bg-sage-100">
           <Image
@@ -96,6 +103,8 @@ export default async function ArticlePage({ post, category }: ArticlePageProps) 
       {post.healthContent && <MedicalDisclaimer />}
 
       <AdSlot position="after-intro" />
+
+      <TableOfContents items={tocItems} />
 
       <div
         className="prose-article mt-8"
