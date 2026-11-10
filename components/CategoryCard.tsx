@@ -20,7 +20,7 @@ export default function CategoryCard({ slug, title, description, icon: Icon }: C
           <h3 className="font-heading text-lg font-semibold text-ink-700 group-hover:text-teal-700">
             {title}
           </h3>
-          <p className="text-sm text-ink-500">{description}</p>
+          <p className="max-w-[26ch] text-balance text-sm text-ink-500">{description}</p>
         </CardContent>
       </Card>
     </Link>
