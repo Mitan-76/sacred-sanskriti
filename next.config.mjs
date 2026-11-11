@@ -22,18 +22,14 @@ const nextConfig = {
         destination: "/practices/why-do-we-ring-bells-in-temples",
         permanent: true,
       },
-      // These two articles were removed entirely (their source videos were
-      // dead) rather than renamed, so there's no matching new article to
-      // send old inbound links/search-index entries to — the category hub
-      // is the nearest still-relevant destination.
       {
         source: "/practices/How_to_Reduce_Office_Stress",
-        destination: "/practices",
+        destination: "/practices/how-to-reduce-office-stress",
         permanent: true,
       },
       {
         source: "/practices/OM_Chanting_and_the_Brain",
-        destination: "/practices",
+        destination: "/practices/om-chanting-and-the-brain",
         permanent: true,
       },
     ];

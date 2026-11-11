@@ -16,6 +16,36 @@ to `/practices`. Owner confirmed (2026-11-10) that no further action is needed
 while the pages don't exist. Resurrecting them as new articles with working
 sources would be a separate, new-article decision.
 
+**Update 2026-11-11:** the owner supplied both articles and made their videos
+public again, so both were restored — see the two 2026-11-11 entries below.
+
+---
+
+## 2026-11-11: OM Chanting and the Brain (restored)
+
+- URL: /practices/OM_Chanting_and_the_Brain -> /practices/om-chanting-and-the-brain (permanent redirect; previously pointed to /practices while the article was deleted)
+- Title: "OM Chanting and the Brain — What Modern Research Says About This Ancient Sound" -> "OM Chanting and the Brain: What the Studies Actually Show"
+- Description: "Can chanting OM reduce stress, calm the mind, and improve your health? Explore what modern neuroscience and research say about OM chanting and its effects on the brain and body." -> "Key studies on OM chanting in one table: the fMRI pilot, the heart rate variability study, sample sizes, limitations and PubMed links."
+- H1: matches title
+- Content: short answer under the H1; study table (2 studies, all fields verified from NCBI abstracts); new sections on each study; "Does OM Chanting Stimulate the Vagus Nerve?"; "Limitations of the Research"; medical disclaimer (automatic, `healthContent: true`); video restored (NzWlC_x4yJ4, confirmed embeddable).
+- Deliberate deviation from ctr-plan.md: the planned description said "vagus nerve and heart rate findings", but neither study measured the vagus nerve (it is the fMRI authors' proposed mechanism), so the description says "the heart rate variability study" instead, per the plan's own truth rule.
+- Removed/softened claims: blood-pressure "listening to OM" study (no citation found) removed; vagal tone -> better digestion/sleep/emotional regulation removed; "not merely psychological" removed; cortisol section removed; "what researchers describe as a full-body calming loop" (unattributed) reworded as practitioner experience; "most people notice something shift within the first week" removed; fMRI result corrected from "resembled responses seen in some relaxation therapies" to what the paper says (similar to vagus nerve stimulation treatment).
+- TODO-SOURCE left: none.
+- Baseline: 2,195 impressions, position 10.8, CTR 0.05% (GSC, 1 Aug 2025 to 8 Nov 2026; measured on the old URL before deletion).
+
+---
+
+## 2026-11-11: Hindu Practices for Office Stress (restored)
+
+- URL: /practices/How_to_Reduce_Office_Stress -> /practices/how-to-reduce-office-stress (permanent redirect; previously pointed to /practices)
+- Title: "How to Reduce Office Stress? Ancient Hindu Practices + Modern Science Explained" -> "Hindu Practices for Office Stress: What Science Says"
+- Description: "Learn how to reduce office stress naturally using ancient Hindu practices like Pranayama, Om chanting, meditation, and yoga supported by modern science." -> "Simple breathing, OM chanting and meditation practices you can do at work, with what the research actually shows for each one."
+- H1: matches title
+- Content: short answer under the H1 listing the five practices; a "What the evidence shows" line under each practice with a named PubMed source or a plain "limited evidence" note; medical disclaimer (automatic); video restored (oED3yK1shuo, confirmed embeddable).
+- Removed/softened claims: meditation "improves attention span" removed (the cited 2014 meta-analysis found insufficient evidence for attention); "even 3 to 5 minutes makes a measurable difference for most people" removed; OM chanting "stimulates the vagus nerve" softened; chronic-stress list (blood pressure, immunity) narrowed to general associations; yoga "strong research support" changed to limited for desk routines, with a pointer to the studied Surya Namaskar article; "most people notice something shift within the first few days" removed; "2-4 weeks" result timing replaced with the 8-week program length the meditation trials actually used.
+- TODO-SOURCE left: none.
+- Baseline: 59 impressions, position 10.2, CTR 1.69% (GSC, 1 Aug 2025 to 8 Nov 2026; old URL).
+
 ---
 
 ## 2026-11-10: Who Was Karna? (hinduism-qa/karna-the-forgotten-hero)

@@ -177,6 +177,8 @@ Every new article should link to relevant existing articles. Current site articl
 | Om symbol | `/symbols/om-symbol` |
 | Surya Namaskar | `/practices/surya-namaskar` |
 | Why Do We Ring Bells in Temples | `/practices/why-do-we-ring-bells-in-temples` |
+| OM chanting and the brain (study table) | `/practices/om-chanting-and-the-brain` |
+| Office stress (Hindu practices + evidence) | `/practices/how-to-reduce-office-stress` |
 
 Update this table whenever a new article is published.
 
@@ -224,6 +226,9 @@ Update this table whenever a new article is published.
 - **33 Koti Devta article:** Wikipedia (Deva, Hinduism), Wisdomlib (Sanskrit dictionary entry for "koti"), Wisdomlib (Brihadaranyaka Upanishad 3.9, Shakalya-Brahmana)
 - **Surya Namaskar article:** Wikipedia (Surya Namaskar), PubMed Central (HRV comparison study, PMC10919408)
 - **What is Dharma article:** Vedabase.io (Bhagavata Purana 1.17.24), Britannica (dharma — religious concept)
+- **OM Chanting and the Brain article:** PubMed 21654968 (Kalyani 2011 fMRI pilot), PubMed 35444369 (Inbaraj 2022 HRV), PubMed 30245619 (Zaccaro 2018 slow-breathing review), PubMed 24395196 (Goyal 2014 meditation meta-analysis)
+- **Office Stress article:** PubMed 30245619 (Zaccaro 2018), PubMed 35444369 (Inbaraj 2022), PubMed 24395196 (Goyal 2014)
+- **Tip:** pubmed.ncbi.nlm.nih.gov blocks automated page fetches (cookie wall). Verify study details through NCBI E-utilities instead: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=<PMID>&rettype=abstract&retmode=text`
 
 ---
 
