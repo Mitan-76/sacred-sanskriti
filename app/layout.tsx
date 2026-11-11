@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import JsonLd from "@/components/JsonLd";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleAnalytics, { GoogleTagManagerNoScript } from "@/components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-main", display: 'swap' });
 const merriweather = Merriweather({
@@ -109,6 +109,7 @@ export default function RootLayout({
                 />
             </head>
             <body className={`${inter.variable} ${merriweather.variable}`}>
+                <GoogleTagManagerNoScript />
                 <Header />
                 <main className="min-h-[80vh]">
                     {children}
