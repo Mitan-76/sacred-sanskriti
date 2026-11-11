@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import JsonLd from "@/components/JsonLd";
 import GoogleAnalytics, { GoogleTagManagerNoScript } from "@/components/GoogleAnalytics";
+import AdSenseScript from "@/components/AdSenseScript";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-main", display: 'swap' });
 const merriweather = Merriweather({
@@ -76,6 +77,7 @@ export default function RootLayout({
         <html lang="en" className="font-sans">
             <head>
                 <GoogleAnalytics />
+                <AdSenseScript />
                 <JsonLd
                     data={{
                         "@context": "https://schema.org",
